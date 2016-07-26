@@ -1,10 +1,12 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-$file=fopen('test.txt',"r");
-while (!feof($file)) {
-    $content[]=fgetss($file);//读取文件去掉html和php标签
-}
-print_r($content);
+$file=fopen('test.txt',"r+");
+fwrite($file, 'foo');//多次添加将出现乱码
+fflush($file);
+// while (!feof($file)) {
+//     $content[]=fgetss($file);//读取文件去掉html和php标签
+// }
+//print_r($content);
 //$arr=file('test.txt');//直接读取文件返回数组,以行为分割
 //print_r($arr);
 //print_r(disk_free_space('C:')/(1024*1024));
@@ -28,6 +30,6 @@ while (!feof($file)) {
 }
 print_r($ot);
 print_r($arrs);
-print_r($arr);
-fclose($file);*/
+print_r($arr);*/
+fclose($file);
 ?>
