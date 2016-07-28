@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="Assets/Home/account/css/common.css">
+</head>
+
+<body class="login">
+    <div class="flow_box">
+        <div class="step1">1.确认账号</div>
+        <div class="step2 step_active">2.获取验证</div>
+        <div class="step3">3.重置密码</div>
+    </div>
+
+        <form id="find-verify" action="FindPassword-sureaccount" method="post">
+            <div id="find_verify">
+                <p>* 找回账号：
+                    <span class="color_blue">{$account}</span>
+                </p>
+                
+                <p>验证手机号：
+                    <span class="color_blue"><?php echo $str; ?></span>
+                </p>
+                <input type="hidden" id="tel" value="{$MobileFind}">
+                <div class="relative_box">
+                    <label for="captcha">验证码：</label> 
+                    <input type="text" id="captcha" class="form-control captcha_text" name="verifyCode" placeholder="请输入验证码" required="">
+                    <img class="captcha-img" src="Relate-code" onclick="document.getElementById('captcha').value='';this.src='Relate-code?t='+ new Date().getTime()">
+                </div>
+                <div class="relative_box">
+                    <input type="tel" class="input_text verify_text" name="verifytext" id="verify_text" required placeholder="短信验证码">
+                    <a href="javascript:;" class="get_verify <notempty name='time'>disabled</notempty>">获取验证码</a>
+                </div>
+                <p class="error">验证码不一致</p>
+                <input type="hidden" name="redirect" value="{$redirect}" />
+                <input type="hidden" id="time" value="{$time}" />
+                <input type="submit" value=" 下一步" class="next_btn">
+            </div>
+        </form>
+        
+        <?php if ($EmailFind){?>
+        <div class="switch-link">
+            <div class="link">
+                <span class="color_999">切换到 </span><a class="color_blue" href="/FindPassword-emailFindPwd?redirect=<?php echo $redirect;?>">邮箱找回</a>
+            </div>
+            客服电话 <a class="color_999" href="tel:95105333">95105333</a>
+        </div>
+        <?php }?>
+        <script src="/Assets/Home/account/js/dist/common.js"></script>
+        <script src="/Assets/Home/account/js/dist/findPsw.bundle.js"></script>
+
+</body>
+
+</html>

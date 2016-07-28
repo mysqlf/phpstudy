@@ -1,0 +1,10 @@
+.make-grid(@num,@index:1) when(@index <= @num){
+  .col-@{index}{
+  	 &:extend(.float-left all);
+  	 width: percentage(@index / @num);
+  }
+  .make-grid(@num,(@index + 1));
+}
+.float-left{
+	float: left;
+}

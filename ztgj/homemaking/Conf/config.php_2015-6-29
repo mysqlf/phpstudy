@@ -1,0 +1,109 @@
+<?php
+return array(
+	//'配置项'=>'配置值'
+	
+	/*'DB_TYPE'   => 'pdo', // 数据库链接类型
+	'DB_PORT'   => 3306, // 端口
+	'DB_PREFIX' => '', // 数据库表前缀
+	//'DB_NAME'   => 'lzl', // 数据库
+	'DB_USER'   => 'ztcwr', // 用户名
+	'DB_PWD'    => 'Chitone5156Zt%1', // 密码
+	'DB_DSN'    => 'mysql:host=192.168.8.47;dbname=5156base;charset=UTF-8',*/
+	/*'DB_USER'   => 'root', // 用户名
+	'DB_PWD'    => 'root', // 密码
+	'DB_DSN'    => 'mysql:host=localhost;dbname=homemaking;charset=UTF8',*/
+	//'DB_FIELDS_CACHE'=>false,
+	 //PDO连接方式
+	 'DB_TYPE'   => 'pdo', // 数据库类型
+	 'DB_USER'   => 'weixi', // 用户名
+	 'DB_PWD'    => 'weixi!@#', // 密码
+	 'DB_PREFIX' => '', // 数据库表前缀 
+	 //'DB_DSN'    => 'sqlsrv:host=shadow,1521;dbname=mak_businessT;charset=UTF8'
+	 'DB_DSN'    => 'sqlsrv:Server=shadow,1433;Database=mak_businessT;',
+	
+	//数据库连接1
+	'DB_CONFIG1' => 'mysql://root:root@localhost:3306/5156base',
+	//数据库连接2
+	'DB_CONFIG2' => 'mysql://ztcwr:Chitone5156Zt%1@192.168.8.47:3306/5156base',
+	//数据库连接3
+	'DB_CONFIG3' => 'sqlsrv://weixi:weixi!@#@shadow:1433/mak_businessT',
+	//数据库连接4
+	'DB_CONFIG4' => array(
+	    'db_type'  => 'sqlsrv',
+	    'db_user'  => 'weixi',
+	    'db_pwd'   => 'weixi!@#',
+	    'db_host'  => 'shadow',
+	    'db_port'  => '1433',
+	    'db_name'  => 'mak_businessT'
+	 ),
+	 //数据库连接5
+	'DB_CONFIG5' => array(
+	    //PDO连接方式
+		 'DB_TYPE'   => 'pdo', // 数据库类型
+		 'DB_USER'   => 'weixi', // 用户名
+		 'DB_PWD'    => 'weixi!@#', // 密码
+		 'DB_PREFIX' => '', // 数据库表前缀 
+		 //'DB_DSN'    => 'sqlsrv:host=shadow,1521;dbname=mak_businessT;charset=UTF8'
+		 'DB_DSN'    => 'sqlsrv:Server=shadow,1433;Database=mak_businessT;'
+	 ),
+	 //数据库连接6
+	 'DB_CONFIG6' => array(
+		'DB_TYPE'   => 'mssql', // 数据库类型
+		'DB_HOST'   => 'egServer70',
+		'DB_PORT'   => 1433, // 端口
+		'DB_USER'   => 'weixi', // 用户名
+		'DB_PWD'    => 'weixi!@#', // 密码
+		'DB_PREFIX' => '', // 数据库表前缀
+		'DB_NAME'   => 'mak_businessT'
+	 ),
+     
+	'TOKEN_ON'  => FALSE,  // 是否开启令牌验证 默认关闭
+    'TOKEN_NAME' => '__hash__',    // 令牌验证的表单隐藏字段名称
+    'TOKEN_TYPE' => 'md5',  //令牌哈希验证规则 默认为MD5
+    'TOKEN_RESET' => TRUE,  //令牌验证出错后是否重置令牌 默认为true
+	'DEFAULT_CHARSET' => 'utf-8',//默认编码
+	'VAR_FILTERS' => 'filter_vars', //过滤用户传递的参数（$_GET,$_POST）
+	'DEFAULT_FILTER' => 'htmlspecialchars,trim',//全局传递参数过滤
+	'VAR_PAGE'=>'page',//设置分页参数
+    'URL_ROUTER_ON'   => true, //开启路由
+    'URL_ROUTE_RULES' => array( //定义路由规则
+    ),
+	'SHOW_PAGE_TRACE' => False,// 显示页面Trace信息
+    'TMPL_ACTION_ERROR' => APP_PATH . 'Tpl/Home/Public/error_jump.html',
+    'TMPL_ACTION_SUCCESS' => APP_PATH . 'Tpl/Home/Public/success_jump.html',
+	'TRACE_PAGE_TABS' => array(
+        'base'  => '基本',
+        'file'  => '文件',
+        'think' => '流程',
+        'error' => '错误',
+        'sql'   => 'SQL',
+        'debug' => '调试'
+    	),// 设置页面Trace结构
+	'THINK_EMAIL' => array(
+        'SMTP_HOST'   => 'smtp.mxhichina.com', //SMTP服务器
+        'SMTP_PORT'   => 25, //SMTP服务器端口
+        'SMTP_USER'   => 'service@lie2lie.com', //SMTP服务器用户名
+        'SMTP_PASS'   => 'Biyong007', //SMTP服务器密码
+        'FROM_EMAIL'  => 'service@lie2lie.com', //发件人EMAIL
+        'FROM_NAME'   => '猎中猎', //发件人名称
+        'REPLY_EMAIL' => '', //回复EMAIL（留空则为发件人EMAIL）
+        'REPLY_NAME'  => '', //回复名称（留空则为发件人名称）
+    ), 
+	'DATA_CACHE_TYPE' => 'memcache', //数据缓存类型 
+	'MEMCACHE_HOST'   => '127.0.0.1:11211',
+	'DATA_CACHE_TIME' => '3600', //数据缓存有效期 0表示永久缓存 
+	'HTML_FILE_SUFFIX' => '.html',// 默认静态文件后缀
+	'TMPL_STRIP_SPACE' => FALSE,//不去除静态文件的空格和换行
+	'URL_MODEL' => '2',//rewrite规则
+	'APP_GROUP_LIST' => 'Home,Chitone', //项目分组设定
+ 	'DEFAULT_GROUP'  => 'Home', //默认分组
+	'URL_CASE_INSENSITIVE' => false, //大小写不敏感
+	'URL_PATHINFO_DEPR'=>'-', // 更改PATHINFO参数分隔符
+	'URL_HTML_SUFFIX' => 'html',//伪静态后缀
+	'DEFAULT_TIMEZONE' => 'Asia/shanghai',// 设置默认时区为上海
+	'DB_FIELDTYPE_CHECK' => TRUE,  // 开启字段类型验证
+	'PAGE' =>array(
+		'theme' => '%upPage% %first% %prePage%  %linkPage% %downPage% %end% %nextPage%'
+	)
+);
+?>

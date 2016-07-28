@@ -1,0 +1,9 @@
+/* line 9, ../../../../liver/jinchangyi/project/jcy-sass/sass/ellipsis.scss */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url('../../../../../feasy/Assets/Home/styles/xml/ellipsis.xml#ellipsis');
+}

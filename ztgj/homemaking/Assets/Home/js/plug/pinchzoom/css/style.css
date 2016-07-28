@@ -1,0 +1,97 @@
+
+/*
+body,
+html{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: #333;
+    font-family: Georgia;
+}
+*/
+div.page{
+    margin: 50px auto 50px auto;
+    /*max-width: 500px;*/
+    position: relative;
+    text-align: left;
+}
+
+div.pinch-zoom {
+    position: relative;
+}
+div.pinch-zoom a{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    background: #333;
+    padding: 3px;
+    font-size: 11px;
+}
+
+div.pinch-zoom div.description {
+    position: absolute;
+    top: 500px;
+    left: 210px;
+}
+
+div.pinch-zoom div.description h1{
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+div.pinch-zoom div.description p{
+    margin: 0px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+div.page,.page .mask{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 10;
+	margin: 0;
+	overflow: hidden;
+	display:block;
+	height: 100%;
+}
+div.page .pinch-zoom-container{
+	overflow: visible !important;
+}
+.slider-box{
+	z-index: 100;
+	height: 100%;
+}
+.slider-box ul{
+	display: table;
+	height: 100%;
+
+}
+.slider-box ul>li{
+	vertical-align: middle !important;
+}
+.page .close-icon{
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 2em;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1000;
+	color: rgba(255,255,255,.8);
+	font-family: '宋体';
+	text-align: center;
+	background: #000;
+	cursor:pointer;
+}

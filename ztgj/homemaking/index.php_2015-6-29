@@ -1,0 +1,42 @@
+<?php
+define('APP_DEBUG', true);
+//define('DOMAIN','http://ariaasia.gicp.net/');
+//define('DOMAIN','http://rohochan.wicp.net/');
+define('DOMAIN','http://jiaz.hr5156.com/');
+define('IMG_DOMIN','www.job5156.com/');
+//define('APP_DOMIN','weixin.hr5156.com/');
+//define('APP_DOMIN','test.hr5156.com/');
+//define('APP_DOMIN','192.168.2.24/');
+//define('APP_DOMIN','ariaasia.gicp.net/');
+//define('APP_DOMIN','jz.chitone.cc/');
+//define('APP_DOMIN','pt.chitone.cc/');
+define('APP_DOMIN','test2.hr5156.com/');
+define('APP_URL','test.job5156.com/');
+//define('APPID','wx53ac322cae217788');
+//define('APPSECRET','bd6956ce0ea03a4a54a06bc5d9a25966');
+define('APPID','wx3bb26d7caff9e9ac');
+define('APPSECRET','b4bd6a29f05cad95ecd956f30fbd8ebb');
+
+//define('APPID','wxac7d96f71582d6d0');
+//define('APPSECRET','94ecd166c6e6b5db21d8126a5d5add56');
+
+define('BUILD_DIR_SECURE',true);
+define('DIR_SECURE_FILENAME', 'index.html,default.html');
+define('DIR_SECURE_CONTENT', 'deney Access!');
+function filter_vars(&$value)
+{
+	$value = preg_replace("/(javascript:)?on(click|load|key|mouse|error|abort|move|unload|change|dblclick|reset|resize|submit)/i","",$value);
+	$value = preg_replace("/(.*?)<\/script>/si","",$value);
+	$value = preg_replace("/(.*?)<\/iframe>/si","",$value);
+	$value = preg_replace ("//iesU", '', $value);	
+	/*$value = preg_replace_callback("/(javascript:)?on(click|load|key|mouse|error|abort|move|unload|change|dblclick|reset|resize|submit)/i","",$value);
+	$value = preg_replace_callback("/(.*?)<\/script>/si","",$value);
+	$value = preg_replace_callback("/(.*?)<\/iframe>/si","",$value);
+	$value = preg_replace_callback ("//isU", '', $value);*/
+	if (!get_magic_quotes_gpc())
+	{
+		$value = addslashes($value);
+	}
+}
+require '../ThinkPHP/ThinkPHP.php';
+?>

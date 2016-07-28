@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no" >
+  <title>找回密码</title>
+  <link rel="stylesheet" href="Assets/Home/styles/screen.css">
+</head>
+<body class="login">
+	   <div class="flow_box">
+	   	<div class="step1">1.输入账号</div>
+	   	<div class="step2 step_active">2.获取验证</div>
+	   	<div class="step3">3.重置密码</div>
+	   </div>
+       <form action="FindPassword-sureaccount" method="post">
+	   <div id="find_verify">
+	       <P>验证手机号：<span id="tel" data-tel="{$bindMobile}"></span><?php echo $str; ?></P>
+	       <div class="relative_box">
+		   <label>填写验证码：</label><input type="number" class="input_text verify_text" name="verifytext" id="verify_text" placeholder="短信验证码">
+		   <a href="javascript:;" class="get_verify">获取验证码</a>
+		   <p class="code_tips"><i class="icon-warn"></i>验证错误</p>
+		   </div>
+           <input type="hidden" name="redirect" value="{$lasturl}" />
+		   <input type="submit" value=" 下一步" class="next_btn">
+	    </div>
+       </form>
+<script src="Assets/Home/scripts/lib/sea.js"></script>
+ <script>
+     seajs.use('./Assets/Home/scripts/page/find_verify');
+ </script>
+</body>
+</html>

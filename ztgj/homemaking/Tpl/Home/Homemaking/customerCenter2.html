@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>客户中心</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="/Assets/Home/css/common.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="P_customerCenter" class="viewport">
+<section class="panel panel-border user-panel">
+	<div class="panel-body horizontal">
+	    <div class="user-head left">
+	    	<img class="lazy" src="/Assets/Home/images/lazy.gif" data-original="/Assets/Home/images/head.jpg" alt="">
+	    </div>
+	    <div class="right user-info">
+	    	<h4 class="name">
+	    	   {$homeCustomerInfo.fldName}
+	    	   <if condition="$homeCustomerInfo.fldSex eq 0"><i class="icon icon-female-samll active"></i> 
+	    	   <elseif condition="$homeCustomerInfo.fldSex eq 1"/><i class="icon icon-male-samll active"></i>
+	    	   </if>
+	    	   <a class="pull-right" id="edit-info" href="javascript:;" title="更改资料"><i class="icon icon-bianji"></i></a>
+	    	</h4>
+	    	<input type="hidden" id="id" name="id" value="{$homeCustomerInfo.fldID}">
+	    	<div class="text-overflow">
+	    	  <!--<span class="c-gray">年   龄：</span>40岁-->
+	    	  <span class="pull-right"><span class="c-gray">预产期：</span>{$homeCustomerInfo.fldchildbirth}</span>
+	        </div>
+	        <div class="text-overflow">
+	    	  <span class="c-gray">手机号：</span><span id="phone-num">{$homeCustomerInfo.fldMobile}</span><i class="icon icon-gou"></i>
+	        </div>
+	        <div>
+	    	  <span class="c-gray">地址：</span><span id="place-txt">{$homeCustomerInfo.fldAddress}</span>
+	        </div>
+	    </div>
+	</div>
+</section>
+    
+<if condition="$homemakingRequirementInfo.fldStatus eq 0">
+<section class="panel panel-border content-panel">
+	<div class="panel-body">
+		<h3 class="title">我的服务</h3>
+		<volist name="homemakingRequirementInfo" id="vo">
+		<div class="clearfix">
+		    <div class="col-4"><span class="tag tag-brand"><if condition="$vo.fldType eq 1">{$vo.Grade}月嫂<elseif condition="$vo.fldType eq 2"/>{$vo.Grade}育婴师</if></span></div>
+			<div class="col-8 service">
+			  服务价格：{$vo.Price}元
+	          <i class="line">|</i> 
+	          <if condition="$vo.fldStatus eq 0"><i class="icon icon-gou-gray"></i>未付定金
+	          <elseif condition="$vo.fldStatus eq 1"/><i class="icon icon-gou-gray"></i>已付定金
+	          <elseif condition="$vo.fldStatus eq 2"/><i class="icon icon-gou-gray"></i>已付款</if></div>
+		</div>
+		</volist>
+	</div>
+</section>
+
+<section class="panel panel-border content-panel">
+	<div class="panel-body">
+		<h3 class="title">我的需求</h3>
+		<volist name="homemakingRequirementInfo" id="vo">
+		<div class="clearfix">
+		    <div class="col-6 service">月嫂籍贯：<if condition="$vo.fldNative neq null">{$vo.fldNative}<else/>未设置</if></div>
+			<div class="col-6 service">月嫂年龄：<if condition="$vo.Age neq null">{$vo.Age}<else/>未设置</if></div>
+		</div>
+		<div class="clearfix">
+		    <!--<div class="col-6 service">月嫂学历：<if condition="$vo.Degree neq null">{$vo.Degree}<else/>未设置</if></div>-->
+		    <div class="col-6 service">婚姻状况：<if condition="$vo.Marry neq null">{$vo.Marry}<else/>未设置</if></div>
+			<div class="col-6 service">月嫂语言能力：<if condition="$vo.Language neq null">{$vo.Language}<else/>未设置</if></div>
+		</div>
+		<div class="clearfix">
+		    <div class="col-12 service">特殊备注：<if condition="$vo.fldRemark neq null">{$vo.fldRemark}<else/>无</if></div>
+		</div>
+		</volist>
+	</div>
+</section>
+
+<form id="J_comment-form" action="/Homemaking-upload" method="post">
+	<section class="panel panel-border content-panel">
+		<div class="panel-body comment">
+			<h3 class="title">评语</h3>
+			<p class="c-gray-light tip-txt">为了使月嫂在今后的工作中不断提高护理质量和个人素质，
+	请您对我们月嫂的护理工作以及工作态度作出认真的评价！</p>
+			<div class="clearfix  horizontal-r">
+			   <div class="right">
+				  <div id="upload-open"> </div>
+				</div>
+			    <div class="left">
+			    	<textarea placeholder="请对 高圆圆 进行点评，字数不超过100字" required name="commentTxt"></textarea>
+			    </div>
+				
+				<div class="clearfix add-img dn">
+					<div class="col-4">
+						<label class="img-box" >
+						    <input class="upload-btn" name="uploadImg1" type="file" accept="image/*">
+							<img src="/Assets/Home/images/add.png" alt="添加图片">
+							<a class="del-img dn" href="javascript:;" ><i class="icon icon-del"></i></a>
+						</label>
+					</div>
+					<div class="col-4">
+					   <label class="img-box">
+					   <input class="upload-btn" name="uploadImg2" type="file" accept="image/*">
+						<img src="/Assets/Home/images/add.png" alt="添加图片">
+						<a class="del-img dn" href="javascript:;" ><i class="icon icon-del"></i></a>
+					   </label>
+					</div>
+					<div class="col-4">
+					  <label class="img-box">
+					    <input class="upload-btn" name="uploadImg2" type="file" accept="image/*">
+						<img src="/Assets/Home/images/add.png" alt="添加图片">
+						<a class="del-img dn" href="javascript:;" ><i class="icon icon-del"></i></a>
+					  </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</form>
+<!--
+<form action="/Homemaking-upload" enctype="multipart/form-data" method="post" >
+<input type="text" name="name" />
+<input type="file" name="photo" />
+<input type="submit" value="提交" >
+</form>
+-->
+<else/>
+<section class="panel panel-border content-panel">
+	<div class="panel-body">
+		<h3 class="title">我的服务</h3>
+		<volist name="homemakingRequirementInfo" id="vo">
+		<div class="clearfix">
+		    <div class="col-4"><span class="tag tag-brand"><if condition="$vo.fldType eq 1">{$vo.Grade}月嫂<elseif condition="$vo.fldType eq 2"/>{$vo.Grade}育婴师</if></span></div>
+			<div class="col-8 service">
+			  服务价格：{$vo.Price}元
+	          <i class="line">|</i> 
+	          <if condition="$vo.fldStatus eq 0"><i class="icon icon-gou-gray"></i>未付定金
+	          <elseif condition="$vo.fldStatus eq 1"/><i class="icon icon-gou-gray"></i>已付定金
+	          <elseif condition="$vo.fldStatus eq 2"/><i class="icon icon-gou-gray"></i>已付款</if></div>
+		</div>
+		</volist>
+	</div>
+</section>
+
+
+
+<form id="J_comment-form" action="/Homemaking-customerCenter" method="post">
+	<section class="panel panel-border content-panel">
+		<div class="panel-body comment">
+			<h3 class="title">评语</h3>
+			<p class="c-gray-light tip-txt">为了使月嫂在今后的工作中不断提高护理质量和个人素质，
+	请您对我们月嫂的护理工作以及工作态度作出认真的评价！</p>
+			<div class="clearfix  horizontal-r">
+			   <div class="right">
+				  <div id="upload-open"> </div>
+				</div>
+			    <div class="left">
+			    	<textarea placeholder="请对 高圆圆 进行点评，字数不超过100字" required name="commentTxt"></textarea>
+			    </div>
+				
+				<div class="clearfix add-img dn">
+					<div class="col-4">
+						<label class="img-box" >
+						    <input class="upload-btn" name="uploadImg1" type="file" accept="image/*">
+							<img src="/Assets/Home/images/add.png" alt="添加图片">
+							<a class="del-img dn" href="javascript:;" ><i class="icon icon-del"></i></a>
+						</label>
+					</div>
+					<div class="col-4">
+					   <label class="img-box">
+					   <input class="upload-btn" name="uploadImg2" type="file" accept="image/*">
+						<img src="/Assets/Home/images/add.png" alt="添加图片">
+						<a class="del-img dn" href="javascript:;" ><i class="icon icon-del"></i></a>
+					   </label>
+					</div>
+					<div class="col-4">
+					  <label class="img-box">
+					    <input class="upload-btn" name="uploadImg2" type="file" accept="image/*">
+						<img src="/Assets/Home/images/add.png" alt="添加图片">
+						<a class="del-img dn" href="javascript:;" ><i class="icon icon-del"></i></a>
+					  </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<section class="select-wrap">
+	<h3 class="title"><i class="icon icon-baobao"></i>宝宝护理 <span class="end-word">细节点评 </span></h3>
+	<div class="clearfix lattice">
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-naipin"></i><br>
+			宝宝喂奶<br>喂奶情况
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="nurse" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="nurse" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="nurse" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-zhiniaobu"></i><br>
+			处理宝宝<br>大小便情况
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="bianbian" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="bianbian" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="bianbian" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-yongquan"></i><br>
+			宝宝洗澡<br>及按摩情况
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="anmo" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="anmo" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="anmo" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-anquan"></i><br>
+			宝宝衣物的<br>清洗和消毒
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xiaodu" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xiaodu" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xiaodu" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-jisuan"></i><br>
+			和宝宝沟通<br>开发潜能
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="qianneng" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="qianneng" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="qianneng" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-yan"></i><br>
+			观察宝宝身<br>体有无异常
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="yichang" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="yichang" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="yichang" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="select-wrap">
+	<h3 class="title"><i class="icon icon-heart2"></i>产妇护理</h3>
+	<div class="clearfix lattice">
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-chanfu"></i><br>
+			协助产妇<br>做个人卫生
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="weisheng" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="weisheng" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="weisheng" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-heart3"></i><br>
+			宝宝喂奶<br>哺乳
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="buru" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="buru" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="buru" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-delete"></i><br>
+			整理产妇<br>房间卫生
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="fangjian" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="fangjian" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="fangjian" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-canju"></i><br>
+
+			产妇月子餐<br>安排与制作
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="yuezican" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="yuezican" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="yuezican" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-pinglun"></i><br>
+
+			与产妇交流<br>育儿心得
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xinde" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xinde" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xinde" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-yaoxiang"></i><br>
+
+			指导产妇做<br>产后恢复操
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="chanhou" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="chanhou" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="chanhou" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="select-wrap">
+	<h3 class="title"><i class="icon icon-star2"></i>个人素质</h3>
+	<div class="clearfix lattice">
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-star"></i><br>
+
+			对待宝宝<br>爱心和责任心
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="zeren" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="zeren" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="zeren" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-time"></i><br>
+
+			对待工作<br>是否积极主动
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="taidu" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="taidu" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="taidu" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-goutong"></i><br>
+			与人沟通<br>及沟通能力
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="goutong" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="goutong" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="goutong" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-sun"></i><br>
+			性格脾气
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xingge" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xingge" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xingge" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-weisheng"></i><br>
+
+			卫生习惯
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xiguan" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xiguan" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="xiguan" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+		
+		<div class="col-4 lattice-el">
+		    <i class="icon icon-wenming"></i><br>
+
+			文明理解
+			<ul class="select-box">
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="wenming" value="1" data-type="1">优<i class="icon icon-uncheck" requried></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="wenming" value="3" data-type="2">良<i class="icon icon-uncheck"></i></label></li>
+				<li class="clearfix"><label class="pull-right"><input type="radio" name="wenming" value="5" data-type="3">差<i class="icon icon-uncheck"></i></label></li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="text-center" style="margin: 20px auto 0">
+		<input class="btn btn-lg btn-primary" type="submit" value="提交点评">
+	</div>
+</section>
+</form>
+</if>
+<script type="text/javascript" src="/Assets/Home/js/lib/sea.js"></script>
+<script type="text/javascript" src="/Assets/Home/js/page/userCenter.min.js?v=5"></script>
+</body>
+</html>

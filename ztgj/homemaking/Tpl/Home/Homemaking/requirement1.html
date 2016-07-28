@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>订制服务</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="/Assets/Home/css/common.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="P_custom">
+	<section class="banner">
+	 <img class="img-block" src="/Assets/Home/images/banner1.jpg" alt="">
+	</section>
+	<section class="sort-box tab-box">
+		<if condition="$type eq '月嫂'">
+		<ul class="flex-box tab-nav">
+			<li ><a class="active" data-type="月嫂" href="javascript:;">月嫂</a></li>
+			<li ><a href="Homemaking-requirement-type-育婴员" data-type="育婴员">育婴嫂</a></li>
+		</ul>
+		<else/>
+		<ul class="flex-box tab-nav">
+			<li ><a href="Homemaking-requirement-type-月嫂" data-type="月嫂" href="javascript:;">月嫂</a></li>
+			<li ><a class="active" data-type="育婴员">育婴嫂</a></li>
+		</ul>
+		</if>
+		<ul class="tab-content">
+			<li ><a class="down-select" id="sort-pay" href="javascript:;" data-select="{$gradePriceArray.string}"><i class="icon  icon-heart"></i> 
+			<span class="value">
+				<if condition="$pay eq null">服务价格（元）<else/>{$pay}元</if>
+			</span>
+			<i class="icon icon-arrow-down pull-right"></i></a></li>
+			<li ><a class="down-select" id="sort-place" href="javascript:;" data-select="广东,广西,湖南,湖北,四川,浙江,江西">
+			<i class="icon icon-place"></i><span class="value">
+				<if condition="$place eq null">籍贯<else/>{$place}</if>
+			</span><i class="icon icon-arrow-down pull-right"></i></a></li>
+			<li ><a  id="sort-date" class="date-toggle" href="javascript:;"><i class="icon icon-rili"></i>
+			<span class="value">
+				<if condition="$date neq null">{$date}<elseif condition="$type eq '育婴员' "/>宝宝生日<else/>预产期</if>
+			</span>
+			<i class="icon icon-arrow-down pull-right"></i><input class="input-date" min="2015-5-10" type="date" ></a></li>
+		</ul>
+	</section>
+	<section>
+		<ul class="yuesao-list">
+			<volist name="list" id="vo">
+			<li>
+				<a href="/Homemaking-requirementDetail-id-{$vo.fldID}" class="panel">
+					<div class="panel-body horizontal">
+					    <div class="yuesao-head left">
+					    	<img class="lazy" src="/Assets/Home/images/lazy.gif" data-original="{$vo.fldPhotoUrl}" alt="">
+					    </div>
+					    <ul class="right yuesao-info">
+					    	<li class="clearfix">
+					    		<span class="col-3">{$vo.fldName}</span> 
+					    		<span class="col-9 text-right c-brand">
+						    		<if condition="$vo.homeInfoSignGradePrice eq null">
+				           				未设置
+				           			<else/>
+				           				{$vo.homeInfoSignGradePrice}元/26天起 
+				           			</if>
+					    		</span>
+					    	</li>
+					    	<li class="clearfix">
+					    		<div class="col-6">年龄：<span class="c-gray-light">
+						    		<if condition="$vo.fldage eq null">
+				           				未设置
+				           			<else/>
+				           				{$vo.fldage}岁
+				           			</if>
+           						</span></div>      
+					    		<div class="col-6">籍贯：<span class="c-gray-light">
+					    			<if condition="$vo.fldNative eq null">
+				           				未设置
+				           			<else/>
+				           				{$vo.fldNative} 
+				           			</if>
+					    		</span></div>
+					    		<div class="col-6">级别：<span class="c-gray-light">
+					    			<if condition="$vo.homeInfoSignGrade eq null">
+				           				未定级
+				           			<else/>
+				           				{$vo.homeInfoSignGrade} 
+				           			</if>
+					    		</span></div>      
+					    		<div class="col-6">学历：<span class="c-gray-light">
+					    			<if condition="$vo.fldEducation eq null">
+				           				未设置
+				           			<else/>
+				           				{$vo.fldEducation} 
+				           			</if>
+					    		</span></div>
+					    	</li>
+					    	<li class="clearfix">
+					    		<div>语言能力：<span class="c-gray-light">
+					    			<if condition="$vo.fldLanguage eq null">
+				           				未设置
+				           			<else/>
+				           				{$vo.fldLanguage} 
+				           			</if>
+					    		</span><span class="pull-right">点评（{$vo.homemakingServiceCommentNum}）</span></div>      
+					    	</li>
+					    </ul>
+					</div>
+					<div class="panel-footer">
+						
+						<div class="tag-box c-gray text-left">
+							<if condition="$vo.homemaking_certificate neq null">
+							证件：
+							<volist name="vo.homemaking_certificate" id="voo" key="k">
+								<span class="tag tag-style{$key+1}">{$voo}</span>
+							</volist>
+		           			</if>
+						</div>
+					</div>
+				</a>
+			</li>
+			</volist>
+		</ul>
+	</section>
+	<div class="fixed-bar fixed-bottom flex-box">
+		<div class="text-center"><a href="/Homemaking-requirementSubmit-type-1" class="btn btn-lg btn-primary">订制月嫂</a></div>
+		<div class="text-center"><a href="/Homemaking-requirementSubmit-type-2" class="btn btn-lg btn-default">订制育婴嫂</a></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/Assets/Home/js/lib/sea.js"></script>
+<script type="text/javascript" src="/Assets/Home/js/page/custom.min.js"></script>
+</body>
+</html>

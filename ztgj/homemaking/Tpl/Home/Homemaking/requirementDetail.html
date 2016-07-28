@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title><if condition="$type eq 1">月嫂详情页<else/>育婴嫂详情页</if></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="/Assets/Home/css/common.min.css" rel="stylesheet">
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body>
+
+<div id="P_requirementDetail" class="padding-bottom-gutter">
+<section class="panel panel-border user-panel">
+	<div class="panel-body horizontal">
+	    <div class="user-head left">
+	    	<img class="lazy" src="Assets/Home/images/lazy.gif" data-original="{$result.PhotoUrl}" alt="">
+	    </div>
+	    <div class="right user-info clearfix">
+	    	<div class="clearfix text-overflow">
+	    		<input id="postData" type="hidden" data-id="{$result.fldID}" data-type="{$type}">
+	    		<h4 class="name col-4">
+		    	   {$result.fldName}
+		    	</h4>
+		    	<div class="c-brand col-8 text-right">
+		    	<if condition="$result.Price neq null">{$result.Price}<if condition="$type eq 1">元/26天起<else/>元/月起</if><else/>未设置</if>
+		    	</div>
+	    	</div>
+	    	<div class="text-overflow clearfix col-12">
+	    	  	<span class="c-gray-light"><if condition="$result.fldage neq null">{$result.fldage}岁<else/><!--未设置--></if></span>
+	    	  	<span class="c-gray-light"><if condition="$result.fldage neq null">属{$result.chineseZodiac}<else/><!--未设置--></if></span>
+	    	  	<span class="c-gray-light"><if condition="$result.fldage neq null">{$result.constellation}<else/><!--未设置--></if></span>
+	    	   	<span class="c-gray-light"><if condition="$result.fldNative neq null">{$result.fldNative}<else/><!--未设置--></if></span>
+	        </div>
+	        <div class="text-overflow clearfix col-12">
+	        <if condition="$type eq 1">
+	    	 带过几个宝宝：<span class="c-gray-light"><if condition="$result.fldTakeBabyNum neq null">{$result.fldTakeBabyNum}个<else/>未设置</if></span>
+	    	<else/>
+	    	 工作年限：<span class="c-gray-light"><if condition="$result.fldWorkYears neq null">{$result.fldWorkYears}<else/>未设置</if></span>
+	    	</if>
+	        </div>
+	        <div class="text-overflow clearfix col-12">
+	    	 拿手菜：<span class="c-gray-light"><if condition="$result.fldSpecialtyDish neq null">{$result.fldSpecialtyDish}<else/>未设置</if></span>
+	        </div>
+	        <div class="text-overflow clearfix col-12">
+	    	 语言能力：<span class="c-gray-light"><if condition="$result.fldLanguage neq null">{$result.fldLanguage}<else/>未设置</if></span>
+	        </div>
+	        <div class="text-overflow clearfix col-12">
+		        <if condition="$type eq 1">
+		        	工作年限：<span class="c-gray-light"><if condition="$result.fldWorkYears neq null">{$result.fldWorkYears}<else/>未设置</if></span>
+		        <else/>
+		        	婚姻：<span class="c-gray-light"><if condition="$result.fldMarryStatus neq null">{$result.fldMarryStatus}<else/>未设置</if></span>
+		    	</if>
+	    	   </div>
+	    </div>
+	    <div class="tag-box c-gray text-left">
+			证件：
+			<volist name="result.homemaking_certificate" id="vo">
+				<span class="tag tag-style{$i%6==0?6:$i%6}">{$vo}</span>
+				<!--
+				<if condition="$vo eq '身份证'">
+					<span class="tag tag-style{$i%6==0?6:$i%6}">身份已验证</span>
+				<else/>
+					<span class="tag tag-style{$i%6==0?6:$i%6}">{$vo}</span>
+				</if>-->
+			</volist>
+		</div>
+	</div>
+</section>
+    
+       
+<section class="panel panel-border detail-panel">
+	<div class="panel-body">
+	     <h2 class="c-title green-title">自我评价</h2>
+	     <if condition="$result.fldSelfAppraise neq null">{$result.fldSelfAppraise}<else/>未设置</if>
+	</div>
+</section>
+<section class="panel panel-border detail-panel">
+	<div class="panel-body">
+	     <h2 class="c-title yellow-title">技能特长</h2>
+		 <if condition="$result.fldSpecialty neq null">{$result.fldSpecialty}<else/>未设置</if>
+	</div>
+</section>
+<section class="panel panel-border detail-panel">
+	<div class="panel-body">
+	     <if condition="$type eq 1">
+	     <h2 class="c-title blue-title">服务内容</h2>
+		 <h3 class="sub-title">宝宝护理：</h3> 
+		 <p>
+		 	1、喂奶、喂水、换尿布  <br>
+			2、洗澡、抚触按摩、脐带消毒、指导游泳  <br>
+			3、宝宝衣物清洗和消毒、消毒奶瓶奶具  <br>
+			4、夜间陪护、观察宝宝有无异常、和宝宝沟通开发潜能
+		 </p>
+		
+		<h3 class="sub-title">产妇护理：</h3>  
+		<p>
+		1、制作营养餐，合理安排膳食<br>
+		2、协助产妇做个人卫生、洗涤衣物、观察恶露<br>
+		3、预防月子病<br>
+		4、协助产妇做产后保健操及产后恢复护理
+		</p>
+		<else/>
+		<h2 class="c-title blue-title">服务内容</h2>
+		 <h3 class="sub-title">婴儿护理：</h3> 
+		 <p class="c-dark">
+		 	生活照料：<span class="c-gray">主要有饮食、饮水、睡眠、二便、三浴、卫生、
+营养配餐、辅食添加、衣服玩具等清洁。</span>
+		 </p>
+		 <p class="c-dark">
+		 	启蒙开发：<span class="c-gray">音乐智能、动作技能训练。其中大动作包括抬头、
+翻身、坐、爬、走、跑、跳，精细动作包括手、眼、脑协调。</span>
+		 </p>
+		 <p class="c-dark">
+		 	日常保健：<span class="c-gray">体格训练、婴幼儿被动操、婴幼儿健身操。</span>
+		 </p>
+		</if>
+	</div>
+</section>
+<section class="panel panel-border detail-panel honor-panel">
+	<div class="panel-body">
+	     <h2 class="c-title yellow2-title">荣誉&证件</h2>
+		<notempty name="result.honorPhoto">
+			<ul class="clearfix imagelightbox" data-target="#slider-honor">
+				<volist name="result.honorPhoto" id="vo" offset="0" length="3">
+				  <li class="col-4">
+			            <a href="javascript:;" target="_blank"><img class="lazy img-responsive" src="Assets/Home/images/lazy.gif" data-original="{$vo.fldUrl}" alt="" /></a>
+			        </li>
+				</volist>
+			</ul>
+		</notempty>
+		<!--<notempty name="result.honorPhoto">
+			<div class="page">
+		        <div id="slider">
+		            <ul>
+		            	<volist name="result.honorPhoto" id="vo" offset="0" length="3">
+		            		<li style="display:block">
+			                    <div class="pinch-zoom">
+			                        <img src="{$vo.fldUrl}"/>
+			                    </div>
+			                  </li>
+		            	</volist>
+		            </ul>
+		        </div>
+		    </div>
+		</notempty>-->
+		<script id="slider-honor" type="text/html">
+			<notempty name="result.honorPhoto">
+				<div class="page">
+				<!--<div class="mask"></div>-->
+				<span class="close-icon">×</span>
+			        <div id="slider" class="slider-box">
+			            <ul>
+			            	<volist name="result.honorPhoto" id="vo" offset="0" length="3">
+			            		<li style="display:block">
+				                    <div class="pinch-zoom">
+				                        <img src="{$vo.fldUrl}"/>
+				                    </div>
+				                  </li>
+			            	</volist>
+			            </ul>
+			        </div>
+			    </div>
+			</notempty>
+		</script>
+	</div>
+</section>
+<section class="panel panel-border detail-panel">
+	<div class="panel-body">
+		<if condition="$all gt 0">
+	    <h2 class="c-title pink-title">雇主点评({$homemakingServiceCommentcount})</h2>
+	    <if condition="$type eq 1">
+        <div class="horizontal">
+        	<div class="left">
+        		<p class="text-center pingfen-circle">
+        		  <em class="num">{$all}<span class="small">%</span></em> <br>
+        		  好评度
+        		</p>
+        	</div>
+        	<div class="right pingfen">
+        		<div class="col-6">宝宝护理 ({$baby}%)</div>
+        		<div class="col-6">
+        			<div class="progress">
+					  <div class="progress-bar" style="width: {$baby}%;"></div>
+					</div>
+        		</div>
+        		<div class="col-6">产妇护理 ({$mother}%)</div>
+        		<div class="col-6">
+        			<div class="progress">
+					  <div class="progress-bar" style="width: {$mother}%;"></div>
+					</div>
+        		</div>
+        		<div class="col-6">个人素质 ({$sitter}%)</div>
+        		<div class="col-6">
+        			<div class="progress">
+					  <div class="progress-bar" style="width: {$sitter}%;"></div>
+					</div>
+        		</div>
+
+        	</div>
+        </div>
+        <else/>
+        	<p class="pull-right pingfen2">
+	           好评度: <em class="num c-brand">{$all}<span class="small c-brand">%</span></em> 
+	        </p>
+        </if>
+        <else/>
+	        <h2 class="c-title pink-title">雇主点评({$homemakingServiceCommentcount})</h2>
+		    <if condition="$type eq 1">
+	        <div class="horizontal">
+	        	<div class="left">
+	        		<p class="text-center pingfen-circle">
+	        		  <em class="num">100<span class="small">%</span></em> <br>
+	        		  好评度
+	        		</p>
+	        	</div>
+	        	<div class="right pingfen">
+	        		<div class="col-6">宝宝护理 (100%)</div>
+	        		<div class="col-6">
+	        			<div class="progress">
+						  <div class="progress-bar" style="width: 100%;"></div>
+						</div>
+	        		</div>
+	        		<div class="col-6">产妇护理 (100%)</div>
+	        		<div class="col-6">
+	        			<div class="progress">
+						  <div class="progress-bar" style="width: 100%;"></div>
+						</div>
+	        		</div>
+	        		<div class="col-6">个人素质 (100%)</div>
+	        		<div class="col-6">
+	        			<div class="progress">
+						  <div class="progress-bar" style="width: 100%;"></div>
+						</div>
+	        		</div>
+
+	        	</div>
+	        </div>
+	        <else/>
+	        	<p class="pull-right pingfen2">
+		           好评度: <em class="num c-brand">100<span class="small c-brand">%</span></em> 
+		        </p>
+	        </if>
+        </if>
+	</div>
+</section>
+<ul class="fuwu-item">
+	<volist name="homemakingServiceCommentResult" id="vo" key="k">
+	<li class="panel panel-border">
+
+		<div class="panel-body clearfix">
+			<div class="col-4 text-overflow c-dark">雇主：{$vo.fldName}</div>
+			<div class="col-8 text-overflow text-right c-dark">服务时间：<span class="c-gray-light">{$vo.fldBeginDate}~{$vo.fldEndDate}</span></div>
+		    <h4 class="sub-title clear">评语：</h4>
+		    <p><if condition="$vo.fldAssessment neq null">{$vo.fldAssessment}<else/>未填写</if></p>
+		    <ul class="clearfix imagelightbox"  data-target="#slider-comment{$k}">
+		      <volist name="vo.UploadFile" id="voo">
+				<li class="col-4"><a href="javascript:;" target="_blank"><img class="lazy img-responsive" src="Assets/Home/images/lazy.gif" data-original="{$voo[1]}"  alt="" /></a></li>
+			</volist>
+			</ul>
+			<script id="slider-comment{$k}" type="text/html">
+				<notempty name="vo.UploadFile">
+					<div class="page">
+					<span class="close-icon">×</span>
+				        <div id="slider" class="slider-box">
+				            <ul>
+				            	<volist name="vo.UploadFile" id="voo">
+				            		<li style="display:block">
+					                    <div class="pinch-zoom">
+					                        <img src="{$voo[0]}"/>
+					                    </div>
+					                  </li>
+				            	</volist>
+				            </ul>
+				        </div>
+				    </div>
+				</notempty>
+			</script>
+		</div>
+	</li>
+	</volist>
+</ul>
+<a class="btn btn-block fixed-bar fixed-bottom fixed-btn btn-primary" href="Homemaking-requirementSubmit-type-{$type}-id-{$result.fldID}">马上预约</a>
+<script type="text/javascript" src="Assets/Home/js/lib/sea.js"></script>
+<script type="text/javascript" src="Assets/Home/js/lib/seajs-css.js"></script>
+<script type="text/javascript" src="Assets/Home/js/page/requirement.min.js"></script>
+<script type="text/javascript" src="/Assets/Home/js/wx/wxHideShare.js"></script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+[ 2016-06-06T14:37:57+08:00 ] 127.0.0.1 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001115s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+
+[ 2016-06-06T14:37:58+08:00 ] 127.0.0.1 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001740s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-06-06T15:43:23+08:00 ] 127.0.0.1 /Homemaking-index-t-customizeYuesao?code=001v2o7G0JssM52fCR8G0I3q7G0v2o7p&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002303s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.010509s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = 'oCA6YwNLc4WdmyWhES1jZv0BaGiM' ) AND ( fldStatus = 1 )  [ RunTime:0.006898s ]
+
+[ 2016-06-06T15:43:23+08:00 ] 127.0.0.1 /Homemaking-customizeYuesao-v-1465199003
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+ERR: 模板不存在[D:/item/homemaking/Tpl/Home/Homemaking/customizeYuesao.html]
+
+[ 2016-06-06T15:44:39+08:00 ] 127.0.0.1 /Homemaking-index-t-customizeYuesao?code=001VSv9C0LUETa2RlZaC0inu9C0VSv9b&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001099s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-06-06T15:44:39+08:00 ] 127.0.0.1 /Homemaking-customizeYuesao-v-1465199079
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001324s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: redirect D:\item\homemaking\Runtime\Cache\Home\a7b5361ac18ac201216a2893ae8334ae.php 第 32 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012575s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000643s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000657s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000560s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002786s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000819s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-06-06T15:44:59+08:00 ] 127.0.0.1 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002241s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002452s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+
+[ 2016-06-06T15:45:15+08:00 ] 127.0.0.1 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.007115s ]
+
+[ 2016-06-06T15:45:19+08:00 ] 127.0.0.1 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.007010s ]
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldPromisetime = '2015-06-11' ) AND ( fldTel = '15112630931' )  [ RunTime:0.007388s ]
+SQL: INSERT INTO homemaking_custommade (fldTel,fldClaim,fldCreatetime,fldType,fldPromisetime) VALUES ('15112630931','123','2016-06-06 15:45:19',1,'2015-06-11') [ RunTime:0.014095s ]
+
+[ 2016-06-06T15:45:29+08:00 ] 127.0.0.1 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002300s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.007282s ]
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldPromisetime = '2015-06-11' ) AND ( fldTel = '15112630931' )  [ RunTime:0.006973s ]
+
+[ 2016-06-06T19:04:14+08:00 ] 127.0.0.1 /Homemaking-index-t-customizeYuyingshi?code=011zs2l21m8ga327wjm21Cd9l21zs2lj&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002329s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002548s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-06-06T19:04:14+08:00 ] 127.0.0.1 /Homemaking-customizeYuyingshi-v-1465211054
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001196s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009381s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000430s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000444s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001904s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000611s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-06-06T19:04:14+08:00 ] 127.0.0.1 /Assets/Home/js/page/cusetomizeYuyingshi.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000992s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [8] Undefined variable: group D:\item\ThinkPHP\Lib\Core\App.class.php 第 102 行.
+ERR: 无法加载模块:Assets/Home/js/page/cusetomizeYuyingshi.js
+
+[ 2016-06-06T19:05:28+08:00 ] 127.0.0.1 /Homemaking-index-t-customizeYuesao?code=031W233Y0qYidP1hud3Y0XB43Y0W233a&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-06-06T19:05:29+08:00 ] 127.0.0.1 /Homemaking-customizeYuesao-v-1465211128
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001265s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005657s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000415s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000429s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001862s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000571s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-06-06T19:06:10+08:00 ] 127.0.0.1 /Weixin-index?signature=9505a46d16e7377b267e84e607598cdb7fc133f6&timestamp=1465211169&nonce=119237048&openid=oCA6YwNLc4WdmyWhES1jZv0BaGiM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001273s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-06-06T19:06:12+08:00 ] 117.136.40.244 /Homemaking-index-t-customizeYuesao?code=041GukKd1o8ZQo0ffUJd1w9pKd1GukKX&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001239s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+NOTIC: [8] Undefined index: openid D:\item\homemaking\Common\common.php 第 94 行.
+NOTIC: [8] Undefined index: nickname D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 664 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.008636s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = null ) AND ( fldStatus = 1 )  [ RunTime:0.008439s ]
+SQL: INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:06:12','admin','2016-06-06 19:06:12','admin') [ RunTime:0.009162s ]
+ERR: 515:[Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'fldOpenId'，表 'mak_businessT.dbo.homemaking_user_bind'；列不允许有 Null 值。INSERT 失败。
+ [ SQL语句 ] : INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:06:12','admin','2016-06-06 19:06:12','admin')
+NOTIC: [8] Undefined index: headimgurl D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 668 行.
+
+[ 2016-06-06T19:06:12+08:00 ] 117.136.40.244 /Homemaking-customizeYuesao-v-1465211172
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001044s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008485s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000423s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000413s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001720s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000489s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-06-06T19:06:12+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001688s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000556s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-06-06T19:06:13+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001253s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000569s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000520s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002449s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000790s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-06-06T19:06:22+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001474s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000667s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000608s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000472s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002737s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000786s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2016-06-06T19:06:23+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003361s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001516s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006161s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002233s ]
+
+[ 2016-06-06T19:07:00+08:00 ] 127.0.0.1 /Weixin-index?signature=a6880aeeb72589d6336b52c4bbe04f433159005d&timestamp=1465211219&nonce=946693356&openid=oCA6YwNLc4WdmyWhES1jZv0BaGiM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001268s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+
+[ 2016-06-06T19:07:01+08:00 ] 117.136.40.244 /Homemaking-index-t-customizeYueguanjia?code=001H7zVF17ZMBe0LxNVF1sqCVF1H7zVh&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001186s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined index: openid D:\item\homemaking\Common\common.php 第 94 行.
+NOTIC: [8] Undefined index: nickname D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 664 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.007710s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = null ) AND ( fldStatus = 1 )  [ RunTime:0.007706s ]
+SQL: INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:07:01','admin','2016-06-06 19:07:01','admin') [ RunTime:0.007494s ]
+ERR: 515:[Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'fldOpenId'，表 'mak_businessT.dbo.homemaking_user_bind'；列不允许有 Null 值。INSERT 失败。
+ [ SQL语句 ] : INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:07:01','admin','2016-06-06 19:07:01','admin')
+NOTIC: [8] Undefined index: headimgurl D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 668 行.
+
+[ 2016-06-06T19:07:01+08:00 ] 117.136.40.244 /Homemaking-customizeYueguanjia-v-1465211221
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001040s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010685s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000686s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000686s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002999s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000941s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2016-06-06T19:07:36+08:00 ] 117.136.40.244 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002005s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.008059s ]
+NOTIC: [8] Undefined index: fldPromisetime D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 839 行.
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldPromisetime = null ) AND ( fldTel = '15112630931' )  [ RunTime:0.007641s ]
+SQL: INSERT INTO homemaking_custommade (fldTel,fldClaim,fldCreatetime,fldType,fldHousekeeper) VALUES ('15112630931','无要求','2016-06-06 19:07:36',3,0) [ RunTime:0.014676s ]
+
+[ 2016-06-06T19:07:37+08:00 ] 117.136.40.244 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001905s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002266s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.007215s ]
+NOTIC: [8] Undefined index: fldPromisetime D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 839 行.
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldPromisetime = null ) AND ( fldTel = '15112630931' )  [ RunTime:0.008353s ]
+SQL: INSERT INTO homemaking_custommade (fldTel,fldClaim,fldCreatetime,fldType,fldHousekeeper) VALUES ('15112630931','无要求','2016-06-06 19:07:37',3,0) [ RunTime:0.020268s ]
+
+[ 2016-06-06T19:09:13+08:00 ] 117.136.40.244 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000698s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.007737s ]
+NOTIC: [8] Undefined index: fldPromisetime D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 839 行.
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldPromisetime = null ) AND ( fldTel = '15112630931' )  [ RunTime:0.005802s ]
+SQL: INSERT INTO homemaking_custommade (fldTel,fldClaim,fldCreatetime,fldType,fldHousekeeper) VALUES ('15112630931','123','2016-06-06 19:09:13',3,0) [ RunTime:0.016103s ]
+
+[ 2016-06-06T19:10:12+08:00 ] 127.0.0.1 /Weixin-index?signature=3e08a056b5da4d5a11107e2dd63ebd116d181451&timestamp=1465211411&nonce=511470617&openid=oCA6YwNLc4WdmyWhES1jZv0BaGiM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000570s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-06-06T19:10:13+08:00 ] 117.136.40.244 /Homemaking-index-t-customizeYuyingshi?code=011EqWzI0fulg32ariDI0sNWzI0EqWzy&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+NOTIC: [8] Undefined index: openid D:\item\homemaking\Common\common.php 第 94 行.
+NOTIC: [8] Undefined index: nickname D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 664 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.007790s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = null ) AND ( fldStatus = 1 )  [ RunTime:0.007069s ]
+SQL: INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:10:13','admin','2016-06-06 19:10:13','admin') [ RunTime:0.007321s ]
+ERR: 515:[Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'fldOpenId'，表 'mak_businessT.dbo.homemaking_user_bind'；列不允许有 Null 值。INSERT 失败。
+ [ SQL语句 ] : INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:10:13','admin','2016-06-06 19:10:13','admin')
+NOTIC: [8] Undefined index: headimgurl D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 668 行.
+
+[ 2016-06-06T19:10:13+08:00 ] 117.136.40.244 /Homemaking-customizeYuyingshi-v-1465211413
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001077s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000392s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000380s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001667s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000527s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-06-06T19:10:29+08:00 ] 117.136.40.244 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002471s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002767s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.007156s ]
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldPromisetime = '2016-06-06' ) AND ( fldTel = '15112630931' )  [ RunTime:0.011472s ]
+
+[ 2016-06-06T19:12:26+08:00 ] 127.0.0.1 /Weixin-index?signature=d32affef431cf3ffb88b0050e495afb8d99583b6&timestamp=1465211546&nonce=1717778979&openid=oCA6YwNLc4WdmyWhES1jZv0BaGiM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002662s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002935s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+
+[ 2016-06-06T19:12:27+08:00 ] 117.136.40.244 /Homemaking-index-t-customizeYueguanjia?code=021Nztm01nPnXM1pISm01TLtm01Nztmz&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001862s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001658s ]
+NOTIC: [8] Undefined index: openid D:\item\homemaking\Common\common.php 第 94 行.
+NOTIC: [8] Undefined index: nickname D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 664 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.007305s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = null ) AND ( fldStatus = 1 )  [ RunTime:0.007358s ]
+SQL: INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:12:27','admin','2016-06-06 19:12:27','admin') [ RunTime:0.007696s ]
+ERR: 515:[Microsoft][SQL Server Native Client 11.0][SQL Server]不能将值 NULL 插入列 'fldOpenId'，表 'mak_businessT.dbo.homemaking_user_bind'；列不允许有 Null 值。INSERT 失败。
+ [ SQL语句 ] : INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES (null,null,'weixin',1,1,'2016-06-06 19:12:27','admin','2016-06-06 19:12:27','admin')
+NOTIC: [8] Undefined index: headimgurl D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 668 行.
+
+[ 2016-06-06T19:12:28+08:00 ] 117.136.40.244 /Homemaking-customizeYueguanjia-v-1465211547
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008355s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000629s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000508s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002733s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000814s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-06-06T19:12:39+08:00 ] 117.136.40.244 /Homemaking-confirmcustommade
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001492s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_custommade' [ RunTime:0.006861s ]
+SQL: SELECT fldCreatetime FROM homemaking_custommade WHERE ( fldTel = '15112630931' )  [ RunTime:0.008756s ]
+

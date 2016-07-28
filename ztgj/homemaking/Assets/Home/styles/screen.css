@@ -1,0 +1,3213 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 9, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 47, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/* line 11, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 19, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/* line 9, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a {
+  background: transparent;
+}
+
+/* line 15, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/* line 9, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 15, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 22, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 29, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 36, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 43, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 49, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 57, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 61, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/* line 9, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+img {
+  border: 0;
+}
+
+/* line 15, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/* line 9, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 15, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 23, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 29, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/* line 15, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 27, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button {
+  overflow: visible;
+}
+
+/* line 36, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 47, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 57, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 64, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 73, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input {
+  line-height: normal;
+}
+
+/* line 83, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 93, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 102, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 113, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 120, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 129, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 136, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 143, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/* line 9, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 432, icon/*.png */
+.icon-sprite, .icon-address, .icon-alarm, .icon-angle, .icon-box_img, .icon-checkout, .icon-date, .icon-dialog, .icon-distance, .icon-edit, .icon-email, .icon-employ, .icon-female, .icon-friend, .icon-friendmanage, .icon-hidden, .icon-invite, .icon-location, .icon-logo, .icon-male, .icon-message, .icon-moremenu, .icon-navigation, .icon-nearby, .icon-nearbyjob, .icon-phone, .icon-recommend, .icon-record, .icon-recorded, .icon-resume, .icon-return, .icon-return_speed, .icon-right, .icon-search, .icon-searchmin, .icon-see, .icon-sign, .icon-time_section, .icon-tips, .icon-topspeed, .icon-unfold, .icon-user, .icon-wangle, .icon-warn {
+  background-image: url('../images/icon-sa8963ae3c9.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 140px auto;
+  -moz-background-size: 140px auto;
+  -ms-background-size: 140px auto;
+  background-size: 140px auto;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-address {
+  background-position: 0 0;
+  height: 28px;
+  width: 18px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-alarm {
+  background-position: 0 -28px;
+  height: 16px;
+  width: 14px;
+}
+/* line 59, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-alarm:active, .icon-alarm.alarm-active {
+  background-position: 0 -44px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-angle {
+  background-position: 0 -60px;
+  height: 5px;
+  width: 8px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-box_img {
+  background-position: 0 -65px;
+  height: 44px;
+  width: 65px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-checkout {
+  background-position: 0 -109px;
+  height: 30px;
+  width: 45px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-date {
+  background-position: 0 -139px;
+  height: 24px;
+  width: 24px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-dialog {
+  background-position: 0 -163px;
+  height: 15px;
+  width: 16px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-distance {
+  background-position: 0 -178px;
+  height: 12px;
+  width: 9px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-edit {
+  background-position: 0 -190px;
+  height: 19px;
+  width: 19px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-email {
+  background-position: 0 -209px;
+  height: 130px;
+  width: 130px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-employ {
+  background-position: 0 -339px;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-female {
+  background-position: 0 -369px;
+  height: 14px;
+  width: 10px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-friend {
+  background-position: 0 -383px;
+  height: 15px;
+  width: 18px;
+}
+/* line 59, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-friend:active, .icon-friend.friend-active {
+  background-position: 0 -398px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-friendmanage {
+  background-position: 0 -413px;
+  height: 30px;
+  width: 40px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-hidden {
+  background-position: 0 -443px;
+  height: 12px;
+  width: 20px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-invite {
+  background-position: 0 -455px;
+  height: 30px;
+  width: 33px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-location {
+  background-position: 0 -485px;
+  height: 12px;
+  width: 12px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-logo {
+  background-position: 0 -497px;
+  height: 50px;
+  width: 140px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-male {
+  background-position: 0 -547px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-message {
+  background-position: 0 -561px;
+  height: 23px;
+  width: 23px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-moremenu {
+  background-position: 0 -584px;
+  height: 24px;
+  width: 22px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-navigation {
+  background-position: 0 -608px;
+  height: 15px;
+  width: 14px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-nearby {
+  background-position: 0 -623px;
+  height: 15px;
+  width: 15px;
+}
+/* line 59, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-nearby:active, .icon-nearby.nearby-active {
+  background-position: 0 -638px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-nearbyjob {
+  background-position: 0 -653px;
+  height: 15px;
+  width: 10px;
+}
+/* line 59, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-nearbyjob:active, .icon-nearbyjob.nearbyjob-active {
+  background-position: 0 -668px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-phone {
+  background-position: 0 -683px;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-recommend {
+  background-position: 0 -698px;
+  height: 30px;
+  width: 33px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-record {
+  background-position: 0 -728px;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-recorded {
+  background-position: 0 -758px;
+  height: 15px;
+  width: 15px;
+}
+/* line 59, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-recorded:active, .icon-recorded.recorded-active {
+  background-position: 0 -773px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-resume {
+  background-position: 0 -788px;
+  height: 30px;
+  width: 29px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-return {
+  background-position: 0 -818px;
+  height: 24px;
+  width: 24px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-return_speed {
+  background-position: 0 -842px;
+  height: 24px;
+  width: 24px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-right {
+  background-position: 0 -866px;
+  height: 14px;
+  width: 8px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-search {
+  background-position: 0 -880px;
+  height: 24px;
+  width: 24px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-searchmin {
+  background-position: 0 -904px;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-see {
+  background-position: 0 -919px;
+  height: 12px;
+  width: 20px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-sign {
+  background-position: 0 -931px;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-time_section {
+  background-position: 0 -946px;
+  height: 15px;
+  width: 131px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-tips {
+  background-position: 0 -961px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-topspeed {
+  background-position: 0 -975px;
+  height: 14px;
+  width: 15px;
+}
+/* line 59, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-topspeed:active, .icon-topspeed.topspeed-active {
+  background-position: 0 -989px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-unfold {
+  background-position: 0 -1003px;
+  height: 6px;
+  width: 11px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-user {
+  background-position: 0 -1009px;
+  height: 23px;
+  width: 23px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-wangle {
+  background-position: 0 -1032px;
+  height: 5px;
+  width: 8px;
+}
+
+/* line 84, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-warn {
+  background-position: 0 -1037px;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 82, ../../jcy-sass/sass/screen.scss */
+a, i, li, input {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 89, ../../jcy-sass/sass/screen.scss */
+body {
+  color: #333;
+  font-family: "Microsoft Yahei","Tahoma","Arial","Roboto","Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","sans-self";
+  font-size: 14px;
+}
+@media (min-width: 240px) and (max-width: 340px) {
+  /* line 89, ../../jcy-sass/sass/screen.scss */
+  body {
+    font-size: 12px;
+  }
+}
+
+/* line 102, ../../jcy-sass/sass/screen.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 107, ../../jcy-sass/sass/screen.scss */
+li {
+  line-style: none;
+}
+
+/* line 110, ../../jcy-sass/sass/screen.scss */
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 116, ../../jcy-sass/sass/screen.scss */
+dl {
+  margin: 0;
+}
+
+/* line 120, ../../jcy-sass/sass/screen.scss */
+dd {
+  margin-left: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* line 125, ../../jcy-sass/sass/screen.scss */
+i {
+  display: inline-block;
+}
+
+/* line 129, ../../jcy-sass/sass/screen.scss */
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none !important;
+}
+
+/* line 136, ../../jcy-sass/sass/screen.scss */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+/* line 142, ../../jcy-sass/sass/screen.scss */
+.color_999 {
+  color: #999;
+}
+
+/* line 145, ../../jcy-sass/sass/screen.scss */
+.color_333 {
+  color: #333;
+}
+
+/* line 148, ../../jcy-sass/sass/screen.scss */
+.color_o {
+  color: #ff6900;
+}
+
+/* line 152, ../../jcy-sass/sass/screen.scss */
+.fr {
+  float: right;
+}
+
+/* line 155, ../../jcy-sass/sass/screen.scss */
+.fl {
+  float: left;
+}
+
+/* line 158, ../../jcy-sass/sass/screen.scss */
+.clear {
+  clear: both;
+}
+
+/* line 161, ../../jcy-sass/sass/screen.scss */
+.user_logo {
+  border-radius: 3px;
+}
+
+/* line 165, ../../jcy-sass/sass/screen.scss */
+.dpn {
+  display: none;
+}
+
+/* line 169, ../../jcy-sass/sass/screen.scss */
+.relative_box {
+  position: relative;
+}
+
+/* line 172, ../../jcy-sass/sass/screen.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 175, ../../jcy-sass/sass/screen.scss */
+.ofh {
+  overflow: hidden;
+}
+
+/* line 179, ../../jcy-sass/sass/screen.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 182, ../../jcy-sass/sass/screen.scss */
+.mb0 {
+  margin-bottom: 0px !important;
+}
+
+/* line 185, ../../jcy-sass/sass/screen.scss */
+.top0 {
+  top: 0 !important;
+}
+
+/* line 189, ../../jcy-sass/sass/screen.scss */
+#mask, #mask_inside {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #333;
+  opacity: 0.5;
+  display: none;
+  z-index: 10;
+  top: 50px;
+}
+
+/* line 199, ../../jcy-sass/sass/screen.scss */
+#mask_inside {
+  z-index: 1003;
+}
+
+/* line 202, ../../jcy-sass/sass/screen.scss */
+.bg_eee {
+  background-color: #eee;
+}
+
+/* line 205, ../../jcy-sass/sass/screen.scss */
+.icon-hidden {
+  cursor: pointer;
+}
+
+/* line 208, ../../jcy-sass/sass/screen.scss */
+label {
+  display: none;
+}
+
+/* line 212, ../../jcy-sass/sass/screen.scss */
+.stopa {
+  pointer-events: none;
+}
+
+/* line 215, ../../jcy-sass/sass/screen.scss */
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -28px;
+}
+
+/*********header-and-footer*********/
+/* line 222, ../../jcy-sass/sass/screen.scss */
+#header {
+  color: #fff;
+  font-size: 1.3em;
+  position: fixed;
+  top: 0;
+  background-color: #03a9f5;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  z-index: 100;
+}
+
+/* line 238, ../../jcy-sass/sass/screen.scss */
+.header-location {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+/* line 243, ../../jcy-sass/sass/screen.scss */
+.header-location #location_btn {
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+  float: left;
+}
+/* line 249, ../../jcy-sass/sass/screen.scss */
+.header-location .icon-location {
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 255, ../../jcy-sass/sass/screen.scss */
+.tab {
+  height: 54px;
+  box-sizing: border-box;
+  top: 50px;
+  position: fixed;
+  background-color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #e0e0e0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e0e0e0;
+  -moz-box-shadow: #ebebeb 0px 2.5px 9px;
+  -webkit-box-shadow: #ebebeb 0px 2.5px 9px;
+  box-shadow: #ebebeb 0px 2.5px 9px;
+}
+/* line 280, ../../jcy-sass/sass/screen.scss */
+.tab > ul {
+  height: 100%;
+}
+
+/* line 285, ../../jcy-sass/sass/screen.scss */
+.tab_btn {
+  width: 33.333%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 100%;
+  position: relative;
+}
+/* line 295, ../../jcy-sass/sass/screen.scss */
+.tab_btn:not(:last-child):before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: #ccc;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 307, ../../jcy-sass/sass/screen.scss */
+.tab_btn:last-child, #bottom_nav a:last-child {
+  border-right: none;
+}
+
+/* line 311, ../../jcy-sass/sass/screen.scss */
+.tab_btn > a {
+  color: #666;
+  line-height: 52px;
+  height: 100%;
+  padding: 0 10px;
+}
+/* line 313, ../../jcy-sass/sass/screen.scss */
+.tab_btn > a .active {
+  color: #ff6900;
+}
+
+/* line 321, ../../jcy-sass/sass/screen.scss */
+.tab_list {
+  margin-top: 105px;
+  margin-bottom: 60px;
+}
+
+/* line 325, ../../jcy-sass/sass/screen.scss */
+#foot_nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  background-color: #fff;
+  height: 59px;
+  border-top: 1px solid #e0e0e0;
+  -moz-box-shadow: #ebebeb 0px -2.5px 9px;
+  -webkit-box-shadow: #ebebeb 0px -2.5px 9px;
+  box-shadow: #ebebeb 0px -2.5px 9px;
+}
+
+/**************header-and-foot-end*************/
+/***************hidden_box*******************/
+/* line 343, ../../jcy-sass/sass/screen.scss */
+#hidden_box, .hidden_box {
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  display: none;
+}
+
+/* line 349, ../../jcy-sass/sass/screen.scss */
+.hidden_box_list {
+  width: 100%;
+  top: 50px;
+}
+
+/* line 354, ../../jcy-sass/sass/screen.scss */
+.hidden_box_friend, .hidden_box_check {
+  margin-top: 20px;
+  position: fixed;
+  width: 90%;
+  margin-left: 5%;
+  top: 70px;
+  box-sizing: border-box;
+  color: #999;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+/* line 366, ../../jcy-sass/sass/screen.scss */
+.hidden_box_friend h2, .hidden_box_check h2 {
+  margin-bottom: 0;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-bottom: 4px;
+  font-weight: 400;
+  font-size: 1.2em;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 374, ../../jcy-sass/sass/screen.scss */
+.hidden_box_friend .check_box_sex, .hidden_box_check .check_box_sex {
+  overflow: hidden;
+  height: 42px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 384, ../../jcy-sass/sass/screen.scss */
+.hidden_box_friend input[type="text"], .hidden_box_friend input[type="tel"], .hidden_box_friend input[type="number"], .hidden_box_check input[type="text"], .hidden_box_check input[type="tel"], .hidden_box_check input[type="number"] {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 10px 3.25%;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  color: #666;
+  margin: 10px 0;
+  height: 46px;
+}
+/* line 395, ../../jcy-sass/sass/screen.scss */
+.hidden_box_friend .input_text, .hidden_box_check .input_text {
+  width: 100%;
+}
+/* line 399, ../../jcy-sass/sass/screen.scss */
+.hidden_box_friend .radio_box, .hidden_box_check .radio_box {
+  position: absolute;
+  right: 2.5%;
+  top: 21px;
+}
+
+/* line 406, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_unknow, .hidden_box_check .radio_male, .hidden_box_check .radio_female {
+  width: 33.33333%;
+  float: left;
+  height: inherit;
+  text-align: center;
+  line-height: 42px;
+  font-size: 1.2em;
+  overflow: hidden;
+  position: relative;
+}
+/* line 416, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check input:checked {
+  background-color: #03a9f5;
+  color: #fff;
+}
+/* line 420, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_unknow:before {
+  content: "不限";
+}
+/* line 423, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_unknow:before {
+  content: "不限";
+}
+/* line 426, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_male:before {
+  content: "男";
+}
+/* line 429, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_female:before {
+  content: "女";
+}
+/* line 432, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .check_sex, .hidden_box_check .check_age {
+  background-color: #03a9f5;
+  color: #fff;
+}
+/* line 436, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .check_box_hide {
+  display: none;
+}
+/* line 439, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .check_box_age {
+  margin-top: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 445, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_all, .hidden_box_check .radio_age_1822, .hidden_box_check .radio_age_2326, .hidden_box_check .radio_age_2735, .hidden_box_check .radio_age_35up, .hidden_box_check .radio_age_6, .hidden_box_check .radio_age_8, .hidden_box_check .radio_age_10, .hidden_box_check .radio_age_12, .hidden_box_check .radio_age_14, .hidden_box_check .radio_age_16 {
+  float: left;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 26%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+/* line 456, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_all:before {
+  content: "全部";
+}
+/* line 459, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_1822:before {
+  content: "18-22岁";
+}
+/* line 462, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_2326:before {
+  content: "23-26岁";
+}
+/* line 465, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_2735:before {
+  content: "27-35岁";
+}
+/* line 468, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_35up:before {
+  content: "35岁以上";
+}
+/* line 471, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_6:before {
+  content: "6公里";
+}
+/* line 474, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_8:before {
+  content: "8公里";
+}
+/* line 477, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_10:before {
+  content: "10公里";
+}
+/* line 480, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_12:before {
+  content: "12公里";
+}
+/* line 483, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_14:before {
+  content: "14公里";
+}
+/* line 486, ../../jcy-sass/sass/screen.scss */
+.hidden_box_check .radio_age_16:before {
+  content: "16公里";
+}
+
+/* line 491, ../../jcy-sass/sass/screen.scss */
+.cancel_btn, .confirm_btn, .affirm_btn, .href_btn, .confirm_btn_a {
+  width: 41%;
+  height: 42px;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+/* line 498, ../../jcy-sass/sass/screen.scss */
+.cancel_btn {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  margin-left: 5%;
+}
+
+/* line 503, ../../jcy-sass/sass/screen.scss */
+.confirm_btn, .affirm_btn, .confirm_btn_a {
+  margin-left: 5%;
+  background-color: #03a9f5;
+  color: #fff;
+}
+
+/* line 509, ../../jcy-sass/sass/screen.scss */
+.educate_select, .jobage_select, .job_status, .address_select {
+  opacity: 1;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1004;
+}
+/* line 517, ../../jcy-sass/sass/screen.scss */
+.educate_select h2, .jobage_select h2, .job_status h2, .address_select h2 {
+  font-size: 1.2em;
+  background-color: #f3f3f3;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  color: #03a9f5;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+/* line 527, ../../jcy-sass/sass/screen.scss */
+.educate_select ul, .jobage_select ul, .job_status ul, .address_select ul {
+  overflow: scroll;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  max-height: 250px;
+}
+
+/* line 536, ../../jcy-sass/sass/screen.scss */
+.mes_select {
+  margin: 0 3.125%;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 541, ../../jcy-sass/sass/screen.scss */
+.address_select {
+  height: 293px;
+  overflow: hidden;
+}
+/* line 544, ../../jcy-sass/sass/screen.scss */
+.address_select .address_province, .address_select .address_city, .address_select .address_area {
+  width: 33.33333%;
+  box-sizing: border-box;
+  float: left;
+  overflow: scroll;
+}
+/* line 549, ../../jcy-sass/sass/screen.scss */
+.address_select .address_province li, .address_select .address_city li, .address_select .address_area li {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+/* line 555, ../../jcy-sass/sass/screen.scss */
+.address_select .address_left {
+  background-color: #eee;
+}
+
+/* line 559, ../../jcy-sass/sass/screen.scss */
+.active_adress {
+  background-color: #eee;
+}
+
+/* line 564, ../../jcy-sass/sass/screen.scss */
+.pull_down {
+  background: url(../images/bottom.png) no-repeat 93% center;
+}
+
+/* line 568, ../../jcy-sass/sass/screen.scss */
+.popup_tip .tips_box {
+  background: #fff;
+  max-width: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+}
+/* line 577, ../../jcy-sass/sass/screen.scss */
+.popup_tip .content {
+  padding: 20px 10px;
+}
+
+/* line 581, ../../jcy-sass/sass/screen.scss */
+.popup_box {
+  display: none;
+  width: 80%;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-left: 10%;
+  padding: 5%;
+  position: fixed;
+  top: 120px;
+}
+/* line 590, ../../jcy-sass/sass/screen.scss */
+.popup_box h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 598, ../../jcy-sass/sass/screen.scss */
+.popup_box ul {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+/* line 602, ../../jcy-sass/sass/screen.scss */
+.popup_box li {
+  padding: 12px 3.125%;
+  font-size: 1.1em;
+}
+/* line 606, ../../jcy-sass/sass/screen.scss */
+.popup_box .check_box {
+  width: 21px;
+  height: 21px;
+  float: right;
+  background: url(../images/checked.png) no-repeat;
+}
+/* line 613, ../../jcy-sass/sass/screen.scss */
+.popup_box .check_box:checked {
+  background-position-y: -21px;
+}
+/* line 616, ../../jcy-sass/sass/screen.scss */
+.popup_box .tips_box {
+  padding: 20px 10%;
+  line-height: 25px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+/* line 623, ../../jcy-sass/sass/screen.scss */
+.popup_box .tips_status {
+  text-align: center;
+}
+/* line 626, ../../jcy-sass/sass/screen.scss */
+.popup_box .icon-success {
+  width: 21px;
+  height: 21px;
+  background: url(../images/checked.png) no-repeat 0 -21px;
+  vertical-align: text-top;
+  margin-right: 10px;
+}
+/* line 633, ../../jcy-sass/sass/screen.scss */
+.popup_box .confirm_btn, .popup_box .affirm_btn, .popup_box .confirm_btn_a {
+  display: inline-block;
+  line-height: 42px;
+}
+
+/* line 638, ../../jcy-sass/sass/screen.scss */
+.icon-mistake {
+  width: 21px;
+  height: 21px;
+  background: url(../images/mistake.png) no-repeat;
+  vertical-align: text-top;
+  margin-right: 10px;
+}
+
+/* line 647, ../../jcy-sass/sass/screen.scss */
+.myrecommend_hide .tips_box, .dateil_box .tips_box {
+  background-color: #fff;
+  margin-left: 25%;
+  width: 40%;
+  padding: 20px 10%;
+  line-height: 25px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  position: fixed;
+  top: 50%;
+  margin-top: -40px;
+  border-radius: 6px;
+}
+/* line 661, ../../jcy-sass/sass/screen.scss */
+.myrecommend_hide .tips_status, .dateil_box .tips_status {
+  text-align: center;
+}
+/* line 664, ../../jcy-sass/sass/screen.scss */
+.myrecommend_hide .icon-success, .dateil_box .icon-success {
+  width: 21px;
+  height: 21px;
+  background: url(../images/checked.png) no-repeat 0 -21px;
+  vertical-align: text-top;
+  margin-right: 10px;
+}
+
+/* line 674, ../../jcy-sass/sass/screen.scss */
+#chat_hidden .tips_box {
+  background-color: #fff;
+  margin-left: 25%;
+  width: 40%;
+  padding: 20px 10%;
+  line-height: 25px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  position: fixed;
+  top: 50%;
+  margin-top: -40px;
+  border-radius: 6px;
+}
+/* line 688, ../../jcy-sass/sass/screen.scss */
+#chat_hidden .tips_status {
+  text-align: center;
+}
+/* line 691, ../../jcy-sass/sass/screen.scss */
+#chat_hidden .icon-success {
+  width: 21px;
+  height: 21px;
+  background: url(../images/checked.png) no-repeat 0 -21px;
+  vertical-align: text-top;
+  margin-right: 10px;
+}
+
+/* line 700, ../../jcy-sass/sass/screen.scss */
+#menu {
+  display: none;
+  background-color: #fff;
+  width: 130px;
+  float: right;
+}
+/* line 705, ../../jcy-sass/sass/screen.scss */
+#menu i {
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 15px #fff;
+  border-right: solid 12px transparent;
+  border-left: solid 12px transparent;
+  position: absolute;
+  top: -12px;
+  right: 3.125%;
+}
+/* line 716, ../../jcy-sass/sass/screen.scss */
+#menu a {
+  padding: 10px;
+  display: block;
+  font-size: 1.1em;
+  color: #6b6b6b;
+  border-bottom: 1px solid #dedede;
+}
+
+/***************hidden_box-end*******************/
+/**************nearby_list*****************/
+/* line 731, ../../jcy-sass/sass/screen.scss */
+.icon-search {
+  display: inline-block;
+  float: right;
+}
+
+/* line 735, ../../jcy-sass/sass/screen.scss */
+.icon-location, .icon-topspeed, .icon-nearbyjob {
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+/* line 740, ../../jcy-sass/sass/screen.scss */
+.tab_list {
+  margin-left: 3.125%;
+  margin-right: 3.125%;
+}
+
+/* line 747, ../../jcy-sass/sass/screen.scss */
+.list_left {
+  width: 60%;
+  float: left;
+  text-align: left;
+}
+/* line 751, ../../jcy-sass/sass/screen.scss */
+.list_left p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* line 755, ../../jcy-sass/sass/screen.scss */
+.list_right {
+  width: 40%;
+  float: right;
+  text-align: right;
+}
+/* line 759, ../../jcy-sass/sass/screen.scss */
+.list_right p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* line 763, ../../jcy-sass/sass/screen.scss */
+#nearby_list {
+  overflow: hidden;
+}
+
+/* line 767, ../../jcy-sass/sass/screen.scss */
+#nearby_list, #my_record, #my_interview, #my_looked {
+  margin-bottom: 60px;
+}
+/* line 770, ../../jcy-sass/sass/screen.scss */
+#nearby_list .jobname, #my_record .jobname, #my_interview .jobname, #my_looked .jobname {
+  font-size: 1.2em;
+  color: #333;
+}
+/* line 773, ../../jcy-sass/sass/screen.scss */
+#nearby_list .jobname .limit-w, #my_record .jobname .limit-w, #my_interview .jobname .limit-w, #my_looked .jobname .limit-w {
+  display: inline-block;
+  max-width: 110px;
+  width: auto;
+  vertical-align: sub;
+}
+/* line 781, ../../jcy-sass/sass/screen.scss */
+#nearby_list .companyname, #nearby_list .distance, #nearby_list .date_list, #my_record .companyname, #my_record .distance, #my_record .date_list, #my_interview .companyname, #my_interview .distance, #my_interview .date_list, #my_looked .companyname, #my_looked .distance, #my_looked .date_list {
+  color: #999;
+}
+/* line 785, ../../jcy-sass/sass/screen.scss */
+#nearby_list .payment, #my_record .payment, #my_interview .payment, #my_looked .payment {
+  font-size: 1.2em;
+  color: #ff6900;
+}
+/* line 791, ../../jcy-sass/sass/screen.scss */
+#nearby_list .job_list, #my_record .job_list, #my_interview .job_list, #my_looked .job_list {
+  border-bottom: 1px solid #e6eaf4;
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+/* line 797, ../../jcy-sass/sass/screen.scss */
+#my_record, #my_interview, #my_looked {
+  margin-top: 60px;
+}
+
+/* line 800, ../../jcy-sass/sass/screen.scss */
+#containers {
+  overflow: hidden;
+  display: none;
+}
+
+/* line 804, ../../jcy-sass/sass/screen.scss */
+.no_location {
+  margin-top: 35%;
+  text-align: center;
+  line-height: 26px;
+}
+
+/* line 812, ../../jcy-sass/sass/screen.scss */
+.near_jobclass_box {
+  top: 101px !important;
+}
+
+/* line 815, ../../jcy-sass/sass/screen.scss */
+.check_box_distance {
+  margin: 20px 0 14px 0;
+  overflow: hidden;
+}
+
+/* line 819, ../../jcy-sass/sass/screen.scss */
+#distance_check {
+  position: absolute;
+  bottom: 114px;
+  right: 11px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  background: url(../images/location.png) no-repeat;
+  -webkit-background-size: 34px;
+  -moz-background-size: 34px;
+  -ms-background-size: 34px;
+  background-size: 34px;
+}
+
+/**************nearby_list-end*****************/
+/**************nearby_detail*****************/
+/* line 836, ../../jcy-sass/sass/screen.scss */
+#nearby_detail {
+  margin-top: 50px;
+  background-color: #eee;
+}
+/* line 839, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .detail_title {
+  font-size: 1.2em;
+  color: #03a9f5;
+}
+/* line 843, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .weals {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+/* line 847, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .section_content {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.5em;
+}
+/* line 857, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .section_content .compayname {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 860, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .section_content .company_img {
+  width: 100%;
+  height: 150px;
+}
+/* line 866, ../../jcy-sass/sass/screen.scss */
+#nearby_detail dt {
+  padding-bottom: 5px;
+}
+/* line 869, ../../jcy-sass/sass/screen.scss */
+#nearby_detail dd {
+  line-height: 1.6em;
+}
+/* line 872, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .demand dd {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 2px 0;
+}
+/* line 881, ../../jcy-sass/sass/screen.scss */
+#nearby_detail .payment {
+  font-size: 1.2em;
+}
+
+/* line 886, ../../jcy-sass/sass/screen.scss */
+.header_menu {
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+}
+
+/* line 889, ../../jcy-sass/sass/screen.scss */
+.icon-moremenu {
+  float: right;
+}
+
+/* line 892, ../../jcy-sass/sass/screen.scss */
+.weals {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #333;
+  margin: 5px 1%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 904, ../../jcy-sass/sass/screen.scss */
+.send_resume {
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  background-color: #03a9f5;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+/* line 914, ../../jcy-sass/sass/screen.scss */
+.nearbynav a {
+  font-size: 1.3em;
+  color: #666;
+  width: 50%;
+  border-right: 1px solid #eee;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 22px;
+}
+
+/* line 924, ../../jcy-sass/sass/screen.scss */
+.nearbynav a.footactive, .friendnav a.footactive {
+  color: #03a9f5;
+}
+
+/**************nearby_detail-end*****************/
+/**************nearby_search*****************/
+/* line 932, ../../jcy-sass/sass/screen.scss */
+:-moz-placeholder,
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+/* line 937, ../../jcy-sass/sass/screen.scss */
+.search_header .icon-return {
+  float: left;
+}
+/* line 940, ../../jcy-sass/sass/screen.scss */
+.search_header .tab_box {
+  margin-left: 40px;
+  display: table;
+}
+/* line 945, ../../jcy-sass/sass/screen.scss */
+.search_header .search_box {
+  display: table-cell;
+  width: 100%;
+  height: 24px;
+  padding: 2px;
+  color: #aeaeae;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+/* line 954, ../../jcy-sass/sass/screen.scss */
+.search_header .search_btn {
+  color: #fff;
+  height: 29px;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding-left: 10px;
+  display: table-cell;
+}
+
+/* line 966, ../../jcy-sass/sass/screen.scss */
+.nearby_list {
+  margin-top: 50px;
+  margin-bottom: 0 !important;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+}
+
+/**************nearby_search-end*****************/
+/**************nearby_search_box*****************/
+/* line 975, ../../jcy-sass/sass/screen.scss */
+#search_box {
+  margin-top: 50px;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 1px;
+}
+/* line 979, ../../jcy-sass/sass/screen.scss */
+#search_box h2 {
+  font-weight: 400;
+  color: #333;
+  font-size: 1.2em;
+  padding-left: 10px;
+  border-left: 3px solid #03a9f5;
+  line-height: 1em;
+}
+/* line 987, ../../jcy-sass/sass/screen.scss */
+#search_box a {
+  width: 25%;
+  color: #999;
+  float: left;
+  margin-bottom: 16px;
+}
+
+/**************nearby_search_box-end*************/
+/**************speed_list*********************/
+/* line 997, ../../jcy-sass/sass/screen.scss */
+#speed_list {
+  margin-top: 50px;
+}
+/* line 999, ../../jcy-sass/sass/screen.scss */
+#speed_list .company_list {
+  overflow: hidden;
+  background-color: #fff;
+}
+/* line 1002, ../../jcy-sass/sass/screen.scss */
+#speed_list .company_list:last-child {
+  margin-bottom: 60px;
+}
+/* line 1006, ../../jcy-sass/sass/screen.scss */
+#speed_list .speed_ul {
+  margin-bottom: 60px;
+}
+/* line 1009, ../../jcy-sass/sass/screen.scss */
+#speed_list .company_logo {
+  width: 67px;
+  height: 67px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  float: left;
+  margin-top: 5px;
+}
+
+/* line 1018, ../../jcy-sass/sass/screen.scss */
+.icon-angle {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* line 1022, ../../jcy-sass/sass/screen.scss */
+.class_box {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #dadada;
+  -moz-box-shadow: #ebebeb 0px 2.5px 9px;
+  -webkit-box-shadow: #ebebeb 0px 2.5px 9px;
+  box-shadow: #ebebeb 0px 2.5px 9px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+/* line 1038, ../../jcy-sass/sass/screen.scss */
+.class_btn {
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+  float: left;
+  text-align: center;
+  font-size: 1.2em;
+}
+/* line 1045, ../../jcy-sass/sass/screen.scss */
+.class_btn a {
+  color: #333;
+}
+
+/* line 1049, ../../jcy-sass/sass/screen.scss */
+.class_btn:last-child, .nearbynav a:last-child {
+  border-right: none;
+}
+
+/* line 1052, ../../jcy-sass/sass/screen.scss */
+.company_list {
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 1058, ../../jcy-sass/sass/screen.scss */
+.company_top {
+  display: block;
+  overflow: hidden;
+}
+
+/* line 1062, ../../jcy-sass/sass/screen.scss */
+.company_logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* line 1069, ../../jcy-sass/sass/screen.scss */
+.company_right {
+  margin-left: 75px;
+}
+
+/* line 1072, ../../jcy-sass/sass/screen.scss */
+.num_people {
+  float: right;
+}
+
+/* line 1076, ../../jcy-sass/sass/screen.scss */
+#speed_list .companyname {
+  color: #333;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 1081, ../../jcy-sass/sass/screen.scss */
+#speed_list .address_list {
+  color: #999;
+}
+/* line 1084, ../../jcy-sass/sass/screen.scss */
+#speed_list .payment {
+  font-size: 1.2em;
+  color: #ff6900;
+}
+
+/* line 1090, ../../jcy-sass/sass/screen.scss */
+.compay_mindetail {
+  color: #999;
+  line-height: 1.6em;
+  margin-top: 6px;
+}
+
+/**************speed_list-end*****************/
+/**************speed_detail*********************/
+/* line 1098, ../../jcy-sass/sass/screen.scss */
+#speed_detail {
+  background-color: #eee;
+}
+/* line 1100, ../../jcy-sass/sass/screen.scss */
+#speed_detail .weals {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+/* line 1104, ../../jcy-sass/sass/screen.scss */
+#speed_detail .section_content {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 1113, ../../jcy-sass/sass/screen.scss */
+#speed_detail .section_content dt {
+  padding-bottom: 5px;
+}
+/* line 1116, ../../jcy-sass/sass/screen.scss */
+#speed_detail .section_content dd {
+  line-height: 1.6em;
+}
+/* line 1119, ../../jcy-sass/sass/screen.scss */
+#speed_detail .section_content:last-child {
+  margin-bottom: 60px;
+}
+/* line 1124, ../../jcy-sass/sass/screen.scss */
+#speed_detail .demand dd {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 2fno px 0;
+}
+/* line 1132, ../../jcy-sass/sass/screen.scss */
+#speed_detail .icon-black_return {
+  margin-top: 5px;
+  float: left;
+  margin-right: 6px;
+}
+/* line 1137, ../../jcy-sass/sass/screen.scss */
+#speed_detail .speed_left {
+  margin-top: 8px;
+  margin-left: 85px;
+}
+/* line 1141, ../../jcy-sass/sass/screen.scss */
+#speed_detail .company_logo {
+  margin-left: 7px;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+/* line 1147, ../../jcy-sass/sass/screen.scss */
+#speed_detail .companyname {
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 1151, ../../jcy-sass/sass/screen.scss */
+#speed_detail .companydetail {
+  color: #666;
+}
+/* line 1154, ../../jcy-sass/sass/screen.scss */
+#speed_detail .detail_title {
+  font-size: 1.2em;
+  color: #03a9f5;
+}
+/* line 1158, ../../jcy-sass/sass/screen.scss */
+#speed_detail .company_img {
+  width: 100%;
+  height: 150px;
+}
+/* line 1162, ../../jcy-sass/sass/screen.scss */
+#speed_detail .user_logo {
+  margin: 0 1%;
+  width: 17%;
+}
+
+/* line 1167, ../../jcy-sass/sass/screen.scss */
+.speednav a {
+  display: block;
+  width: 33.333%;
+  height: 60px;
+  float: left;
+  line-height: 60px;
+  text-align: center;
+  border-right: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  font-size: 1.3em;
+  color: #999;
+}
+/* line 1178, ../../jcy-sass/sass/screen.scss */
+.speednav a i {
+  margin-right: 5px;
+}
+/* line 1181, ../../jcy-sass/sass/screen.scss */
+.speednav a:first-child {
+  background-color: #03a9f5;
+  color: #fff;
+}
+
+/**************speed_detail-end*****************/
+/**************login*****************/
+/* line 1190, ../../jcy-sass/sass/screen.scss */
+.login {
+  background-color: #f2f2f2;
+}
+
+/* line 1193, ../../jcy-sass/sass/screen.scss */
+.icon-logo {
+  display: block;
+  margin: 65px auto 13px auto;
+}
+
+/* line 1198, ../../jcy-sass/sass/screen.scss */
+#login_box {
+  width: 93.75%;
+  margin: 0 3.125% 0 3.125%;
+  border-radius: 5px;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+/* line 1206, ../../jcy-sass/sass/screen.scss */
+#login_box .username_text, #login_box .pw_text, #login_box .verify_text {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 10px 10px 10px 40px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  color: #666;
+  margin: 10px 0;
+  height: 46px;
+  width: 100%;
+}
+/* line 1217, ../../jcy-sass/sass/screen.scss */
+#login_box .icon-hidden, #login_box .icon-see {
+  margin-top: 16px;
+  margin-left: 10px;
+}
+/* line 1221, ../../jcy-sass/sass/screen.scss */
+#login_box .login_other {
+  color: #439ad3;
+  margin-right: 5%;
+  margin-top: 17px;
+}
+/* line 1227, ../../jcy-sass/sass/screen.scss */
+#login_box .login_other a {
+  color: #0968b9;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #03A9F5;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+/* line 1240, ../../jcy-sass/sass/screen.scss */
+#login_box .username_text {
+  background: url(../images/user.png) no-repeat #fff 10px 50%;
+}
+/* line 1243, ../../jcy-sass/sass/screen.scss */
+#login_box .pw_text {
+  background: url(../images/lock.png) no-repeat #fff 10px 50%;
+}
+/* line 1246, ../../jcy-sass/sass/screen.scss */
+#login_box .forget_pw {
+  color: #0968b9;
+  margin-right: 20px;
+}
+
+/* line 1251, ../../jcy-sass/sass/screen.scss */
+.icon-box_img {
+  top: -25px;
+  left: 50%;
+  margin-left: -32px;
+  position: absolute;
+}
+
+/* line 1257, ../../jcy-sass/sass/screen.scss */
+.commen_btn, .save_btn, .next_btn {
+  height: 44px;
+  background-color: #03a9f5;
+  border-radius: 5px;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* line 1264, ../../jcy-sass/sass/screen.scss */
+.next_btn {
+  width: 100%;
+}
+
+/* line 1267, ../../jcy-sass/sass/screen.scss */
+.commen_btn {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* line 1271, ../../jcy-sass/sass/screen.scss */
+.save_btn {
+  width: 100%;
+}
+
+/* line 1274, ../../jcy-sass/sass/screen.scss */
+.verify_text, .bind_tel {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 10px 10px 10px 40px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  color: #666 !important;
+  margin-bottom: 0px;
+  height: 46px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* line 1286, ../../jcy-sass/sass/screen.scss */
+.bind_tel {
+  background: url(../images/phone.png) no-repeat #fff 10px 50%;
+}
+
+/* line 1289, ../../jcy-sass/sass/screen.scss */
+#login_foot {
+  margin: 60px 3.125% 20px 3.125%;
+  color: #999;
+}
+/* line 1292, ../../jcy-sass/sass/screen.scss */
+#login_foot dt {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+/* line 1297, ../../jcy-sass/sass/screen.scss */
+#login_foot dd {
+  display: inline;
+  margin-right: 10px;
+  color: #b6b6b6;
+}
+
+/**************login-end*****************/
+/**************register*******************/
+/* line 1308, ../../jcy-sass/sass/screen.scss */
+.verify_text {
+  background: url(../images/message.png) no-repeat #fff 10px 50%;
+}
+
+/* line 1311, ../../jcy-sass/sass/screen.scss */
+.get_verify {
+  position: absolute;
+  height: 44px;
+  right: 1px;
+  top: 11px;
+  width: 88px;
+  text-align: center;
+  background-color: #ff9600;
+  line-height: 44px;
+  color: #fff;
+  border-radius: 0 4px 4px 0px;
+}
+
+/* line 1323, ../../jcy-sass/sass/screen.scss */
+.code_tips, .tel_tips {
+  opacity: 0;
+  height: 26px;
+  margin: 0;
+  padding-left: 38px;
+  line-height: 26px;
+  color: #FF4500;
+}
+
+/* line 1332, ../../jcy-sass/sass/screen.scss */
+.icon-warn {
+  vertical-align: sub;
+  margin-right: 8px;
+}
+
+/**************register-end*****************/
+/**************step*********************/
+/* line 1340, ../../jcy-sass/sass/screen.scss */
+.flow_box {
+  overflow: hidden;
+  margin: 26px 3.125%;
+}
+
+/* line 1344, ../../jcy-sass/sass/screen.scss */
+.step1, .step2, .step3 {
+  width: 33%;
+  float: left;
+  background-color: #ccc;
+  text-align: center;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* line 1355, ../../jcy-sass/sass/screen.scss */
+.step_active {
+  background-color: #78d7f6;
+}
+
+/* line 1358, ../../jcy-sass/sass/screen.scss */
+.step1:before, .step2:before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  border-left: solid 15px #fff;
+  border-top: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  right: -15px;
+  z-index: 10;
+}
+
+/* line 1369, ../../jcy-sass/sass/screen.scss */
+.step1:after, .step2:after {
+  content: "";
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  border-left: solid 15px #ccc;
+  border-top: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  right: -13px;
+  z-index: 11;
+}
+
+/* line 1380, ../../jcy-sass/sass/screen.scss */
+.step_active:after {
+  border-left-color: #78d7f6;
+}
+
+/* line 1384, ../../jcy-sass/sass/screen.scss */
+.step1 {
+  z-index: 6;
+}
+
+/* line 1387, ../../jcy-sass/sass/screen.scss */
+.step2 {
+  z-index: 4;
+}
+
+/* line 1390, ../../jcy-sass/sass/screen.scss */
+#find_name, #set_pw, #find_verify {
+  margin-top: 30px !important;
+}
+
+/* line 1393, ../../jcy-sass/sass/screen.scss */
+#find_verify {
+  margin-top: 30px !important;
+}
+/* line 1395, ../../jcy-sass/sass/screen.scss */
+#find_verify p {
+  color: #666;
+  margin-bottom: 25px;
+}
+/* line 1399, ../../jcy-sass/sass/screen.scss */
+#find_verify .get_verify {
+  top: 11px;
+  right: 1px;
+}
+
+/* line 1405, ../../jcy-sass/sass/screen.scss */
+#level_box .level {
+  width: 20%;
+  float: right;
+  text-align: center;
+  color: #666;
+  margin-bottom: 15px;
+  margin-left: 4px;
+}
+
+/* line 1415, ../../jcy-sass/sass/screen.scss */
+.twig {
+  height: 5px;
+  width: 100%;
+  background-color: #cccccc;
+}
+
+/* line 1421, ../../jcy-sass/sass/screen.scss */
+.low .level_active {
+  background-color: #ff2645;
+}
+
+/* line 1426, ../../jcy-sass/sass/screen.scss */
+.middle .level_active {
+  background-color: #FF9933;
+}
+
+/* line 1431, ../../jcy-sass/sass/screen.scss */
+.high .level_active {
+  background-color: #009900;
+}
+
+/* line 1435, ../../jcy-sass/sass/screen.scss */
+.icon-email {
+  margin: 21px auto;
+  display: block;
+}
+
+/* line 1439, ../../jcy-sass/sass/screen.scss */
+.email_tip1, .email_tip2, .email_tip3 {
+  text-align: center;
+}
+
+/* line 1442, ../../jcy-sass/sass/screen.scss */
+.email_tip1, .email_tip3 {
+  color: #666;
+}
+
+/* line 1445, ../../jcy-sass/sass/screen.scss */
+.email_tip2, .email_tip3 {
+  font-size: 1.3em;
+}
+
+/* line 1448, ../../jcy-sass/sass/screen.scss */
+.email_tip1 {
+  font-size: 1.2em;
+}
+
+/* line 1451, ../../jcy-sass/sass/screen.scss */
+.email_tip3 {
+  color: #03a9f5;
+}
+
+/* line 1455, ../../jcy-sass/sass/screen.scss */
+#set_pw .input_text {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 10px 3.25%;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  color: #666;
+  margin: 10px 0;
+  height: 46px;
+}
+
+/**************step-end*****************/
+/*****************personal************************/
+/* line 1470, ../../jcy-sass/sass/screen.scss */
+.personal_header {
+  padding-top: 15px;
+  background-color: #eeeeee;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+/* line 1476, ../../jcy-sass/sass/screen.scss */
+.person_user_logo, .detail_user_logo {
+  margin-left: 3.125%;
+  margin-right: 6.25%;
+  width: 23.75%;
+  float: left;
+  border-radius: 8%;
+}
+
+/* line 1483, ../../jcy-sass/sass/screen.scss */
+.person_name {
+  float: left;
+  width: 51.25%;
+}
+
+/* line 1487, ../../jcy-sass/sass/screen.scss */
+.person_user_name, .detail_user_name {
+  color: #333;
+  font-size: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin: initial;
+}
+
+/* line 1494, ../../jcy-sass/sass/screen.scss */
+.person_user_name .user_name, .detail_user_name .user_name {
+  max-width: 5em;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  width: auto;
+}
+/* line 1500, ../../jcy-sass/sass/screen.scss */
+.person_user_name .fd_distance, .detail_user_name .fd_distance {
+  padding-top: 5px;
+}
+
+/* line 1504, ../../jcy-sass/sass/screen.scss */
+.detail_user_name .user_name {
+  max-width: 8em;
+}
+
+/* line 1507, ../../jcy-sass/sass/screen.scss */
+.icon-male {
+  margin-left: 10px;
+}
+
+/* line 1510, ../../jcy-sass/sass/screen.scss */
+.feeling {
+  color: #666;
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* line 1515, ../../jcy-sass/sass/screen.scss */
+.person_detail {
+  float: right;
+  width: 15.625%;
+}
+/* line 1518, ../../jcy-sass/sass/screen.scss */
+.person_detail img {
+  width: 100%;
+}
+
+/* line 1522, ../../jcy-sass/sass/screen.scss */
+.person_menu ul {
+  overflow: hidden;
+}
+
+/* line 1525, ../../jcy-sass/sass/screen.scss */
+.person_menu_li {
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  width: 33.33333%;
+  float: left;
+  box-sizing: border-box;
+  height: 120px;
+  position: relative;
+}
+/* line 1535, ../../jcy-sass/sass/screen.scss */
+.person_menu_li a {
+  color: #888;
+}
+
+/* line 1539, ../../jcy-sass/sass/screen.scss */
+.remind {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #ff0e1f;
+  color: #fff;
+  font-style: initial;
+  font-size: 0.8em;
+  top: 10%;
+  left: 71%;
+}
+
+/* line 1551, ../../jcy-sass/sass/screen.scss */
+.menuicon {
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+/*****************personal-end********************/
+/*****************myrecommend********************/
+/* line 1558, ../../jcy-sass/sass/screen.scss */
+.myrecommend_h1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* line 1568, ../../jcy-sass/sass/screen.scss */
+.recomend_btn {
+  display: block;
+  border: 1px solid #03a9f5;
+  padding: 10px 4%;
+  border-radius: 5px;
+  margin: 70px auto 10px;
+  text-align: center;
+  color: #03a9f5;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  white-space: nowrap;
+  width: 8em;
+}
+
+/* line 1582, ../../jcy-sass/sass/screen.scss */
+.friend_list {
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  overflow: hidden;
+}
+
+/* line 1586, ../../jcy-sass/sass/screen.scss */
+.friend_list li {
+  border-top: 1px solid #e6eaf4;
+  padding: 7px 3.125%;
+  overflow: hidden;
+}
+
+/* line 1591, ../../jcy-sass/sass/screen.scss */
+.friend_list li img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+/* line 1597, ../../jcy-sass/sass/screen.scss */
+#myrecommend li:last-child {
+  border-bottom: 1px solid #e6eaf4;
+}
+/* line 1600, ../../jcy-sass/sass/screen.scss */
+#myrecommend .user_mes {
+  float: left;
+  margin-left: 10px;
+}
+/* line 1604, ../../jcy-sass/sass/screen.scss */
+#myrecommend .person_user_name {
+  font-size: 1.3em;
+}
+/* line 1609, ../../jcy-sass/sass/screen.scss */
+#myrecommend .phone {
+  color: #b6b6b6;
+}
+
+/* line 1613, ../../jcy-sass/sass/screen.scss */
+.icon-female {
+  margin-left: 10px;
+}
+
+/* line 1616, ../../jcy-sass/sass/screen.scss */
+.hidden_box_list {
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  z-index: 11;
+}
+
+/* line 1622, ../../jcy-sass/sass/screen.scss */
+.jobclass_box, .location_box, .near_jobclass_box {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  max-height: 300px;
+  overflow: auto;
+  background-color: #fff;
+}
+/* line 1629, ../../jcy-sass/sass/screen.scss */
+.jobclass_box li, .location_box li, .near_jobclass_box li {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dadada;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #333;
+  background-color: #fff;
+}
+/* line 1643, ../../jcy-sass/sass/screen.scss */
+.jobclass_box li.active, .location_box li.active, .near_jobclass_box li.active {
+  background-color: #fafafa;
+  color: #04aaf6;
+}
+
+/* line 1650, ../../jcy-sass/sass/screen.scss */
+.jobclass_box, .location_box {
+  top: 50px;
+}
+
+/*****************myrecommend-end********************/
+/*****************integrity*************************/
+/* line 1656, ../../jcy-sass/sass/screen.scss */
+#integrity {
+  margin-top: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+}
+/* line 1661, ../../jcy-sass/sass/screen.scss */
+#integrity a {
+  box-sizing: border-box;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+  color: #666;
+  border-bottom: 1px solid #e6eaf4;
+}
+
+/*****************integrity-end********************/
+/*****************friendmanage********************/
+/* line 1679, ../../jcy-sass/sass/screen.scss */
+#friendmanage, #friendrecord, #friendnearby, #friendadd, .common-list {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+/* line 1682, ../../jcy-sass/sass/screen.scss */
+#friendmanage li, #friendrecord li, #friendnearby li, #friendadd li, .common-list li {
+  position: relative;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 10px;
+}
+/* line 1689, ../../jcy-sass/sass/screen.scss */
+#friendmanage li img, #friendrecord li img, #friendnearby li img, #friendadd li img, .common-list li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: block;
+  float: left;
+}
+/* line 1696, ../../jcy-sass/sass/screen.scss */
+#friendmanage li .fd_list, #friendrecord li .fd_list, #friendnearby li .fd_list, #friendadd li .fd_list, .common-list li .fd_list {
+  display: block;
+  margin-left: 65px;
+  min-height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 1702, ../../jcy-sass/sass/screen.scss */
+#friendmanage li .fd_adress, #friendrecord li .fd_adress, #friendnearby li .fd_adress, #friendadd li .fd_adress, .common-list li .fd_adress {
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 1706, ../../jcy-sass/sass/screen.scss */
+#friendmanage li .fd_distance, #friendrecord li .fd_distance, #friendnearby li .fd_distance, #friendadd li .fd_distance, .common-list li .fd_distance {
+  color: #aeaeae;
+  font-size: 0.8em;
+}
+
+/* line 1715, ../../jcy-sass/sass/screen.scss */
+#friendrecord .remind {
+  top: -5px;
+  left: 43px;
+  text-align: center;
+}
+
+/* line 1722, ../../jcy-sass/sass/screen.scss */
+.friendnav a {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  color: #666;
+  padding-top: 11px;
+  height: 60px;
+  border-right: 1px solid #e1e1e1;
+  position: relative;
+}
+/* line 1734, ../../jcy-sass/sass/screen.scss */
+.friendnav a i {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+/* line 1740, ../../jcy-sass/sass/screen.scss */
+.friendnav a:last-child {
+  border-right: none;
+}
+
+/* line 1745, ../../jcy-sass/sass/screen.scss */
+.condition_btn {
+  float: right;
+  color: #fff;
+}
+
+/* line 1749, ../../jcy-sass/sass/screen.scss */
+.icon-wangle {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* line 1754, ../../jcy-sass/sass/screen.scss */
+.friendadd_btn {
+  background-color: #0fcd3c;
+  display: block;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #43b95f;
+  float: right;
+  padding: 3px 10px;
+}
+
+/*****************friendmanage-end********************/
+/*****************recently_job************************/
+/* line 1767, ../../jcy-sass/sass/screen.scss */
+#recently_job, #basic_mes, #top_educate, #find_name, #find_verify, #set_pw, #my_assess, #mess_detail {
+  margin-top: 50px;
+  padding: 0 5%;
+  position: relative;
+}
+/* line 1771, ../../jcy-sass/sass/screen.scss */
+#recently_job input[type="text"], #basic_mes input[type="text"], #top_educate input[type="text"], #find_name input[type="text"], #find_verify input[type="text"], #set_pw input[type="text"], #my_assess input[type="text"], #mess_detail input[type="text"] {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 10px 3.25%;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  color: #666;
+  margin: 10px 0;
+  height: 46px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 1783, ../../jcy-sass/sass/screen.scss */
+#recently_job .input_text, #basic_mes .input_text, #top_educate .input_text, #find_name .input_text, #find_verify .input_text, #set_pw .input_text, #my_assess .input_text, #mess_detail .input_text {
+  width: 100%;
+}
+/* line 1787, ../../jcy-sass/sass/screen.scss */
+#recently_job .time_month, #basic_mes .time_month, #top_educate .time_month, #find_name .time_month, #find_verify .time_month, #set_pw .time_month, #my_assess .time_month, #mess_detail .time_month {
+  width: 41%;
+  height: 46px;
+  opacity: 0;
+  position: absolute;
+  top: 124px;
+  z-index: 2;
+  right: 5%;
+}
+/* line 1796, ../../jcy-sass/sass/screen.scss */
+#recently_job #start_time, #basic_mes #start_time, #top_educate #start_time, #find_name #start_time, #find_verify #start_time, #set_pw #start_time, #my_assess #start_time, #mess_detail #start_time {
+  left: 5%;
+}
+/* line 1800, ../../jcy-sass/sass/screen.scss */
+#recently_job #end_time, #basic_mes #end_time, #top_educate #end_time, #find_name #end_time, #find_verify #end_time, #set_pw #end_time, #my_assess #end_time, #mess_detail #end_time {
+  right: 5%;
+}
+/* line 1804, ../../jcy-sass/sass/screen.scss */
+#recently_job .start_text, #recently_job .end_text, #recently_job .basic_text, #recently_job .education, #basic_mes .start_text, #basic_mes .end_text, #basic_mes .basic_text, #basic_mes .education, #top_educate .start_text, #top_educate .end_text, #top_educate .basic_text, #top_educate .education, #find_name .start_text, #find_name .end_text, #find_name .basic_text, #find_name .education, #find_verify .start_text, #find_verify .end_text, #find_verify .basic_text, #find_verify .education, #set_pw .start_text, #set_pw .end_text, #set_pw .basic_text, #set_pw .education, #my_assess .start_text, #my_assess .end_text, #my_assess .basic_text, #my_assess .education, #mess_detail .start_text, #mess_detail .end_text, #mess_detail .basic_text, #mess_detail .education {
+  width: 100%;
+  background: url(../images/bottom.png) no-repeat 93% center;
+}
+/* line 1808, ../../jcy-sass/sass/screen.scss */
+#recently_job h2, #basic_mes h2, #top_educate h2, #find_name h2, #find_verify h2, #set_pw h2, #my_assess h2, #mess_detail h2 {
+  overflow: hidden;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #03a9f5;
+  height: 32px;
+  line-height: 46px;
+}
+/* line 1816, ../../jcy-sass/sass/screen.scss */
+#recently_job .save_btn, #basic_mes .save_btn, #top_educate .save_btn, #find_name .save_btn, #find_verify .save_btn, #set_pw .save_btn, #my_assess .save_btn, #mess_detail .save_btn {
+  margin-top: 10px;
+}
+
+/* line 1821, ../../jcy-sass/sass/screen.scss */
+#my_assess p {
+  margin-bottom: 15px;
+  color: #999;
+}
+
+/*****************recently_job-end********************/
+/*****************basic_mes************************/
+/* line 1831, ../../jcy-sass/sass/screen.scss */
+#basic_mes {
+  overflow: hidden;
+  position: relative;
+}
+/* line 1834, ../../jcy-sass/sass/screen.scss */
+#basic_mes .mes_input_box {
+  width: 45%;
+  float: left;
+}
+/* line 1839, ../../jcy-sass/sass/screen.scss */
+#basic_mes h2 {
+  margin-bottom: 0;
+}
+/* line 1842, ../../jcy-sass/sass/screen.scss */
+#basic_mes .right_box {
+  margin-left: 10%;
+}
+
+/* line 1846, ../../jcy-sass/sass/screen.scss */
+.basic_tips {
+  color: #999;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* line 1851, ../../jcy-sass/sass/screen.scss */
+.icon-tips {
+  margin: 0 5px;
+}
+
+/* line 1854, ../../jcy-sass/sass/screen.scss */
+.radio_box {
+  position: absolute;
+  right: 6.5%;
+  top: 68px;
+}
+/* line 1858, ../../jcy-sass/sass/screen.scss */
+.radio_box .radio_female, .radio_box .radio_male {
+  width: 25px;
+  height: 23px;
+  margin-right: 20px;
+  background: url(../images/radio_sex.png) no-repeat;
+  background-size: 50px;
+  -webkit-background-size: 50px;
+}
+/* line 1867, ../../jcy-sass/sass/screen.scss */
+.radio_box .radio_female {
+  background-position-y: -27px;
+}
+/* line 1870, ../../jcy-sass/sass/screen.scss */
+.radio_box input:checked {
+  background-position-x: -25px;
+}
+
+/*****************basic_mes-end********************/
+/*****************resume*************************/
+/* line 1876, ../../jcy-sass/sass/screen.scss */
+#resume {
+  margin-top: 50px;
+  overflow: hidden;
+}
+/* line 1879, ../../jcy-sass/sass/screen.scss */
+#resume section {
+  background-color: #fff;
+  margin-top: 7px;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  font-size: 1.2em;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+/* line 1880, ../../jcy-sass/sass/screen.scss */
+#resume section p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 1892, ../../jcy-sass/sass/screen.scss */
+#resume section h2 {
+  border-bottom: 1px solid #e6eaf4;
+  font-size: 1em;
+  font-weight: 400;
+  color: #03a9f5;
+  margin: 10px 0 0 0;
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-bottom: 10px;
+}
+/* line 1901, ../../jcy-sass/sass/screen.scss */
+#resume section:last-child {
+  margin-bottom: 7px;
+}
+/* line 1904, ../../jcy-sass/sass/screen.scss */
+#resume section dl {
+  width: 100%;
+}
+/* line 1908, ../../jcy-sass/sass/screen.scss */
+#resume .resume_left {
+  width: 90px;
+  float: left;
+  margin-left: 3.125%;
+}
+/* line 1913, ../../jcy-sass/sass/screen.scss */
+#resume .resume_right {
+  float: left;
+}
+/* line 1916, ../../jcy-sass/sass/screen.scss */
+#resume .icon-time_section {
+  margin-left: 13px;
+}
+
+/*****************resume-end********************/
+/*****************mess_detail*******************/
+/* line 1923, ../../jcy-sass/sass/screen.scss */
+#mess_detail {
+  overflow: hidden;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 1930, ../../jcy-sass/sass/screen.scss */
+#mess_detail .detail_right {
+  width: 70%;
+  float: left;
+}
+/* line 1934, ../../jcy-sass/sass/screen.scss */
+#mess_detail .detail_user_logo {
+  margin-left: initial;
+}
+/* line 1937, ../../jcy-sass/sass/screen.scss */
+#mess_detail .detail_other span {
+  margin-right: 10px;
+  color: #666;
+}
+/* line 1941, ../../jcy-sass/sass/screen.scss */
+#mess_detail .add_friend, #mess_detail .remove_friend {
+  display: block;
+  text-align: center;
+  width: 45%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+}
+/* line 1953, ../../jcy-sass/sass/screen.scss */
+#mess_detail .add_friend {
+  float: left;
+  border: 1px solid #43b95f;
+  color: #43b95f;
+}
+/* line 1958, ../../jcy-sass/sass/screen.scss */
+#mess_detail .remove_friend {
+  border: 1px solid #aeaeae;
+  color: #aeaeae;
+  float: right;
+}
+
+/* line 1964, ../../jcy-sass/sass/screen.scss */
+.detail_other span, .detail_right_box span {
+  margin-right: 10px;
+  color: #666;
+}
+
+/* line 1968, ../../jcy-sass/sass/screen.scss */
+.detail_main {
+  background-color: #fff;
+  margin-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 1975, ../../jcy-sass/sass/screen.scss */
+.detail_main li {
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+  color: #666;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 1984, ../../jcy-sass/sass/screen.scss */
+.detail_main li:last-child {
+  border-bottom: none;
+}
+/* line 1988, ../../jcy-sass/sass/screen.scss */
+.detail_main .detail_left_box {
+  float: left;
+  width: 80px;
+}
+/* line 1992, ../../jcy-sass/sass/screen.scss */
+.detail_main .detail_right_box {
+  margin-left: 80px;
+}
+
+/* line 1996, ../../jcy-sass/sass/screen.scss */
+.send_btn {
+  display: block;
+  height: 44px;
+  background-color: #03a9f5;
+  border-radius: 5px;
+  font-size: 1.3em;
+  color: #fff;
+  width: 90%;
+  margin: 20px 5%;
+  text-align: center;
+  line-height: 44px;
+}
+
+/*****************mess_detail-end***************/
+/*****************chat***************/
+/* line 2012, ../../jcy-sass/sass/screen.scss */
+#chat_box {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top: 1px solid #abb3be;
+  border-bottom: 1px solid #abb3be;
+}
+/* line 2026, ../../jcy-sass/sass/screen.scss */
+#chat_box .chat_text {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 34px;
+  padding-left: 4px;
+  padding-right: 68px;
+}
+/* line 2035, ../../jcy-sass/sass/screen.scss */
+#chat_box .chat_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 18px;
+  border-radius: 4px;
+  height: 34px;
+  color: #fff;
+  background-color: #03a9f5;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 2051, ../../jcy-sass/sass/screen.scss */
+#chat {
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+  padding-top: 10px;
+  margin: 60px 0;
+}
+/* line 2055, ../../jcy-sass/sass/screen.scss */
+#chat .user, #chat .touser {
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+/* line 2062, ../../jcy-sass/sass/screen.scss */
+#chat .user {
+  padding-left: 60px;
+}
+/* line 2065, ../../jcy-sass/sass/screen.scss */
+#chat .touser {
+  padding-right: 60px;
+}
+/* line 2068, ../../jcy-sass/sass/screen.scss */
+#chat .user_logo, #chat .touser_logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+/* line 2073, ../../jcy-sass/sass/screen.scss */
+#chat .touser_logo {
+  float: left;
+}
+/* line 2076, ../../jcy-sass/sass/screen.scss */
+#chat .user_logo {
+  float: right;
+}
+/* line 2079, ../../jcy-sass/sass/screen.scss */
+#chat .chat_box_left {
+  margin-left: 70px;
+}
+/* line 2082, ../../jcy-sass/sass/screen.scss */
+#chat .chat_box_right {
+  margin-right: 70px;
+}
+/* line 2085, ../../jcy-sass/sass/screen.scss */
+#chat .user_record, #chat .touser_record {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  word-break: break-all;
+  color: #333;
+  border-radius: 5px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding: 5px 5px 5px 10px;
+  position: relative;
+}
+/* line 2098, ../../jcy-sass/sass/screen.scss */
+#chat .user_record i, #chat .touser_record i {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  background: url(../images/angel_white.png) no-repeat;
+  top: 1em;
+}
+/* line 2107, ../../jcy-sass/sass/screen.scss */
+#chat .user_record {
+  float: right;
+}
+/* line 2109, ../../jcy-sass/sass/screen.scss */
+#chat .user_record i {
+  right: -9px;
+}
+/* line 2113, ../../jcy-sass/sass/screen.scss */
+#chat .touser_record {
+  float: left;
+}
+/* line 2115, ../../jcy-sass/sass/screen.scss */
+#chat .touser_record i {
+  left: -9px;
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*****************chat-end***************/
+/* line 2127, ../../jcy-sass/sass/screen.scss */
+.no_more {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 10px 0;
+  color: #999;
+}
+
+/***************list-reports**************/
+/* line 2135, ../../jcy-sass/sass/screen.scss */
+a.fd_list {
+  display: block;
+  overflow: hidden;
+}
+/* line 2138, ../../jcy-sass/sass/screen.scss */
+a.fd_list img {
+  margin-right: 10px;
+}
+
+/* line 2143, ../../jcy-sass/sass/screen.scss */
+#friendmanage a.fd_list li img {
+  width: 70px;
+  height: 70px;
+}
+
+/* line 2147, ../../jcy-sass/sass/screen.scss */
+.more_signup {
+  margin: 0 1%;
+  width: 17%;
+}
+
+/* line 2152, ../../jcy-sass/sass/screen.scss */
+.error {
+  color: #FF4500;
+  font-style: initial;
+  margin-bottom: 10px;
+}
+
+/* line 2158, ../../jcy-sass/sass/screen.scss */
+.password_hidden {
+  width: 40px;
+  height: 46px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin: 0 !important;
+}
+
+/* line 2167, ../../jcy-sass/sass/screen.scss */
+.skip {
+  display: block;
+  margin-top: 20px;
+  color: #4169E1;
+}
+
+/* line 2172, ../../jcy-sass/sass/screen.scss */
+.control_btn {
+  margin-top: 10px;
+}
+
+/* line 2175, ../../jcy-sass/sass/screen.scss */
+.top100 {
+  top: 100px !important;
+}
+
+/* line 2179, ../../jcy-sass/sass/screen.scss */
+#nearby_tab .active_btn a {
+  color: #ff6900;
+}
+
+/* line 2182, ../../jcy-sass/sass/screen.scss */
+.limit-h3 {
+  line-height: 1.6em;
+  overflow: hidden;
+  max-height: 4.8em;
+}
+/* line 2186, ../../jcy-sass/sass/screen.scss */
+.limit-h3.active {
+  max-height: none;
+}
+
+/* line 2190, ../../jcy-sass/sass/screen.scss */
+.read_more {
+  text-align: center;
+  color: #ff6900;
+  padding: 5px;
+}
+
+/* line 2195, ../../jcy-sass/sass/screen.scss */
+.swiper-slide {
+  text-align: center;
+}
+
+/* line 2198, ../../jcy-sass/sass/screen.scss */
+.icon-return_speed {
+  float: left;
+}
+
+/* line 2201, ../../jcy-sass/sass/screen.scss */
+.icon-unfold {
+  margin-left: 10px;
+}
+
+/* line 2205, ../../jcy-sass/sass/screen.scss */
+.search_list li {
+  text-align: center;
+}
+
+/* line 2209, ../../jcy-sass/sass/screen.scss */
+.chat-time {
+  text-align: center;
+  padding: 15px 0;
+  color: #999;
+}
+
+/* line 2215, ../../jcy-sass/sass/screen.scss */
+.speed_line {
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  background-color: #03a9f5;
+  left: 0;
+  display: none;
+}
+
+/* line 2224, ../../jcy-sass/sass/screen.scss */
+.user_input {
+  padding-right: 110px;
+}
+
+/* line 2227, ../../jcy-sass/sass/screen.scss */
+.nomassage {
+  padding-top: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 2233, ../../jcy-sass/sass/screen.scss */
+#error img {
+  width: 150px;
+  margin: 150px auto 0;
+}
+
+/* line 2238, ../../jcy-sass/sass/screen.scss */
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* line 2241, ../../jcy-sass/sass/screen.scss */
+.tag {
+  border: 1px solid #03A9F5;
+  padding: 2px 8px;
+  color: #03a9f5;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: .8em;
+  line-height: 1.5em;
+}

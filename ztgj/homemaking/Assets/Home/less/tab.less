@@ -1,0 +1,50 @@
+.tab-box{
+	background: #fff;
+
+	>.tab-nav{
+        >li{
+           text-align: center;
+           position: relative;
+           .border-bottom(@border-color-light);
+
+           &:not(:last-of-type){
+              &:before{
+              	.before(1px,15px);
+                background: @border-color;
+                position: absolute;
+			    right: 0;
+			    top: 35%;
+              }
+           }
+        	a{
+        		display: inline-block;
+        		padding: 15px 20px;
+        		font-size: 1.2em;
+
+        		&.active{
+        			.border-bottom(#90bd34,2px);
+        			color: @brand-color;
+        		}
+        	}
+        }
+	}
+	>.tab-content{
+        >li{
+        	padding: 12px 10px;
+        	position: relative;
+        	.border-bottom(@border-color-light);
+            >a{
+            	display: block;
+
+              &.input-group{
+                display: table;
+                border: 0;
+
+                .input-group-addon{
+                  width: 32px;
+                }
+              }
+            }
+        }
+	}
+}

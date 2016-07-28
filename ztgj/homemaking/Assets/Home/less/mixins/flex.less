@@ -1,0 +1,69 @@
+.flex-box(){
+  display: -webkit-box;  /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;    /* 老版本语法: Firefox (buggy) */ 
+  display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+ // display: -webkit-flex;  /* 新版本语法： Chrome 21+ */
+ // display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */
+}
+
+.justify-content(@type:space-between){
+  -webkit-justify-content:@type;
+     -moz-justify-content:@type;
+      -ms-justify-content:@type;
+          justify-content:@type;
+}
+.align-items(@type:stretch){
+  -webkit-align-items:@type;
+     -moz-align-items:@type;
+      -ms-align-items:@type;
+          align-items:@type;
+}
+.align-content(@type:stretch){
+  -webkit-align-content:@type;
+     -moz-align-content:@type;
+      -ms-align-content:@type;
+          align-content:@type;
+}
+.flex-flow(@dir:row,@wrap:no-wrap){
+	-webkit-flex-flow:@dir @wrap;
+       -moz-flex-flow:@dir @wrap;
+        -ms-flex-flow:@dir @wrap;
+            flex-flow:@dir @wrap;
+}
+.flex-direction(@dir){
+	-webkit-align-content:@dir;
+       -moz-align-content:@dir;
+        -ms-align-content:@dir;
+            align-content:@dir;
+}
+.flex-wrap(@wrap){
+	-webkit-flex-wrap:@wrap;
+       -moz-flex-wrap:@wrap;
+        -ms-flex-wrap:@wrap;
+            flex-wrap:@wrap;
+}
+.flex-order(){
+	-webkit-order:@wrap;
+       -moz-order:@wrap;
+        -ms-order:@wrap;
+            order:@wrap;
+}
+.flex(@ratio){
+	-webkit-box-flex:@ratio;
+       -moz-box-flex:@ratio;
+        -ms-box-flex:@ratio;
+            box-flex:@ratio;
+    -webkit-flex:@ratio;
+       -moz-flex:@ratio;
+        -ms-flex:@ratio;
+            flex:@ratio;
+}
+.make-flex-ratio(@ratio:10) when (@ratio >= 1){
+  .flex-@{ratio}{
+  	.flex(@ratio);
+  }
+ .make-flex-ratio(@ratio - 1)
+}
+
+
+

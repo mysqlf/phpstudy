@@ -1,0 +1,1883 @@
+[ 2016-05-31T10:33:34+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004874s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015543s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001146s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001250s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000977s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005251s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001496s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2016-05-31T10:35:00+08:00 ] 127.0.0.1 /?signature=799818431d2b37a530c73d175d55c8623b381b64&echostr=5559724141769980500&timestamp=1464662100&nonce=56023678
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001529s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000688s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000637s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000508s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002826s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000854s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-05-31T10:35:32+08:00 ] 127.0.0.1 /wein
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002716s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006097s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000365s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000362s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001735s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-05-31T10:35:37+08:00 ] 127.0.0.1 /weixin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005184s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000422s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000399s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001758s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000533s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-05-31T10:36:20+08:00 ] 127.0.0.1 /weixin-index?signature=60add609bb7ec8d939f1a8f1c059360237cd6cdb&echostr=7353187190486007718&timestamp=1464662180&nonce=870265711
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001170s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009452s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000703s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000740s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003193s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001036s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2016-05-31T10:45:05+08:00 ] 127.0.0.1 /weixin?signature=a543db5b3018424824126cf3bcfddb6c5be36e45&echostr=5994031213408287677&timestamp=1464662705&nonce=167949639
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001395s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010092s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000722s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000739s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000586s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003194s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2016-05-31T10:45:21+08:00 ] 127.0.0.1 /weixin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001740s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007527s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000530s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000516s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000401s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002320s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000684s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2016-05-31T10:47:50+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001875s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000824s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000747s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000588s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003318s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001093s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2016-05-31T10:48:57+08:00 ] 127.0.0.1 /Index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001677s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001847s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002216s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001036s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000960s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001252s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2016-05-31T10:49:03+08:00 ] 127.0.0.1 /Index-test
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001007s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+ERR: could not find driver
+
+[ 2016-05-31T10:49:17+08:00 ] 127.0.0.1 /Index-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000658s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000890s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000406s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000364s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000271s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001669s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000546s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2016-05-31T10:49:45+08:00 ] 127.0.0.1 /Weixin-index?signature=30a57172fb16c9aafd3ec582f1279544bb1a7be9&echostr=4654959314479152091&timestamp=1464662985&nonce=447587771
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002405s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002673s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+
+[ 2016-05-31T10:50:01+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000928s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2016-05-31T10:50:05+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001975s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002195s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001745s ]
+
+[ 2016-05-31T10:50:59+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002159s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002407s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-05-31T10:51:01+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002086s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+
+[ 2016-05-31T10:51:30+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+
+[ 2016-05-31T10:51:39+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001025s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-05-31T10:52:13+08:00 ] 127.0.0.1 /Weixin-index?signature=435582d850ae5a043a91a5d83eb0acddf1e15d03&echostr=2301336765897571967&timestamp=1464663133&nonce=1234775667
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001711s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+
+[ 2016-05-31T10:53:18+08:00 ] 127.0.0.1 /Weixin-index?signature=b52ed96fdfbad417dfecce7ab58fdb233b90b3f6&timestamp=1464663198&nonce=1486639304
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001376s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T10:59:20+08:00 ] 127.0.0.1 /Weixin-index?signature=7d3de519b84fec60bb6e96fcc35795aefc77b5a8&timestamp=1464663560&nonce=630398563
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001380s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T11:00:15+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+
+[ 2016-05-31T11:00:28+08:00 ] 127.0.0.1 /Weixin-index?signature=8c30b5e89f2718ebb5f35996089eeaa5bef93b07&timestamp=1464663628&nonce=896752373
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001172s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T11:01:41+08:00 ] 127.0.0.1 /Weixin-index?signature=0d4dd9b9979eb6101766186451d43cd1c25bb88e&timestamp=1464663701&nonce=765973966
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001359s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-05-31T11:01:52+08:00 ] 127.0.0.1 /Weixin-index?signature=1c6f8e46c9899553cfdc4e84dc5215f272f34d0a&timestamp=1464663712&nonce=120745618
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001981s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002197s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+
+[ 2016-05-31T11:04:13+08:00 ] 127.0.0.1 /Weixin-index?signature=b25d596830222b1fe1905ad01acba439cec1793e&timestamp=1464663853&nonce=1410099358
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+
+[ 2016-05-31T11:04:24+08:00 ] 127.0.0.1 /Weixin-index?signature=dfd6ca38f0cf090acbb14c7052294761212aeda0&timestamp=1464663863&nonce=1380168536
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001897s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] Undefined offset: 1 D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 73 行.
+NOTIC: [8] Use of undefined constant DB_CONFIG2 - assumed 'DB_CONFIG2' D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 141 行.
+SQL: SHOW COLUMNS FROM `proj_ptime_wechat_count` [ RunTime:0.008282s ]
+SQL: SELECT * FROM `proj_ptime_wechat_count` WHERE ( `barcode_id` = 0 ) LIMIT 1   [ RunTime:0.006444s ]
+
+[ 2016-05-31T11:05:33+08:00 ] 127.0.0.1 /Weixin-index?signature=5d595445b702bca0325a591817711890c97f0d5a&timestamp=1464663933&nonce=764645230
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002756s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002212s ]
+
+[ 2016-05-31T11:07:59+08:00 ] 127.0.0.1 /Weixin-index?signature=ba5b996991001629bc52655f67f85240162fe15b&timestamp=1464664078&nonce=2073096551
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002442s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002690s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T11:26:57+08:00 ] 127.0.0.1 /Weixin-index?signature=374559fb4b55e56a0b3e5fe6e87daa832063d066&timestamp=1464665217&nonce=22034748
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001558s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T11:28:19+08:00 ] 127.0.0.1 /Weixin-index?signature=940c695dfa572b68f99f950ef926d5c7dbab7d36&timestamp=1464665299&nonce=64861862
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-05-31T11:28:30+08:00 ] 127.0.0.1 /Weixin-index?signature=8ce36a993331aa47cbec84e91fb0a8beebb92a00&timestamp=1464665309&nonce=2080276047
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+
+[ 2016-05-31T11:28:45+08:00 ] 127.0.0.1 /Weixin-index?signature=2959c955e39a5bb946cec4d3cde41a5cee0136c7&timestamp=1464665325&nonce=1980476800
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001169s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8] Undefined offset: 1 D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 73 行.
+NOTIC: [8] Use of undefined constant DB_CONFIG2 - assumed 'DB_CONFIG2' D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 141 行.
+SQL: SHOW COLUMNS FROM `proj_ptime_wechat_count` [ RunTime:0.007900s ]
+SQL: SELECT * FROM `proj_ptime_wechat_count` WHERE ( `barcode_id` = 0 ) LIMIT 1   [ RunTime:0.006515s ]
+
+[ 2016-05-31T11:28:48+08:00 ] 127.0.0.1 /Weixin-index?signature=42844f1718b8207e90024d2e34c16e7ba9e0e97b&timestamp=1464665328&nonce=1400752894
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001155s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+
+[ 2016-05-31T11:28:48+08:00 ] 117.136.31.247 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001941s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000905s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000846s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000692s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003828s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001042s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2016-05-31T11:28:49+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002400s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001091s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001024s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000901s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004694s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001486s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001644s ]
+
+[ 2016-05-31T11:28:49+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003209s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001501s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001417s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001581s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006755s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001846s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002026s ]
+
+[ 2016-05-31T11:35:34+08:00 ] 127.0.0.1 /Weixin-index?signature=58289231fff399e2ebd23ac1022e107688f54650&timestamp=1464665734&nonce=274263788
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T13:56:23+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001245s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-05-31T13:56:28+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+
+[ 2016-05-31T13:57:15+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001850s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+
+[ 2016-05-31T13:57:19+08:00 ] 127.0.0.1 /Weixin-index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001061s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+
+[ 2016-05-31T13:57:24+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001616s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000710s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000645s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002865s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2016-05-31T13:57:38+08:00 ] 127.0.0.1 /Weixin-index?signature=671d628eb553056f4af3b49c28ed908ecc86c6dd&timestamp=1464674258&nonce=74919262
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002274s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002464s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-05-31T13:57:38+08:00 ] 117.136.79.157 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001933s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000890s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000827s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003678s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001281s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-05-31T13:57:55+08:00 ] 117.136.79.157 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001505s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000684s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000634s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000505s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002814s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000847s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2016-05-31T15:37:05+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001868s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000913s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000849s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000704s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003754s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001105s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2016-05-31T15:37:09+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001344s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000588s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000467s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002584s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-05-31T16:50:26+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001650s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000785s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000730s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003242s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2016-05-31T16:50:38+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001954s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002151s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:50:59+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001330s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:54:17+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002437s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002656s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:54:21+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000736s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:54:25+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001120s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:55:58+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002035s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002255s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:56:43+08:00 ] 127.0.0.1 /Weixin-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001188s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 非法操作:sendmenu
+
+[ 2016-05-31T16:57:21+08:00 ] 127.0.0.1 /Menu-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001536s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001707s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [2] filemtime(): stat failed for Runtime/wechatCode.txt D:\item\homemaking\Common\common.php 第 121 行.
+NOTIC: [2] file_get_contents(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\item\homemaking\Lib\Action\Home\MenuAction.class.php 第 106 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=A8E_mgHpxxOxYIk-yNjYYfdLgRsxdaN81yM9miJoWL6vsx7gKOUC97G9aKTlzZjEbnFlLTp0AF-KsPjfhewwlPU65QJQfsqolPtbCNV_3o9Sf-YtHYmQMl5U8dOBQ1XRDDZiAJALLH): failed to open stream: No such file or directory D:\item\homemaking\Lib\Action\Home\MenuAction.class.php 第 106 行.
+
+[ 2016-05-31T17:00:31+08:00 ] 127.0.0.1 /Menu-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001153s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2] file_get_contents(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\item\homemaking\Lib\Action\Home\MenuAction.class.php 第 106 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=A8E_mgHpxxOxYIk-yNjYYfdLgRsxdaN81yM9miJoWL6vsx7gKOUC97G9aKTlzZjEbnFlLTp0AF-KsPjfhewwlPU65QJQfsqolPtbCNV_3o9Sf-YtHYmQMl5U8dOBQ1XRDDZiAJALLH): failed to open stream: No such file or directory D:\item\homemaking\Lib\Action\Home\MenuAction.class.php 第 106 行.
+
+[ 2016-05-31T17:00:52+08:00 ] 127.0.0.1 /Weixin-index?signature=b407e76696b2181b46e20b504aec14b43f44a759&timestamp=1464685251&nonce=2135216727
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002103s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+
+[ 2016-05-31T17:04:11+08:00 ] 127.0.0.1 /Weixin-index?signature=a907c6c4cf4f11b27e77feae1b325e27746a642c&timestamp=1464685450&nonce=1077066621
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-05-31T17:07:56+08:00 ] 127.0.0.1 /Weixin-index?signature=d12ad59c77d2545110043982fa6052b59b611d63&timestamp=1464685675&nonce=1398562829
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002227s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002445s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001855s ]
+
+[ 2016-05-31T17:14:20+08:00 ] 127.0.0.1 /Weixin-index?signature=da667f0389386ba0e1fde6727f82a985902f15df&timestamp=1464686059&nonce=1803780406
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-05-31T17:14:23+08:00 ] 127.0.0.1 /Weixin-index?signature=b25e0a8d79ad099cac1c985e38cddadc8fe64b3f&timestamp=1464686063&nonce=1414332864
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001487s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-05-31T17:17:35+08:00 ] 127.0.0.1 /Weixin-index?signature=307df201ebf4272297362884376857b8e9c53eeb&timestamp=1464686255&nonce=618532161
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002264s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001877s ]
+
+[ 2016-05-31T17:18:16+08:00 ] 127.0.0.1 /Weixin-index?signature=06babc0ff4bdd20ee68b088ce13838266064695f&timestamp=1464686295&nonce=1662677816
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001728s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+
+[ 2016-05-31T17:18:41+08:00 ] 117.136.79.157 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002126s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000567s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000532s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002293s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000663s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-05-31T17:18:41+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001047s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000508s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000453s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000576s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-05-31T17:18:41+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001078s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000505s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000460s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001976s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000574s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-05-31T17:18:46+08:00 ] 127.0.0.1 /Weixin-index?signature=e07e7fe92fd9aa04764f3875f7632a69df41358b&timestamp=1464686325&nonce=1915756204
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000664s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-05-31T17:18:49+08:00 ] 127.0.0.1 /Weixin-index?signature=48a3406a60d96386ce20813b99319dfc8b62380d&timestamp=1464686329&nonce=1231267638
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001126s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-05-31T17:28:04+08:00 ] 127.0.0.1 /Menu-sendmenu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000941s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [2] file_get_contents(): Unable to find the wrapper &quot;https&quot; - did you forget to enable it when you configured PHP? D:\item\homemaking\Lib\Action\Home\MenuAction.class.php 第 109 行.
+NOTIC: [2] file_get_contents(https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=A8E_mgHpxxOxYIk-yNjYYfdLgRsxdaN81yM9miJoWL6vsx7gKOUC97G9aKTlzZjEbnFlLTp0AF-KsPjfhewwlPU65QJQfsqolPtbCNV_3o9Sf-YtHYmQMl5U8dOBQ1XRDDZiAJALLH): failed to open stream: No such file or directory D:\item\homemaking\Lib\Action\Home\MenuAction.class.php 第 109 行.
+
+[ 2016-05-31T17:28:10+08:00 ] 127.0.0.1 /Weixin-index?signature=9b2d80f8899909bac7f4f9a351ab9757c8aca6f5&timestamp=1464686889&nonce=342024162
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002252s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+
+[ 2016-05-31T17:28:23+08:00 ] 127.0.0.1 /Weixin-index?signature=3ec0c009e6a49c285db2fd4d8580503f4518dea2&timestamp=1464686903&nonce=1346496477
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001155s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+
+[ 2016-05-31T17:29:08+08:00 ] 127.0.0.1 /Weixin-index?signature=7b819b210392955850f4f31a20431ef035703da7&timestamp=1464686947&nonce=864554877
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001536s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] Undefined offset: 1 D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 73 行.
+NOTIC: [8] Use of undefined constant DB_CONFIG2 - assumed 'DB_CONFIG2' D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 141 行.
+SQL: SHOW COLUMNS FROM `proj_ptime_wechat_count` [ RunTime:0.009792s ]
+SQL: SELECT * FROM `proj_ptime_wechat_count` WHERE ( `barcode_id` = 0 ) LIMIT 1   [ RunTime:0.007034s ]
+
+[ 2016-05-31T17:29:11+08:00 ] 127.0.0.1 /Weixin-index?signature=600166b7351402d03f4b4aa26e07e9cca9a97e1e&timestamp=1464686950&nonce=1365527851
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001184s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-05-31T17:30:40+08:00 ] 127.0.0.1 /Weixin-index?signature=a9ce32b3dd9fd004d456ce9a476c8268997686bd&timestamp=1464687039&nonce=823653704
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000903s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-05-31T17:30:51+08:00 ] 127.0.0.1 /Weixin-index?signature=b6b4330af5f8e0bfa803f05edc533c3fa592d507&timestamp=1464687051&nonce=809452316
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001142s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T17:33:37+08:00 ] 127.0.0.1 /Weixin-index?signature=48a8b3cb4a6bbf43e21ba534740be00ac66801c4&timestamp=1464687216&nonce=1481435664
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001880s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002055s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+
+[ 2016-05-31T17:33:37+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=02139CL709wqEu1AqbM701wBL7039CL3&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:35:28+08:00 ] 127.0.0.1 /Weixin-index?signature=b3d85d50a014fa0280aee8c4dc755eca6d9e0110&timestamp=1464687328&nonce=1714646967
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001483s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+
+[ 2016-05-31T17:35:29+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=0218ig390kydDt1uc8190hyj3908ig36&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001522s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-05-31T17:35:29+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002499s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001172s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001096s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000899s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004807s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001254s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2016-05-31T17:35:47+08:00 ] 127.0.0.1 /Weixin-index?signature=ecde1b145e3e7fc2a5dd2947e38fb9872fe32ba5&timestamp=1464687346&nonce=1979164395
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-05-31T17:35:47+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=001aLNx82KygOE0v1lu82H7Kx82aLNxh&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001482s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001657s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:35:55+08:00 ] 127.0.0.1 /Weixin-index?signature=f3b08db50d314ac85ac93a490e41175679f16d76&timestamp=1464687354&nonce=963419985
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001466s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+
+[ 2016-05-31T17:35:55+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=031WBmWf10FjBm0KthXf1canWf1WBmWO&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001339s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:36:42+08:00 ] 127.0.0.1 /Weixin-index?signature=4ca5e4d0889e1c8ecd39747e02c81b92abb777d6&timestamp=1464687401&nonce=246711609
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000811s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+
+[ 2016-05-31T17:36:42+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=031Kh2eq1ioLCu0Y7meq18S3eq1Kh2eM&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001526s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:36:47+08:00 ] 127.0.0.1 /Weixin-index?signature=44814a0cf40019039319214ddff0087be0f9fffb&timestamp=1464687406&nonce=287608305
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001527s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+
+[ 2016-05-31T17:36:47+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E7%B2%A4%E7%AE%A1%E5%AE%B6?code=0419qLCr0pXnOr1XgiEr0nBJCr09qLCA&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001114s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:39:08+08:00 ] 127.0.0.1 /Weixin-index?signature=8c77edf6df42d45f09c48e4b56634437bf3c7656&timestamp=1464687548&nonce=1065322693
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001792s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001959s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+
+[ 2016-05-31T17:39:09+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=0110sr8p1qvJJv0yJz7p1mWx8p10sr8M&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001531s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:39:27+08:00 ] 127.0.0.1 /Weixin-index?signature=d452625c9714643025473720c3bb3847c24108a5&timestamp=1464687567&nonce=1268453983
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-05-31T17:39:28+08:00 ] 117.136.79.157 /Homemaking-index-t-requirement-type-%E6%9C%88%E5%AB%82?code=041sJbgW07hBFP1xEQgW0AjdgW0sJbgY&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001538s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:42:15+08:00 ] 127.0.0.1 /Weixin-index?signature=6261c0453ed4f1104c03f02fb83fd9a92fa1f252&timestamp=1464687735&nonce=74660444
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001922s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+
+[ 2016-05-31T17:42:15+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=041vTPWe2umqiP0HlgXe2QRSWe2vTPW1&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001358s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001507s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:42:16+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001946s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000923s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000809s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000591s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003556s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001081s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-05-31T17:44:49+08:00 ] 127.0.0.1 /Weixin-index?signature=1696b161cdb5fa63ebdf6070ff1febaf93827614&timestamp=1464687888&nonce=4912863
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002312s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002556s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+
+[ 2016-05-31T17:44:49+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=03104dO82GPQxE0wenN82tKhO8204dOs&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001300s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:49:23+08:00 ] 127.0.0.1 /Weixin-index?signature=c7ef5e088631e415ad05d06e9b7cbbf1cb20a546&timestamp=1464688162&nonce=2091422915
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002107s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002310s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+
+[ 2016-05-31T17:49:23+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=011lWNMV1jKUi9115MPV1tpOMV1lWNMh&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:51:14+08:00 ] 127.0.0.1 /Weixin-index?signature=8ca7b98f00beeb7496679be57aa2676286b1435a&timestamp=1464688274&nonce=367911258
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001237s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-05-31T17:51:15+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=031E4Pxi0c5JIi1vObxi0PtPxi0E4PxY&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000612s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:51:25+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001607s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000667s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000608s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002650s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000808s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-05-31T17:53:09+08:00 ] 127.0.0.1 /Weixin-index?signature=9417e3411509645c0435215d5841a78f5928d996&timestamp=1464688388&nonce=1070638047
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+
+[ 2016-05-31T17:53:09+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=031DpBAD19mS7g0BtIzD1WJAAD1DpBAw&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002064s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:54:53+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=011rFFBD1oOJ6g0TymBD1FzDBD1rFFBA&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:55:09+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=0114h7N50xZHtv1NgJO506J0N504h7N-&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:55:19+08:00 ] 127.0.0.1 /Homemaking-index-t-customerCenter?code=0117ca7J0GZGe42ukc6J0B8b7J07ca77&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000679s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:55:43+08:00 ] 127.0.0.1 /Homemaking-index-t-requirement-type-%E6%9C%88%E5%AB%82?code=0313Kc1N0vrIdh2wSOZM0PZa1N03Kc1U&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000570s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T17:56:44+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=021q0WJk105EQz0QkNJk1rMXJk1q0WJk&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T18:15:34+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001425s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000581s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000557s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000429s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002365s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000773s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-05-31T18:42:53+08:00 ] 127.0.0.1 /Weixin-index?signature=f95bfa81cf8d1e62a903fb1697823b51831278fd&timestamp=1464691372&nonce=621076654
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001070s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-05-31T18:42:54+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003771s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008692s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.006909s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003031s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002997s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016274s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003733s ]
+
+[ 2016-05-31T18:42:55+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=031xR0331aosV02byz331fF1331xR039&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001194s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T18:43:04+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002212s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.001052s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000966s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000799s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004318s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001283s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2016-05-31T18:45:03+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001304s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000596s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000536s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000410s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002413s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-05-31T18:46:02+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=041xB6Kk1cDUXz06eJKk1jicKk1xB6Ki&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T18:46:11+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=041gUyAl0SExyf1HIzCl07pzAl0gUyAu&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000727s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+ERR: could not find driver
+
+[ 2016-05-31T18:47:39+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=0019tik22nCpE11kY2n22iVik229tikD&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000741s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.043167s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = 'oCA6YwNLc4WdmyWhES1jZv0BaGiM' ) AND ( fldStatus = 1 )  [ RunTime:0.008197s ]
+SQL: INSERT INTO homemaking_user_bind (fldOpenId,fldOpenName,fldOpenType,fldType,fldStatus,fldCreateDate,fldOwner,lastEditdt,lastEditby) VALUES ('oCA6YwNLc4WdmyWhES1jZv0BaGiM','浪子','weixin',1,1,'2016-05-31 18:47:38','admin','2016-05-31 18:47:38','admin') [ RunTime:0.014602s ]
+
+[ 2016-05-31T18:47:39+08:00 ] 127.0.0.1 /Homemaking-custommade-v-1464691659-type-%E6%9C%88%E5%AB%82
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001209s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2016-05-31T18:48:14+08:00 ] 127.0.0.1 /Weixin-index?signature=743188ac520251048305a143efcc11c18263863a&timestamp=1464691694&nonce=696302204
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001116s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [8] Undefined variable: result D:\item\homemaking\Lib\Action\Home\WeixinAction.class.php 第 56 行.
+
+[ 2016-05-31T18:48:15+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=0311gyGf02qWSE19OJHf0wZyGf01gyG4&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001170s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-05-31T18:48:16+08:00 ] 127.0.0.1 /Homemaking-custommade-v-1464691695-type-%E6%9C%88%E5%AB%82
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001087s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-05-31T18:48:31+08:00 ] 127.0.0.1 /Homemaking-index-t-custommade-type-%E8%82%B2%E5%A9%B4%E5%B8%88?code=0213tJIp0i84Qc169MIp0UEEIp03tJIK&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-05-31T18:48:31+08:00 ] 127.0.0.1 /Homemaking-custommade-v-1464691711-type-%E8%82%B2%E5%A9%B4%E5%B8%88
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+
+[ 2016-05-31T18:55:06+08:00 ] 127.0.0.1 /Weixin-index?signature=21796c9d716473bc1c0e343236e3966abc0784c1&timestamp=1464692105&nonce=1126638564
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002096s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002286s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+
+[ 2016-05-31T18:55:08+08:00 ] 117.136.79.157 /Homemaking-index-t-requirement-type-%E6%9C%88%E5%AB%82?code=031K0mBK1mTN7a0jfCAK1mDfBK1K0mBD&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001513s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_user_bind' [ RunTime:0.007573s ]
+SQL: SELECT fldId,fldOpenId,fldOpenName,fldOpenType,fldType FROM homemaking_user_bind WHERE ( fldOpenId = 'oCA6YwNLc4WdmyWhES1jZv0BaGiM' ) AND ( fldStatus = 1 )  [ RunTime:0.005993s ]
+
+[ 2016-05-31T18:55:09+08:00 ] 117.136.79.157 /Homemaking-requirement-v-1464692108-type-%E6%9C%88%E5%AB%82
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Undefined index: db_host D:\item\ThinkPHP\Lib\Core\Db.class.php 第 127 行.
+NOTIC: [8] Undefined index: db_port D:\item\ThinkPHP\Lib\Core\Db.class.php 第 128 行.
+NOTIC: [8] Undefined index: db_name D:\item\ThinkPHP\Lib\Core\Db.class.php 第 129 行.
+NOTIC: [8] Undefined index: db_params D:\item\ThinkPHP\Lib\Core\Db.class.php 第 131 行.
+SQL: SELECT fldId,fldName,fldType FROM homemaking_service_price  [ RunTime:0.006597s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_service_price_detail' [ RunTime:0.008366s ]
+SQL: SELECT * FROM homemaking_service_price_detail WHERE ( 1=1 AND fldParentId='1' )  [ RunTime:0.007028s ]
+SQL: SELECT * FROM homemaking_service_price_detail WHERE ( 1=1 AND fldParentId='2' )  [ RunTime:0.007868s ]
+SQL: SELECT spd.fldId,spd.fldParentId,spd.fldGrade,spd.fldPrice,sp.fldType FROM homemaking_service_price_detail spd right join  homemaking_service_price as sp on spd.fldParentId = sp.fldID WHERE ( fldStatus = 1 )  [ RunTime:0.006884s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='1' [ RunTime:0.007013s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='2' [ RunTime:0.007191s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='3' [ RunTime:0.007199s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='4' [ RunTime:0.006690s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='5' [ RunTime:0.006876s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='6' [ RunTime:0.006674s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='7' [ RunTime:0.007462s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='8' [ RunTime:0.007277s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='9' [ RunTime:0.007392s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='12' [ RunTime:0.008229s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='13' [ RunTime:0.007272s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='14' [ RunTime:0.006788s ]
+NOTIC: [8] Undefined index: mapping_order D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index: mapping_limit D:\item\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM homemaking_service_price_certificate AS a, homemaking_certificate AS b WHERE a.fldCertificateId = b.fldId AND a. fldPriceId='15' [ RunTime:0.007556s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_setting' [ RunTime:0.008202s ]
+SQL: SELECT fldValue FROM homemaking_setting WHERE ( fldName = 'workyears' )  [ RunTime:0.007294s ]
+SQL: SELECT fldValue FROM homemaking_setting WHERE ( fldName = 'location' )  [ RunTime:0.007559s ]
+ERR: 系统不支持:sqlsrv
+
+[ 2016-05-31T18:55:19+08:00 ] 127.0.0.1 /Weixin-index?signature=50079dd00d88c4efea74b0015e9957537d950fb2&timestamp=1464692118&nonce=2046520248
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001922s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+
+[ 2016-05-31T18:55:19+08:00 ] 117.136.79.157 /Homemaking-index-t-custommade-type-%E6%9C%88%E5%AB%82?code=011TYwEr0FIoNr1oICBr0aTBEr0TYwEN&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001954s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-05-31T18:55:20+08:00 ] 117.136.79.157 /Homemaking-custommade-v-1464692119-type-%E6%9C%88%E5%AB%82
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001254s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+
+[ 2016-05-31T18:55:42+08:00 ] 127.0.0.1 /Weixin-index?signature=ea20f530a129714f17a7faa8f97fb3accc63c75d&timestamp=1464692142&nonce=1070858899
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-05-31T18:55:44+08:00 ] 117.136.79.157 /Homemaking-index-t-requirement-type-%E6%9C%88%E5%AB%82?code=041pLfEH0BSqz42fssEH0KKkEH0pLfE1&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000848s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-05-31T18:55:44+08:00 ] 117.136.79.157 /Homemaking-requirement-v-1464692144-type-%E6%9C%88%E5%AB%82
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002045s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002262s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+ERR: 系统不支持:sqlsrv
+
+[ 2016-05-31T18:57:51+08:00 ] 127.0.0.1 /Weixin-index?signature=506ba320941671fb001f262973bfc0252fdb7bcc&timestamp=1464692271&nonce=672493241
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-05-31T18:57:53+08:00 ] 117.136.79.157 /Homemaking-index-t-requirement-type-%E6%9C%88%E5%AB%82?code=041x2InQ04zDSd2P41pQ0MaLnQ0x2Inq&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-05-31T18:57:56+08:00 ] 117.136.79.157 /Homemaking-requirement-v-1464692273-type-%E6%9C%88%E5%AB%82
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001313s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: 
+            SELECT column_name,data_type,column_default,is_nullable
+            FROM   information_schema.tables AS t
+            JOIN   information_schema.columns AS c
+            ON     t.table_catalog = c.table_catalog
+            AND    t.table_schema  = c.table_schema
+            AND    t.table_name    = c.table_name
+            WHERE  t.table_name = 'HomeCustomer' [ RunTime:0.013480s ]
+SQL: SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME='HomeCustomer' [ RunTime:0.008436s ]
+SQL: select isnull(stuff((SELECT ','+ CAST(fldreserveHomeID as VARCHAR(10)) FROM HomeCustomer WHERE ( fldchildbirth >= DATEADD(d,-isnull(fldreserveDay,0),'2016-05-31') and fldchildbirth <= '2016-05-31' ) for xml path('')),1,1,''),0) as fldreserveHomeIDs [ RunTime:0.017749s ]
+SQL: 
+            SELECT column_name,data_type,column_default,is_nullable
+            FROM   information_schema.tables AS t
+            JOIN   information_schema.columns AS c
+            ON     t.table_catalog = c.table_catalog
+            AND    t.table_schema  = c.table_schema
+            AND    t.table_name    = c.table_name
+            WHERE  t.table_name = 'HomeInfo' [ RunTime:0.013964s ]
+SQL: SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME='HomeInfo' [ RunTime:0.007980s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_image_url' [ RunTime:0.007103s ]
+SQL: SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [fldID],[fldName],[fldage],[fldNative],[fldEducation],[fldLanguage],[fldType],[fldPosition],[fldMobile],[fldPhoto],[fldGuid],[fldIDCard],convert(varchar(10),[fldBirthday],120) as fldBirthday,[fldSign],[fldLocation],[fldSpecialtyDish],[fldhonorGuid],[fldTakeBabyNum],[fldGrade],[fldhometype] FROM [HomeInfo] WHERE (  fldhometype = '03' and fldSign = 1 and fldgrade in ('一星','二星','三星','四星','五星','金牌','砖石')     and fldID not in (0) and fldCompany=1 and fldGrade <> ''  )) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.015515s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 1613 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pay D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 33 行.
+NOTIC: [8] Undefined variable: place D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 43 行.
+NOTIC: [8] Undefined variable: date D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 54 行.
+NOTIC: [8] Undefined variable: location D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016637s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000464s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001979s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000579s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-05-31T18:57:57+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000982s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000438s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000403s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000554s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-05-31T18:57:58+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000966s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000432s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000398s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001769s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-05-31T18:57:59+08:00 ] 117.136.79.157 /WeixinJS-get_jsconfig?url=http%3A%2F%2F151808qj20.iask.in%2FHomemaking-requirement-v-1464692273-type-%25E6%259C%2588%25E5%25AB%2582
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000719s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-05-31T18:58:27+08:00 ] 127.0.0.1 /Weixin-index?signature=cd37a7e2f8371540e48c0b4ce1fca1b8604893d2&timestamp=1464692307&nonce=412469214
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-05-31T18:58:28+08:00 ] 117.136.79.157 /Homemaking-index-t-requirement-type-%E8%82%B2%E5%A9%B4%E5%91%98?code=011fmK6T0E6HOT1mGf4T0iFI6T0fmK6t&state=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000571s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: errcode D:\item\homemaking\Common\common.php 第 166 行.
+
+[ 2016-05-31T18:58:28+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001024s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' D:\item\ThinkPHP\Lib\Behavior\ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000400s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001862s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-05-31T18:58:30+08:00 ] 117.136.79.157 /Homemaking-requirement-v-1464692308-type-%E8%82%B2%E5%A9%B4%E5%91%98
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000643s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+SQL: 
+            SELECT column_name,data_type,column_default,is_nullable
+            FROM   information_schema.tables AS t
+            JOIN   information_schema.columns AS c
+            ON     t.table_catalog = c.table_catalog
+            AND    t.table_schema  = c.table_schema
+            AND    t.table_name    = c.table_name
+            WHERE  t.table_name = 'HomeInfo' [ RunTime:0.010532s ]
+SQL: SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME='HomeInfo' [ RunTime:0.008463s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_image_url' [ RunTime:0.006155s ]
+SQL: SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [fldID],[fldName],[fldage],[fldNative],[fldEducation],[fldLanguage],[fldType],[fldPosition],[fldMobile],[fldPhoto],[fldGuid],[fldIDCard],convert(varchar(10),[fldBirthday],120) as fldBirthday,[fldSign],[fldLocation],[fldSpecialtyDish],[fldhonorGuid],[fldWorkYears],[fldGrade],[fldhometype] FROM [HomeInfo] WHERE (  fldhometype = '04' and fldSign = 1 and fldOnWork = 0 and fldgrade in ('一星','二星','三星','四星','五星','金牌')     and fldCompany=1 and fldGrade <> ''  )) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.023172s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 1613 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pay D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 33 行.
+NOTIC: [8] Undefined variable: place D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 47 行.
+NOTIC: [8] Undefined variable: date D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 64 行.
+NOTIC: [8] Undefined variable: location D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014373s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000412s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000413s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000917s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-05-31T18:58:30+08:00 ] 117.136.79.157 /WeixinJS-get_jsconfig?url=http%3A%2F%2F151808qj20.iask.in%2FHomemaking-requirement-v-1464692308-type-%25E8%2582%25B2%25E5%25A9%25B4%25E5%2591%2598
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-05-31T18:58:32+08:00 ] 127.0.0.1 /Homemaking-requirement-v-1464692308-type-%E8%82%B2%E5%A9%B4%E5%91%98
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000581s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+SQL: 
+            SELECT column_name,data_type,column_default,is_nullable
+            FROM   information_schema.tables AS t
+            JOIN   information_schema.columns AS c
+            ON     t.table_catalog = c.table_catalog
+            AND    t.table_schema  = c.table_schema
+            AND    t.table_name    = c.table_name
+            WHERE  t.table_name = 'HomeInfo' [ RunTime:0.010824s ]
+SQL: SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME='HomeInfo' [ RunTime:0.008056s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_image_url' [ RunTime:0.007561s ]
+SQL: SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [fldID],[fldName],[fldage],[fldNative],[fldEducation],[fldLanguage],[fldType],[fldPosition],[fldMobile],[fldPhoto],[fldGuid],[fldIDCard],convert(varchar(10),[fldBirthday],120) as fldBirthday,[fldSign],[fldLocation],[fldSpecialtyDish],[fldhonorGuid],[fldWorkYears],[fldGrade],[fldhometype] FROM [HomeInfo] WHERE (  fldhometype = '04' and fldSign = 1 and fldOnWork = 0 and fldgrade in ('一星','二星','三星','四星','五星','金牌')     and fldCompany=1 and fldGrade <> ''  )) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.014964s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 1613 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pay D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 33 行.
+NOTIC: [8] Undefined variable: place D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 47 行.
+NOTIC: [8] Undefined variable: date D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 64 行.
+NOTIC: [8] Undefined variable: location D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014665s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000437s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000464s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000340s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000559s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-05-31T18:58:32+08:00 ] 127.0.0.1 /Homemaking-requirement-v-1464692308-type-%E8%82%B2%E5%A9%B4%E5%91%98
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000727s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+NOTIC: [8] iconv(): Detected an incomplete multibyte character in input string D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 308 行.
+SQL: 
+            SELECT column_name,data_type,column_default,is_nullable
+            FROM   information_schema.tables AS t
+            JOIN   information_schema.columns AS c
+            ON     t.table_catalog = c.table_catalog
+            AND    t.table_schema  = c.table_schema
+            AND    t.table_name    = c.table_name
+            WHERE  t.table_name = 'HomeInfo' [ RunTime:0.010299s ]
+SQL: SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_NAME='HomeInfo' [ RunTime:0.008527s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'homemaking_image_url' [ RunTime:0.007126s ]
+SQL: SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [fldID],[fldName],[fldage],[fldNative],[fldEducation],[fldLanguage],[fldType],[fldPosition],[fldMobile],[fldPhoto],[fldGuid],[fldIDCard],convert(varchar(10),[fldBirthday],120) as fldBirthday,[fldSign],[fldLocation],[fldSpecialtyDish],[fldhonorGuid],[fldWorkYears],[fldGrade],[fldhometype] FROM [HomeInfo] WHERE (  fldhometype = '04' and fldSign = 1 and fldOnWork = 0 and fldgrade in ('一星','二星','三星','四星','五星','金牌')     and fldCompany=1 and fldGrade <> ''  )) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.013841s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\item\homemaking\Lib\Action\Home\HomemakingAction.class.php 第 1613 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: pay D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 33 行.
+NOTIC: [8] Undefined variable: place D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 47 行.
+NOTIC: [8] Undefined variable: date D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 64 行.
+NOTIC: [8] Undefined variable: location D:\item\homemaking\Runtime\Cache\Home\b7afad04b4f6d1169a009a62de260c94.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013938s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-05-31T18:58:54+08:00 ] 127.0.0.1 /Homemaking-requirementSubmit-type-2-v-1464692312
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000636s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'account_info' [ RunTime:0.012291s ]
+NOTIC: [8] Undefined index: code D:\item\homemaking\Lib\Model\AccountInfoModel.class.php 第 56 行.
+NOTIC: [8] Undefined index: account_id D:\item\homemaking\Lib\Model\AccountInfoModel.class.php 第 57 行.
+ERR: Redis server went away
+

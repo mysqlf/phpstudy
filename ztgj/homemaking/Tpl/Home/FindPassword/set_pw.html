@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no" >
+  <title>找回密码</title>
+  <link rel="stylesheet" href="Assets/Home/styles/screen.css">
+</head>
+<body class="login">
+	   <div class="flow_box">
+	   	<div class="step1">1.输入账号</div>
+	   	<div class="step2">2.获取验证</div>
+	   	<div class="step3 step_active">3.重置密码</div>
+	   </div>
+       <form action="FindPassword-setpassword" method="post">
+	   <div id="set_pw">
+		   <label for="password">密码：</label><input type="password" class="input_text" id="password" name="password" data-max="20" data-min="6" placeholder="新密码（6-20位字母、数字或符号）" required>
+		   <div id="level_box">
+		   	  <div class="level high">
+		   	  	<p >高</p>
+		   	  	<div class="twig"></div>
+		   	  </div>
+		   	  <div  class=" level middle">
+		   	  	<p>中</p>
+		   	  	<div class="twig"></div>
+		   	  </div>
+		   	  <div class="level low">
+		   	  	<p>低</p>
+		   	  	<div class="twig"></div>
+		   	  </div>
+		   </div>
+		   <label for="repeat_pw">重复密码：</label><input type="password" class="input_text" id="repeat_pw" name="repassword" placeholder="请重复输入新密码" required>
+           <input type="hidden" name="redirect" value="{$lasturl}" />
+		   <input type="submit" value=" 下一步" class="next_btn mt10">
+	    </div>
+           </form>
+ <script src="Assets/Home/scripts/lib/sea.js"></script>
+ <script>
+     seajs.use('./Assets/Home/scripts/page/set_pw');
+ </script>	
+
+</body>
+</html>

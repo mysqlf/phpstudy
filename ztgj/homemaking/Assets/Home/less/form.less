@@ -1,0 +1,43 @@
+.input-group{
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  .border-bottom(@border-color-light);
+
+ .input-group-addon,.form-control{
+     display: table-cell;
+     height: 40px;
+     line-height: 40px;
+ }
+ .input-group-addon{
+ 	text-align: center;
+ }
+  .form-control{
+  	position: relative;
+	  z-index: 2;
+	  width: 100%;
+	  margin-bottom: 0;
+    line-height: normal;
+  }
+}
+.form-control{
+	border: 0;
+	width:100%;
+	outline: 0;
+	height: 40px;
+}
+label.error{
+	color: #f66;
+}
+input[type = "radio"]{
+  opacity: 0;
+}
+.J_radio .btn{
+    padding: 8px 35px;
+        margin: 5px 15px 5px 0;
+        opacity: 1 !important;
+
+        &.active{
+          .btn-primary
+        }
+  }

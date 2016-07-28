@@ -1,0 +1,201 @@
+.icon-introduce{
+	&:extend(.icon);
+	background-image: url(../images/introduce-sprite.png);
+	.square(50px);
+	margin: 0;
+	.background-size(100px auto)
+}
+
+.icon-dingzhi{
+  background-position:0 0;
+}
+.icon-team{
+  background-position:0 -62px;
+}
+.icon-gaozhi{
+  background-position:0 -127px;
+}
+.icon-touming{
+  background-position:0 -190px;
+}
+.icon-baozhang{
+  background-position:0 -252px;
+}
+
+.introduce-list{
+	background: #fff;
+	padding: 10px;
+	margin:0 10px 10px;
+	border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    
+    p{
+    	line-height: 1.8em;
+
+    }
+
+	.first{
+		font-size: 1.15em;
+		@media (max-width:@screen-xs) {
+			font-weight: bold;
+			font-size: 1.05em;
+		}
+	}
+	.sec{
+		color: @gray-light;
+	}
+
+}
+.introduce-item{
+	.title{
+	  font-size: 1.3em;
+	  color: #333;
+	  margin: 10px;
+	  font-weight: normal;
+	}
+}
+
+.panel-introduce{
+    background: #fff;
+ 	
+	p.others{
+		width: 50%;
+		height: 40px;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+	}
+
+
+	&:hover,&:focus{
+	  	   z-index: 100;
+	  }
+
+	.title{
+      background: #fff;
+	  padding: 10px;
+	  border-bottom: 1px solid @border-color-light;
+	}
+	.border-0{
+		border-bottom: 0;
+	}
+    
+	.lattice-el{
+	  position: relative;
+
+
+	  &:hover,&:focus{
+	  	   z-index: 100;
+	  }
+	  .active.content{
+	  	  	display: block;
+	  	  	z-index: 100;
+	  	  }
+	}
+
+    .lattice-box{
+    	position: relative;
+    	height: 100px;
+
+    	&.active{
+    		display: block;
+
+    		.content.active{
+    			display: block;
+    		}
+    	}
+    }
+	.content{
+	  position: absolute;
+	  background: url(../images/tip-bg.jpg) no-repeat;
+	  background-size: cover;
+	  padding: 10px;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  text-align: left;
+	  color: #333;
+	  line-height: 1.8em;
+	  display: none;
+
+	  &:before{
+	  	  .sanjiao(10px,#f0f0f0);
+		  
+		  border-bottom-color: #f0f0f0;
+		  position: absolute;
+		  top: -20px;
+		  margin-left: -20px;
+		  left: 52%;
+	  }
+
+	  &.content-l{
+
+	  	&:before{
+	  		left: 19%;
+	  	}
+        
+	  }
+	  &.content-c{
+	  	margin-left: -1px;
+	  	&:before{
+	  		left: 52%;
+	  	}
+	  	
+	  }
+	  &.content-r{
+	  	margin-left: -2px;
+	  	&:before{
+	  		left: 86%;
+	  	}
+	  	
+	  }
+	}
+	  
+}
+.table-introduce{
+	text-align: center;
+	border:1px solid @brand-color;
+   	border-collapse: inherit;
+   	border-radius: 10px;
+   	overflow: hidden;
+   	line-height: 1.8em;
+   	width:95%;
+	margin:10px auto;
+
+   th{
+   	background: @brand-color;
+   	color: #fff;
+   	padding: 10px;
+   	font-weight: normal;
+   	font-size: 1.2em;
+   	
+   }
+   td{
+   	border-left:1px solid @brand-color;
+   	border-bottom:1px solid @brand-color;
+   	padding: 5px;
+
+   		
+}
+.text-left {
+	span{
+		display: block;
+		width:100%;
+	}
+   }
+
+   .rank{
+   	background-color:lighten(@brand-color,20%);
+   }
+
+   tr{
+   	&:last-child td{
+   		border-bottom: 0;
+   	 }
+   	td[rowspan],td[colspan]{
+   		border-left: 0;
+   	} 
+   
+   }
+}

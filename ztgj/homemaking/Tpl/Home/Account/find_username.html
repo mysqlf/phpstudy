@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="Assets/Home/account/css/common.css">
+</head>
+
+<body class="login">
+    <div class="flow_box">
+        <div class="step1 step_active">1.确认账号</div>
+        <div class="step2">2.获取验证</div>
+        <div class="step3">3.重置密码</div>
+    </div>
+
+
+    <div id="find_name">
+        <form id="username-form" method="post">
+            <p class="tip">* 请确认要找回密码的账号</p>
+            <input type="text" class="input_text" id="tel_email" name="account" value="{$account}" placeholder="输入账号" required>
+            <div class="relative_box dpn">
+                <input type="text" class="input_text" name="resumeName" id="resume-Name" required maxlength="10" placeholder="请输入您简历中的姓名">
+            </div>
+            <p class="error">
+                输入账号不正确
+            </p>
+            <input type="submit" value=" 下一步" class="next_btn mt10">
+            <input type="hidden" name="redirect" value="{$redirect}" />
+        </form>
+    </div>
+    
+    <script src="/Assets/Home/account/js/dist/common.js"></script>
+    <script src="/Assets/Home/account/js/dist/findPsw.bundle.js"></script>
+</body>
+
+</html>

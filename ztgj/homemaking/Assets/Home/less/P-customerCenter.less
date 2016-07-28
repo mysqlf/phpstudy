@@ -1,0 +1,304 @@
+.user-panel{
+     line-height: 1.8em;
+
+	.panel-body{
+		
+		.name{
+		  font-size: 1.5em;
+		  font-weight: normal;
+		  color: #333;
+		  margin-bottom: 6px;
+
+		  .icon{
+		  	top: -2px;
+		  	margin-left:8px; 
+		  }
+		}
+	}
+}
+
+.content-panel .panel-body{
+	.title{
+	  position: relative;
+	  font-size: 1.2em;
+	  font-weight: normal;
+	  margin-bottom: 8px;
+	  color: #333;
+
+      &:before{
+      	.before(3px,15px);
+	      	position: absolute;
+	      	left: -10px;
+	        top: 3px;
+	      	background: @brand-color;
+      }
+
+	}
+	.tag{
+      	border-radius: 2px;
+      }
+
+}
+#P_customerCenter{
+	padding-bottom: 30px;
+
+	.lattice .lattice-el{
+		position: relative;
+	    height: 135px;
+	    overflow: hidden;
+
+	    &.error{
+		  	color: @error-color;
+		  }
+
+		&:before{
+			.before-sanjiao-top(8px,#90bd34);
+			bottom: 0;
+			right: 0;
+		}
+		.select-box{
+		  background: @brand-color;
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  text-align:left;
+
+
+
+		  li{
+
+             label.error{
+             	display: none !important;
+             }
+             label{
+             	line-height: 30px;
+			   font-size: 1.2em;
+             	padding: 5px 10px;
+             	display: block;
+             	width: 100%;
+             	color: #fff;
+
+             	.icon{
+             		float: right;
+             		top: 5px;
+
+             		&.active{
+             			.icon-check;
+             		} 
+             	}
+             }
+			  &:not(:last-child){
+			  	.border-bottom(rgba(255,255,255,.2))
+			  }
+		  }
+		  .translate3d(0,102%,0);
+		  .transition(.3s);
+	     }
+	     &.active{
+	     	.select-box{
+	     		.translate3d(0,0,0);
+	     	}
+	     }
+	}
+
+	.service{
+		line-height: 1.8em;
+		display: table-cell;
+	    padding-left: 10px;
+	    vertical-align: middle;
+	    height: 3em;
+	}
+	.comment{
+
+		textarea{
+			.border();
+			width: 100%;
+			height: 5em;
+			padding: 5px;
+			resize:none;
+		}
+		.tip-txt{
+			margin-bottom: 10px;
+		}
+		.add-img{
+
+			>div{
+				padding: 15px;
+				overflow: hidden;
+				position: relative;
+
+				.img-box{
+	                overflow: hidden;
+					img{
+							width: 100%;
+						}
+					.del-img{
+						  position: absolute;
+						  top: 5px;
+						  right: 0;
+						  z-index: 10;
+					}
+					.img-percentage{
+						  background: #fff;
+						  position: absolute;
+						  top: 50%;
+						  left: 0;
+						  right: 0;
+						  height: 56%;
+						  width: 56%;
+						  margin: -30% auto 0;
+						  text-align: center;
+						  padding-top: 25%;
+					}	
+
+				}
+			}
+			
+			.upload-btn{
+				position: absolute;
+				left: 0;
+				top: 0;
+			    font-size:50em;
+				opacity: 0;
+		}	
+		}
+		#upload-open{
+			width: 5em;
+			height:5em;
+			overflow: hidden;
+			margin-left: 1em;
+			background:#ccc url(../images/camera.png) no-repeat center;
+		
+		}
+
+	 .horizontal-r{
+	 	.right{
+	 		width: 6em;
+	 	}
+	 	.left{
+	 		
+	 		margin-right: 6em;
+	 	}
+	 }	
+	}
+.commented{
+	.split-line{
+		border:1px solid @border-color-light;
+		margin: 20px -10px;
+		height: 0;
+		line-height: 0;
+	}
+	.tip-txt{
+		padding: 10px;
+		background: #f5f5f5;
+		border: 1px solid @border-color-light;
+	}
+}	
+.select-wrap{
+	padding-bottom: 20px;
+	>.title{
+		padding: 10px 0;
+	    color: #555;
+	    font-size: 1.3em;
+
+
+		.end-word{
+           background: #f0c0e0;
+           padding:2px 5px;
+           color: #fff;
+           border-radius: 3px;
+		}
+	}
+}	
+	}
+.rank-tag{
+	background:@brand-color;
+	padding: 2px;
+	margin-top: 5px;
+    color: #fff;
+
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    line-height: 25px;
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+
+	.count{
+		display:inline-block;
+		.square(25px);
+		background: #fff;
+		border-radius: 50%;
+		color: @brand-color;
+		text-align: center;
+		font-style: normal;
+		margin-right: 5px;
+		font-size: 1.2em;
+		position: relative;
+		top: 1px;
+	}
+}
+.center-tab{
+	>li>a{
+		display: block;
+		text-align: center;
+		padding:8px;
+		font-size: 1.3em;
+		border:1px solid @brand-color;
+
+		&.active{
+			background:@brand-color;
+			color: #fff;
+		}
+	}
+}
+#P_customerCenter{
+	.icon-tanhao{
+		margin-left: 0;
+		margin-right: 3px;
+	}
+}
+.qipao-tip{
+	background: #fae0f0;
+	border-radius: 12px;
+	padding: 12px;
+	color: #f0a0c0;
+	line-height: 1.6em;
+	position: relative;
+	margin-top: 50px;
+
+	&:before{
+		display: block;
+		content: '';
+		.size(40px,22px); 
+		position: absolute;
+		top: -20px;
+        left: 5px;
+		background: url(../images/qipao.png) no-repeat;
+	}
+}
+
+#alert-form {
+	.place-txt{
+	  word-break: break-all;
+	  line-height: 1.8em;
+	  height: 32px;
+	}
+   .input-group{
+  	 table-layout: fixed;
+   }
+}
+
+#code-box{
+	.input-group-addon:last-child{
+		width: auto;
+	}
+}
+html .layermbox0 .layermchild{
+	max-width: 500px;
+}

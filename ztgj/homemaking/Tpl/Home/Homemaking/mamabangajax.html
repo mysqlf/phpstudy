@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Ajax无刷新分页</title>
+        <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            function page(id){    //page函数名 一定要和action中的第三个参数一致上面有
+                 var id = id;
+                    //$.get('Homemaking-mamabang2', {'p':id}, function(data){  //用get方法发送信息到UserAction中的user方法
+                    $.get('Homemaking-mamabangajax-page-'+id, function(data){  //用get方法发送信息到UserAction中的user方法
+                     $("#page").replaceWith("<div  id='page'>"+data+"</div>"); //page一定要和tpl中的一致
+                });
+             }
+            
+        </script>
+    </head>
+
+    <body>
+            <div id='page'>   <!--这里的page和下面js中的test要一致-->
+                    <volist id='list' name='list'>   <!--内容输出-->
+                    <{$list.fldId}>&nbsp;&nbsp;<{$list.fldName}><br/>
+            </volist>
+            <{$page}>  <!--分页输出-->
+        </div>
+        
+    </body>
+</html>

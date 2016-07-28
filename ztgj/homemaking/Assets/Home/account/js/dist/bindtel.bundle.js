@@ -1,0 +1,11 @@
+webpackJsonp([4],[/*!*****************************!*\
+  !*** ./js/entry/bindTel.js ***!
+  \*****************************/
+function(e,t,n){var i=n(7);i.init()},,,,,/*!*******************************!*\
+  !*** ./js/plug/verifyCode.js ***!
+  \*******************************/
+function(e,t,n){var i;i=function(e,t,i){var o=n(1),r=n(2),a={el:o(".get_verify"),telEl:o("#tel"),captchaEl:o("#captcha"),count:null,timer:parseInt(o("#time").val())||60,init:function(){var e=this;60!=e.timer&&e.beginCode()},disabledBtn:function(){return this.el.addClass("disabled"),this},enableBtn:function(){var e=this;return e.el.removeClass("disabled"),this},beginCode:function(){var e=this;return e.disabledBtn(),e.count=setInterval(function(){e.countSecond(e.timer)},1e3),this},getCode:function(){var e=this,t={phoneVal:e.telEl.val(),verifyCode:e.captchaEl.val()};return e.disabledBtn(),o.post("Account-getcode",t,function(t){1===t?(r.open({content:"您已经超过5次请求获取验证，请24小时后再尝试请求",time:3}),e.enableBtn(),e.el.trigger("codeFail",t)):t===!1||"false"===t?(e.enableBtn(),r.open({content:"验证码失效，请重新获取验证码",time:3})):(e.beginCode(),e.el.trigger("codeSuccess",t))},"json").fail(function(){e.beginCode()}),this},countSecond:function(e){var t=this;return 0!=e?(t.timer=e-1,t.el.text(t.timer+"s重新获取"),t.disabledBtn()):(clearInterval(t.count),t.timer=60,t.enableBtn(),t.el.text("重新获取")),this}};i.exports=a}.call(t,n,t,e),!(void 0!==i&&(e.exports=i))},,/*!****************************!*\
+  !*** ./js/page/bindtel.js ***!
+  \****************************/
+function(e,t,n){var i;i=function(e,t,i){var o=n(1);n(2);verifyCode=n(5),n(3),n(4);var r={init:function(){var e=this.validate();o(".get_verify").on("click",function(){e.element("#tel")&&verifyCode.getCode()}),o(".icon-return").on("click",function(){window.history.back(-1)})},validate:function(){var e=o("#bindtel-form").validate({rules:{phoneVal:{required:!0,istelephone:!0,number:!0,remote:{url:"Account-mobile",type:"post",async:!1,dataType:"json",data:{phoneVal:function(){return o("#tel").val()}}}}},messages:{phoneVal:{required:"请输入手机号",istelephone:"手机格式不正确",number:"手机格式不正确",remote:"手机号已被注册"}}});return e}};return r}.call(t,n,t,e),!(void 0!==i&&(e.exports=i))}]);
+//# sourceMappingURL=bindtel.bundle.js.map

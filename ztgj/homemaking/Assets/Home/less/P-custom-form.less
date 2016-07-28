@@ -1,0 +1,84 @@
+#P_custom_form {
+    &,
+    #custom_form {
+        height: 100%;
+    }
+}
+
+.sticky-footer {
+    .sticky-footer(83px);
+    @media (max-width: @screen-xs) {
+        margin-bottom: -77px;
+        &:after{
+        	height: 77px;
+        }
+    }
+}
+
+#custom_form {
+    .multiple-btn {
+        padding: 15px 0 !important;
+        .btn {
+            margin: 0 10px;
+        }
+    }
+    .demand-panel {
+        &>div {
+            padding-left: 15px;
+        }
+    }
+    .panel {
+        &>div {
+            border-bottom: 1px solid #f0f0f0;
+            .tag {
+                margin-right: 5px;
+                font-size: 1em;
+                position: relative;
+                &.active:before {
+                    .before-sanjiao-top(8px, @brand-color);
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .input-group-addon {
+        width: 40px;
+        .icon {
+            margin: 0;
+        }
+        .icon-arrow-down {
+            top: 0;
+        }
+    }
+    .input-group {
+        padding: 4px 0;
+        border-bottom: 0;
+        &.dn {
+            display: none;
+        }
+    }
+    .form-title {
+        font-size: 1.1em;
+        padding: 0 10px 10px;
+        color: #333;
+        font-weight: bold;
+    }
+    textarea.form-control {
+        line-height: 1.8em;
+        transition: .3s;
+    }
+}
+
+#get-code-btn {
+    padding: 0 15px;
+    margin: 0 8px;
+    line-height: 34px;
+    background: #ddd;
+    &.disabled,
+    &:disabled {
+        color: #999;
+        border-color: #eee;
+        pointer-events: none;
+    }
+}

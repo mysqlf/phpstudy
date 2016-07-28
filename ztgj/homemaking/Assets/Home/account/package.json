@@ -1,0 +1,26 @@
+{
+  "name": "permit",
+  "description": "智通通行证第二版",
+  "version": "2.0.0",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "license": "MIT",
+
+  "devDependencies": {
+    "css-loader": "^0.13.0",
+    "style-loader": "^0.13.0",
+    "autoprefixer-loader": "^3.1.0",
+    "uglify-js": "^2.5.0",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2"
+  }
+}

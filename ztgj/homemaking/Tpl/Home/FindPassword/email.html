@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no" >
+  <title>找回密码</title>
+  <link rel="stylesheet" href="Assets/Home/styles/screen.css">
+</head>
+<body class="login">
+   <i class="icon-email"></i>
+   <?php if($emailsign != 1): ?>
+   <p class="email_tip1">{$content}</p>
+   <p class="email_tip2">{$bindEmail}</p>
+   <p class="email_tip3"><a href="{$emailurl}">请查收</a></p>
+   <?php else: ?>
+   <p class="email_tip1">{$content}</p>
+   <p class="email_tip2">{$bindEmail}</p>
+   <p class="email_tip3"><a href="{$emailurl}">去点链接</a></p>
+   <?php endif; ?>
+</body>
+</html>

@@ -1,0 +1,40 @@
+//水平居中
+.marke-center(){
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.border(@color:@border-color,@size:1px,@type:solid){
+     border:@size @type @color;
+}
+.border-bottom(@color:@border-color,@size:1px,@type:solid){
+     border-bottom:@size @type @color;
+}
+.border-color(@color:@border-color){
+	border-bottom-color:@color;
+}
+
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.before(@width,@height,@content:''){
+   content: @content;
+   display: inline-block;
+   width: @width;
+   height: @height;
+}
+.sanjiao(@border:8px,@color){
+	  content: '';
+	  display: inline-block;
+	  width: 0;
+	  height: 0;
+	  border: @border solid transparent;
+}
+.before-sanjiao-top(@border:8px,@color){
+	.sanjiao(@border:8px,@color);
+	border-right-color: @color;
+    position: absolute;
+    border-bottom: 0;
+}

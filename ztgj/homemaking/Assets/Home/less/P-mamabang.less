@@ -1,0 +1,185 @@
+.public-box{
+	padding: 5px 10px;
+    z-index: 1000;
+    background: @brand-color;
+    width: 100%;
+    label.error{
+    	  color:#fff;
+    	  display: block;
+		  clear: both;
+		  padding: 5px 0 2px;
+    }
+	&.fixed{
+
+		width: 100%;
+		.horizontal {
+			.textarea{
+				border:1px solid @border-color-light;
+			}
+		}
+		
+	}
+
+	.horizontal{
+		.right{
+			width:4.5em;
+		}
+		.left{
+			margin-right: 5em;
+		}
+		.btn{
+			padding: 0;
+			height: 40px;
+			background: #90bd34;
+			color: #fff;
+			border: #90bd34;
+		}
+		.form-control{
+			padding: 5px;
+		}
+	}
+	
+}
+.shuoshuo-box{
+    
+    .sub-title{
+      background: none;
+	  border: 0;
+	  padding-bottom: 0;
+	  padding-top: 0;
+
+	  h2{
+	  	  font-size: 1.2em;
+		  font-weight: normal;
+		  color: #333;
+		  margin: 0;
+	  }
+    }
+
+	li{
+		margin-top: 10px;
+		line-height: 1.8em;
+		background: #fff;
+		padding: 10px;
+		border:1px solid @border-color;
+		color: #333; 
+
+		&.active{
+			border-color:@brand-color;
+			margin-top: 0;
+		}
+
+		.left{
+			width: 45px;
+
+		}
+		.right{
+			margin-left: 55px;
+            
+            >a{
+				display: block;
+			}
+			.title{
+				font-size: 1.3em;
+				margin-bottom: 2px;
+			}
+			
+		}
+		.zan-btn{
+              	.icon{
+              		.icon-heart2-gray;
+
+              	}
+              	&.isLike{
+              		.icon{
+	              		.icon-heart2-pink;
+	              	}
+              	}
+              }
+		.reply-box{
+			  padding: 8px;
+			  background: #f0f0f0;
+			  margin-top: 20px;
+			  position: relative;
+              
+              
+			  &:before{
+			  	.sanjiao(8px,#f0f0f0);
+				  border-width: 15px 8px;
+				  border-bottom-color: #f0f0f0;
+				  position: absolute;
+				  top: -30px;
+				  left: 20px;
+
+			  }
+		}
+		 .name{
+			  	font-size: 1.3em;
+			  	color:@brand-color;
+			  	margin-right: 10px;
+			  }
+		.header{
+			  border-bottom: 1px solid @border-color-light;
+			  margin-bottom: 10px;
+			  padding-bottom: 5px;
+
+			 
+
+			  
+			.pull-right{
+				margin-left: 15px;
+			}
+		}
+		.tag-author{
+			  	  background: #90bd34;
+				  color: #fff;
+				  padding: 3px;
+				  border-radius: 4px;
+				  line-height: 1em;
+				  margin-left: 5px;
+
+			  }
+		.reply-btn{
+			padding: 3px 5px 3px 1px;
+			border-radius: 3px;
+			line-height: 1.5em;
+		}
+		.footer{
+			margin-top: 10px;
+
+			.pull-right{
+				margin-left: 5px;
+			}
+			span{
+				color: #999;
+			}
+		}
+	}
+}
+#public-popup{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+.public-box2{
+	.textarea{
+
+      border-bottom: 1px solid @border-color-light;
+	  resize: none;
+	  height: 7em;
+	  padding: 10px;
+	  margin: 10px 0;
+    }
+    .location{
+    	padding: 0 10px;
+    }
+
+    label.error{
+    	padding: 10px;
+    	display: block;
+
+    }
+}
