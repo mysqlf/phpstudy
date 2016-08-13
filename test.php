@@ -34,7 +34,7 @@ $arr= array(1,2,3,4,5);
 #遍历数组,将数组内的每一个值按照函数内的方法进行运算,再返回
 #array_map所调用的函数有且只能有一个参数
 #print_r(array_map('myfoo',$arr));
-echo "<br>";
+#echo "<br>";
 
 function myfoo2($x,$y){
     if ($x>0) {
@@ -49,9 +49,9 @@ function myfoo2($x,$y){
 #array_reduce使用的函数参数只能有两个,第一个参数起始为空用于暂存结果,数组遍历赋值给第二个参数
 #且默认参数无效
 $arr= array(100,100,1,1,1,1);
-print_r(array_reduce($arr,'myfoo2'));
+#print_r(array_reduce($arr,'myfoo2'));
 
-echo "<br/>";
+#echo "<br/>";
 #从指定位置开始返回数据类似于Py中list切片
 #print_r(array_slice($arr,1));
 
@@ -66,5 +66,39 @@ function my_foo3($x){
 #所指定的方法参数只能有一个
 #根据指定方法筛选数组内的值
 #去掉返回未false的值
-print_r(array_filter($arr,'my_foo3'));
+#print_r(array_filter($arr,'my_foo3'));
+
+$tmps=123;
+/**
+ * [get_variable_name 获取变量的名字]
+ * @param  [] &$var  []
+ * @return [str]        
+ */
+function get_variable_name(&$var){
+    $tmp  = $var;
+    $var   = "tmp_exists_x" . mt_rand();//产生一个随机数
+    $name = array_search($var, $GLOBALS, TRUE);
+    $var   = $tmp;
+    return $name;
+}
+var_dump(get_defined_vars());#get_defined_vars()获取当前的符号表
+#$x=get_defined_vars($tmps);
+#var_dump($x);
+/*#var_dump($GLOBALS);
+$name=get_variable_name($tmps);
+#类似C指针的使用
+print_r(get_variable_name($name));
+#name
+echo "<br/>";
+print_r(get_variable_name($$name));
+#tmps
+echo "<br/>";
+print_r(get_variable_name($$$name));
+#123
+echo "<br/>";
+print_r($name);
+#tmps
+echo "<br/>";
+print_r($$name);
+#123*/
 ?>
