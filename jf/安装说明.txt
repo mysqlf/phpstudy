@@ -1,0 +1,17 @@
+﻿运行环境：PHP5.3以上，mysql5
+
+1、将程序上传至主机根目录
+2、将本文件同目录下的 jifenduihuan.sql  sql文件导入mysql数据库
+3、修改Common\Conf\config.php
+	'DB_NAME'   => '', // 数据库名
+    'DB_USER'   => '', // 用户名
+    'DB_PWD'    => '', // 密码
+修改对应的mysql数据库参数
+
+后台管理地址：网址+admin.PHP 
+//超级管理员
+登录帐号：super	
+登陆密码：123456
+//普通管理员
+登录帐号：admin
+登陆密码：123456

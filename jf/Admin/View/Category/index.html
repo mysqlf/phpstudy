@@ -1,0 +1,53 @@
+[include file="Inc/header" /]
+[include file="Left/category" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Category/index')}" class="active"><i class="icon-th-large"></i> 分类列表</a>[eq name='uid' value='1']<a href="{:U('Category/add',array('id'=>0))}"><i class="icon-plus"></i> 添加顶级分类</a>[/eq]</div>
+        <div class="content">
+            <table class="table table-border table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-c" width="20px">ID</th>
+                        [if condition="authcheck('Model/index',$uid)"]<th width="80px" class="text-c">模型</th>[/if]
+                        <th>名称</th>
+                        <th class="text-c" width="50px">排序</th>
+                        <th width="300px">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    [volist name="data" id="vo"]
+                    <tr>
+                        <td class="text-c">{$vo.id}</td>
+                        [if condition="authcheck('Model/index',$uid)"]<td class="text-c">{:r_model_name($vo['mid'])}</td>[/if]
+                        <td>{$vo.cname}</td>
+                        <td class="text-c">
+                            <a onclick="mod_sort({$vo.id})" href="javascript:;">{$vo.sort}</a>
+                        </td>
+                        <td>
+                            [if condition="($vo.pid eq 0) AND ($vo.mid eq 2)"]<a href="{:U('Category/add',array('id'=>$vo['id']))}" class="btn btn-secondary radius size-S" type="button">添加子类</a>　[/if]
+                            <a href="{:U('Category/mod',array('id'=>$vo['id']))}" class="btn btn-success radius size-S" type="button">修改</a>　
+                            [if condition="($vo.pid neq 0) AND ($vo.mid eq 2)"]<a onclick="confirm('{:U('Category/del',array('id'=>$vo['id']))}','确定要删除吗？')" class="btn btn-danger radius size-S" type="button">删除</a>[/if]
+                        </td>
+                    </tr>
+                    [/volist]
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script>
+    var modsorturl = "{:U('Category/sort')}";
+    function mod_sort(id){
+        layer.prompt({title: '修改序号'},function(val){
+            $.post(modsorturl, {id:id,sort:val},function(data){
+                if (data.status==1) {
+                    layer.msg(data.info,{icon: 6});
+                }else{
+                    layer.msg(data.info,{icon: 5});
+                    layer.close(index);
+                }
+            });
+            location.reload();
+        });
+    }
+</script>
+[include file="Inc/footer" /]

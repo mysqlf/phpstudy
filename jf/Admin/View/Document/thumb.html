@@ -1,0 +1,75 @@
+[include file="Inc/header" /]
+[include file="Left/document" /]
+<style type="text/css">
+.thumb_list{width:150px;height:190px;float: left;margin-right:10px;margin-bottom: 10px;overflow: hidden;border:1px solid #ccc;}
+.thumb_list .img{width: 100%;height: 120px;line-height: 120px;text-align: center;position: relative;}
+.thumb_list .img img{max-height: 100px;max-width: 150px;}
+.thumb_list .tit{width:100%;height:22px;line-height:22px;text-align:center;border-top:1px solid #ddd;font-size: 12px;}
+.thumb_list .cate{width:100%;height:20px;line-height:20px;text-align:center;border-top:1px solid #ddd;font-size: 12px;color:#888;}
+.thumb_list .mark{width:100%;height:25px;line-height:25px;text-align:center;border-top:1px solid #ddd;font-size: 12px;}
+.thumb_list .img .push{display: block;width: 35px;height: 35px;position: absolute;top:5px;right: 5px;border-radius: 35px;
+    background-color: red;overflow: hidden;line-height:35px;font-size: 12px;color: #fff;}
+</style>
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Document/index',array('mid'=>$mdata['id']))}" class="active"><i class="icon-th-large"></i> {:r_model_name($mdata['id'])}列表</a><a href="{:U('Document/add',array('mid'=>$mdata['id']))}"><i class="icon-plus"></i> 添加{:r_model_name($mdata['id'])}</a></div>
+        <div class="content">
+            [notempty name="catelist"]
+            <div class="category">
+                <div class="menu"><i class="icon-angle-down"></i> 选择分类</div>
+                <div class="cate_son_menu">
+                    [volist name="catelist" id="vo"]
+                    <a href="{:U('Document/index',array('mid'=>$mdata['id'],'cid'=>$vo['id']))}"><i class="icon-angle-right"></i> {$vo.name}</a>
+                    [/volist]
+                </div>
+            </div>
+            [/notempty]
+            <div class="search">
+                <i class="icon-search"></i>
+                <form action="{:U('Document/search')}" method="post" accept-charset="utf-8">
+                <input type="text" placeholder=" 输入关键词搜索" name="keyword" class="input-text radius le4">
+                <input type="hidden" name="mid" value="{$mdata.id}">
+                <input class="btn btn-primary le1 radius" type="submit" value="搜索">
+                </form>
+            </div>
+            <table class="table table-border table-bordered table-striped table-hover">
+                <form id="form1" action="{:U('Document/delmore')}" method="post" accept-charset="utf-8">
+                <input name="mid" type="hidden" value="{$mdata.id}">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="width:980px;">
+                            [volist name="data" id="vo" mod="5"]
+                            <div class="thumb_list">
+                                <div class="img"><img src="{$vo.thumb|thumb}">[eq name='vo.push' value='1']<span class="push">推荐</span>[/eq]</div>
+                                <div class="tit"><input type="checkbox" name="id[]" value="{$vo.id}"> {$vo.title|cut=10}</div>
+                                <div class="cate">分类：[present name="vo.cid"]{:r_category_name($vo['cid'])}[/present]</div>
+                                <div class="mark"><a href="{:U('Document/mod',array('id'=>$vo['id'],'mid'=>$mdata['id']))}"><i class="icon-pencil2"></i> 修改</a>　<a onclick="confirm('{:U('Document/del',array('id'=>$vo['id'],'mid'=>$mdata['id']))}','确定要删除吗？')"><i class="icon-times-circle"></i> 删除</a></div>
+                            </div>
+                            [/volist]
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="100">
+                            <a href="javascript:;" class="btn btn-secondary radius size-MINI" onClick="CheckAll()">全选/反选</a> 
+                            <input id="submit" class="btn btn-warning radius size-MINI" type="button" value="删除选中">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10"><div class="paging">{$paging}</div></td>
+                    </tr>
+                </tbody>
+                </form>
+            </table>
+        </div>
+    </div>
+<script type="text/javascript">
+$('#submit').click(function(){
+    layer.confirm('确定要删除选中的内容吗？', {icon: 3}, function(index){
+        layer.close(index);
+        $("#form1").submit();
+    });
+});
+</script>
+[include file="Inc/footer" /]

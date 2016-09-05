@@ -1,0 +1,44 @@
+[include file="Inc/header" /]
+[include file="Left/Member" /]
+    <!-- bdright -->
+    <div id="bdright">
+         <div class="site"><a class="active" href="{:U('Log/score_log')}"><i class="icon-th-large"></i> 积分日志</a></div>
+        <div class="content">
+            <div class="search">
+                <i class="icon-search"></i>
+                <form action="{:U('Log/score_log')}" method="post" accept-charset="utf-8">
+                    <input type="text" placeholder=" 输入用户名或姓名搜索" name="keyword" class="input-text radius le4">
+                    <input class="btn btn-primary le1 radius" type="submit" value="搜索">
+                </form>
+            </div>
+            <table class="table table-border table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>姓名</th>
+                        <th>时间</th>
+                        <th>积分</th>
+                        <th>备注</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    [volist name="data" id="vo"]
+                    <tr>
+                        <th><a title="点击查看用户信息" href="{:U('Member/info',array('id'=>$vo['member_id']))}">{$vo.member_username}</a></th>
+                        <th><a title="点击查看用户信息" href="{:U('Member/info',array('id'=>$vo['member_id']))}">{$vo.member_name}</a></th>
+                        <th>{$vo.time|date2=1}</th>
+                        <td>[eq name="vo.type" value="1"]<span class="green">+{$vo.score}</span>[/eq][eq name="vo.type" value="-1"]<span class="red">-{$vo.score}</span>[/eq]</td>
+                        <th>{$vo.note}</th>
+                        <td>　
+                            <a onclick="confirm('{:U('Log/score_del',array('id'=>$vo['id']))}','确定要删除吗？')" class="btn btn-danger radius size-S">删除</a></td>
+                    </tr>
+                    [/volist]
+                    <tr>
+                        <td colspan="20"><div class="paging">{$paging}</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+[include file="Inc/footer" /]

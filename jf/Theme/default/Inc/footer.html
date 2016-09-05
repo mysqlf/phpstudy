@@ -1,0 +1,62 @@
+    <div class="footer">
+        <div class="box">
+            <div class="footer_nav">
+                <a href="__ROOT__/">首页</a><span>|</span>
+                <a href="{:U('Index/page',array('id'=>9))}">关于我们</a><span>|</span>
+                <a href="{:U('Index/page',array('id'=>11))}">隐私声明</a><span>|</span>
+                <a href="{:U('Index/page',array('id'=>10))}">法律声明</a><span>|</span>
+                <a href="{:U('Index/page',array('id'=>6))}">会员规则</a>
+            </div>
+            <div class="copy">
+                {$block.copy}
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+// 兑换滚动
+try{ 
+    var isStoped = false; 
+    var oScroll = document.getElementById("scrollWrap"); 
+    with(oScroll){ 
+        noWrap = true; 
+    } 
+
+    oScroll.onmouseover = new Function('isStoped = true'); 
+    oScroll.onmouseout = new Function('isStoped = false'); 
+
+    var preTop = 0; 
+    var curTop = 0; 
+    var stopTime = 0; 
+    var oScrollMsg = document.getElementById("scrollMsg");
+
+    oScroll.appendChild(oScrollMsg.cloneNode(true)); 
+    init_srolltext();
+    
+}catch(e){} 
+function init_srolltext(){ 
+    oScroll.scrollTop = 0; 
+    setInterval('scrollUp()', 15); 
+}
+function scrollUp(){ 
+    if(isStoped)
+    return; 
+    curTop += 1; 
+    if(curTop == 19){ 
+        stopTime += 1; 
+        curTop -= 1; 
+        if(stopTime == 180){ 
+            curTop = 0; 
+            stopTime = 0; 
+        } 
+    }else{ 
+        preTop = oScroll.scrollTop; 
+        oScroll.scrollTop += 1; 
+        if(preTop == oScroll.scrollTop){ 
+            oScroll.scrollTop = 0; 
+            oScroll.scrollTop += 1; 
+        } 
+    } 
+}
+</script>
+</body>
+</html>

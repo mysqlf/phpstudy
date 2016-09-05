@@ -1,0 +1,38 @@
+[include file="Inc/header" /]
+[include file="Left/member" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Member/index')}"><i class="icon-th-large"></i> 会员列表</a><a href="{:U('Member/add')}"><i class="icon-plus"></i> 添加会员</a><a class="active" href="{:U('Member/import')}"><i class="icon-arrow-circle-o-up"></i> 导入会员</a><a href="{:U('Member/import2')}"><i class="icon-arrow-circle-o-up"></i> 导入积分</a></div>
+        <div class="content">
+            <form action="#" method="post" enctype="multipart/form-data">
+            <div id="tab_form" class="HuiTab">
+                <div class="tabBar cl"><span>基础</span></div>
+                <!-- 基础 -->
+                <div class="tabCon">
+                    <table class="table table-border table-bordered table-hover radius">
+                        <tr>
+                            <th width="120px">上传表格</th>
+                            <td>
+                                <input type="file" name="member" accept=".xls" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="120px">下载格式</th>
+                            <td>
+                                <a href="__ROOT__/Uploads/xls/import_member_template.xls">点击下载导入会员模板</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th width="120px">说明</th>
+                            <td>
+                                (会员初始密码：888888，该密码可以在 根目录\Common\Conf\config.php文件修改)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="submit_btn"><input class="btn btn-primary le1 radius" type="submit" value="提交"></div>
+            </form>
+        </div>
+    </div>
+[include file="Inc/footer" /]

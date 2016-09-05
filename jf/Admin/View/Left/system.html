@@ -1,0 +1,32 @@
+    <!-- bdleft -->
+    <div id="bdleft">
+        <ul>
+            <li class="item">
+                <div class="menu"><i class="icon-gears"></i>系统设置<b><i class='icon-angle-right'></i></b></div>
+                <div class="info">
+                    <a href="{:U('System/setting')}"><div class="sonmenu"><i class="icon-caret-right"></i> 前台设置</div></a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="item">
+                <div class="menu"><i class="icon-male"></i>管理员<b><i class='icon-angle-right'></i></b></div>
+                <div class="info">
+                    [if condition="authcheck('Admin/index',$uid)"]<a href="{:U('Admin/index')}"><div class="sonmenu"><i class="icon-caret-right"></i> 管理员列表</div></a>[/if]
+                    [if condition="authcheck('Auth/role',$uid)"]<a href="{:U('Auth/role')}"><div class="sonmenu"><i class="icon-caret-right"></i> 角色分组</div></a>[/if]
+                    [if condition="authcheck('Auth/rule',$uid)"]<a href="{:U('Auth/rule')}"><div class="sonmenu"><i class="icon-caret-right"></i> 权限列表</div></a>[/if]
+                    <a href="{:U('Admin/modpass')}"><div class="sonmenu"><i class="icon-caret-right"></i> 修改密码</div></a>
+                    <a href="{:U('Admin/modinfo')}"><div class="sonmenu"><i class="icon-caret-right"></i> 个人资料</div></a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="item">
+                <div class="menu"><i class="icon-cloud"></i>数据库<b><i class='icon-angle-right'></i></b></div>
+                <div class="info">
+                    <a href="{:U('dbbak/index')}"><div class="sonmenu"><i class="icon-caret-right"></i> 数据表列表</div></a>
+                    <a href="{:U('dbbak/file')}"><div class="sonmenu"><i class="icon-caret-right"></i> 备份文件列表</div></a>
+                </div>
+            </li>
+        </ul>
+    </div><!-- /bdleft -->

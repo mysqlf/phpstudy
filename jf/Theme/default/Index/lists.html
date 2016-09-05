@@ -1,0 +1,62 @@
+[include file="Inc/header" /]
+    <div class="box">
+        <!-- user center -->
+        <div class="p_user_center fl oh">
+            [include file="Inc/login" /]
+        </div>
+        <!-- p_right -->
+        <div class="p_right fr oh">
+            <!--<div class="p_ad cl oh"><img src="__IMG__/p_ad01.jpg" alt="慧捷积分兑换"></div>-->
+            <div class="p_content cl oh">
+                <div class="choose">
+                    <div class="jf"><span>　　积分：</span>
+                        <a [empty name="score1"]class="active"[/empty] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>0,'score2'=>0))}">不限</a>
+                        <a [eq name="score1" value="1"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>1,'score2'=>99))}">1-99</a>
+                        <a [eq name="score1" value="100"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>100,'score2'=>199))}">100-199</a>
+                        <a [eq name="score1" value="200"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>200,'score2'=>299))}">200-299</a>
+                        <a [eq name="score1" value="300"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>300,'score2'=>399))}">300-399</a>
+                        <a [eq name="score1" value="400"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>400,'score2'=>499))}">400-499</a>
+                        <a [eq name="score1" value="500"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>$level,'score1'=>500,'score2'=>9999))}">500以上</a>
+                    </div>
+                    <div class="pl">
+                        <span>　　品类：</span>
+                        <a [empty name="cid"]class="active"[/empty] href="{:U('Index/lists',array('cid'=>0,'level'=>$level,'score1'=>$score1,'score2'=>$score2))}">不限</a>
+                        [scate pid="1"]
+                        <a [eq name="vo.id" value="$cid"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$vo['id'],'level'=>$level,'score1'=>$score1,'score2'=>$score2))}">{$vo.name}</a>
+                        [/scate]
+                    </div>
+                    <div class="dj"><span>会员等级：</span>
+                        <a [empty name="level"]class="active"[/empty] href="{:U('Index/lists',array('cid'=>$cid,'level'=>0,'score1'=>$score1,'score2'=>$score2))}">不限</a>
+                        <a [eq name="level" value="1"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>1,'score1'=>$score1,'score2'=>$score2))}">普通会员</a>
+                        <a [eq name="level" value="2"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>2,'score1'=>$score1,'score2'=>$score2))}">银牌会员</a>
+                        <a [eq name="level" value="3"]class="active"[/eq] href="{:U('Index/lists',array('cid'=>$cid,'level'=>3,'score1'=>$score1,'score2'=>$score2))}">金牌会员</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p_content cl oh">
+
+                [volist name="data" id="vo"]
+                <div class="p_good_list gi_1" [in name="i" value="4,8,12,16,20,24"]style="margin-right:0;float:right;"[/in]>
+                    <div class="img"><a href="{:U('Index/msg',array('id'=>$vo['id']))}"><img src="{$vo.thumb|thumb}" alt="{$vo.title}" title="{$vo.title}"></a></div>
+                    <div class="tit"><span class="t1">{$vo.title|cut=10}</span><span class="t2"><span class="num">{$vo.score} </span>积分</span></div>
+                    <a href="{:U('Index/msg',array('id'=>$vo['id']))}"><div class="buy">立即兑换</div></a>
+                </div>
+                [/volist]
+                <div class="paging">{$paging}</div>
+            </div>
+        </div>
+        <div class="p_left_goods fl oh">
+            <div class="tit"></div>
+            <div class="con">
+                [loop table="Doc_product" limit="3"]
+                <div class="glist">
+                    <div class="img"><a href="{:U('Index/msg',array('id'=>$vo['id']))}"><img src="{$vo.thumb|thumb}" alt="{$vo.title}" title="{$vo.title}"></a></div>
+                    <div class="title">{$vo.title|cut=12}</div>
+                </div>
+                [/loop]
+            </div>
+            <div class="bot"></div>
+        </div>
+    </div>
+    <div style="height:5px;clear:both;"></div>
+[include file="Inc/footer" /]

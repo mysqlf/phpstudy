@@ -1,0 +1,27 @@
+[include file="Mob/header" /]
+<header data-am-widget="header" class="am-header am-header-default">
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            登录系统
+        </a>
+    </h1>
+</header>
+
+<div style="clear:both;margin-top:30%;"></div>
+<div class="am-container">
+    <form id="form1" action="#" method="post" accept-charset="utf-8">
+        <div class="am-input-group">
+            <span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+            <input type="text" name="username" class="am-form-field" placeholder="用户名" datatype="*" nullmsg="用户名不能为空">
+        </div>
+        <div style="clear:both;height: 20px;"></div>
+        <div class="am-input-group">
+            <span class="am-input-group-label"><i class="am-icon-lock am-icon-fw"></i></span>
+            <input type="password" name="password" class="am-form-field" placeholder="密码" datatype="*" nullmsg="密码不能为空">
+        </div>
+        <div style="clear:both;height: 20px;"></div>
+        <button type="submit" class="am-btn am-btn-primary am-btn-block">立即登录</button>
+    </form>
+</div>
+<div style="clear:both;margin-top:20%;"></div>
+[include file="Mob/footer" /]

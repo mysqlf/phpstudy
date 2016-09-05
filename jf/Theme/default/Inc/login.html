@@ -1,0 +1,26 @@
+<div style="height:49px;clear:both;background: none;"></div>
+<div style="height:11px;clear:both;background: white;width: 96%;margin: 0 auto;"></div>
+[empty name="mbinfo"]
+<div class="login">
+<form class="form-1" id="myform1" action="{:U('Index/login')}" method="post" accept-charset="utf-8">
+    <input type="text" name="username" fs="请填写用户名" datatype="*" nullmsg="用户名不能为空">
+    <input type="password" name="password" placeholder="密码">
+    <input type="submit" value=" " title="登录">
+</form>
+    <a href="{:U('Index/page',array('id'=>8))}" title="忘记密码"></a>
+</div>
+[else/]
+<div class="user_info">
+    <p>账户：<a href="{:U('Member/index')}">{$mbinfo.username}</a></p>
+    <p>姓名：{$mbinfo.name}</p>
+    <p>当前积分：{$mbinfo.score}</p>
+    <p>登录时间：{$mbinfo.last_login_time|date2}</p>
+    <div class="log_out"><a href="{:U('Index/logout')}">退出平台</a></div>
+</div>
+[/empty]
+<div style="height:15px;clear:both;background: white;width: 96%;margin: 0 auto"></div>
+<a href="{:U('Cart/index')}"><div class="cart">
+    [notempty name="mbinfo"]
+    <span>{$cartnum}</span>
+    [/notempty]
+</div></a>

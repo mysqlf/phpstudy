@@ -1,0 +1,78 @@
+[include file="Inc/header" /]
+[include file="Left/model" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Model/index')}"><i class="icon-th-large"></i> 模型列表</a><a href="{:U('Field/index',array('mid'=>$mid))}" class="active"><i class="icon-bars"></i> [{:r_model_name($mid)}]字段列表</a><a href="{:U('Field/add',array('mid'=>$mid))}"><i class="icon-plus"></i> 添加[{:r_model_name($mid)}]字段</a></div>
+        <div class="content">
+            <table class="table table-border table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-c" width="40px">模型</th>
+                        <th width="80px">名称</th>
+                        <th width="50px">标识</th>
+                        <th class="text-c" width="80px">类型</th>
+                        <th class="text-c" width="60px">排序</th>
+                        <th class="text-c" width="40px">状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    [volist name="data" id="vo"]
+                    <tr>
+                        <td class="text-c">{:r_model_name($vo['mid'])}</td>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.name}</td>
+                        <td class="text-c" >
+                        [switch name="vo.type"]
+                            [case value="1"]数字[/case]
+                            [case value="2"]字符串[/case]
+                            [case value="3"]文本区域[/case]
+                            [case value="4"]下拉框选择[/case]
+                            [case value="5"]富文本编辑器[/case]
+                            [case value="6"]单文件上传[/case]
+                            [case value="7" ]多文件上传[/case]
+                            [case value="8"]选择分类[/case]
+                            [case value="9"]日期时间[/case]
+                            [case value="10"]单选按钮[/case]
+                            [case value="11"]简单编辑器[/case]
+                            [case value="12"]城市选择器[/case]
+                            [default/]<span class="red">错误</span>
+                        [/switch]
+                        </td>
+                        <td class="text-c">
+                            <a onclick="mod_sort({$vo.id})" href="javascript:;">{$vo.sort}</a>
+                        </td>
+                        <td class="text-c" >
+                            [eq name="vo.status" value="1"]
+                            <a onclick="ajaxjump('{:U('Field/isno_status',array('id'=>$vo['id'],'mid'=>$mid,'s'=>0))}')" href="javascript:;"><img src="__IMG__/ico_green.png" title="点击禁用"></a>
+                            [else/]
+                            <a onclick="ajaxjump('{:U('Field/isno_status',array('id'=>$vo['id'],'mid'=>$mid,'s'=>1))}')" href="javascript:;"><img src="__IMG__/ico_red.png" title="点击启用"></a>
+                            [/eq]
+                        </td>
+                        <td>
+                            <a href="{:U('Field/mod',array('id'=>$vo['id'],'mid'=>$mid))}" class="btn btn-success radius size-S" type="button">修改</a>　
+                            <input onclick="confirm('{:U('Field/del',array('id'=>$vo['id'],'mid'=>$vo['mid'],'name'=>$vo['name']))}','确定要删除吗？')" class="btn btn-danger radius size-S" type="button" value="删除">
+                        </td>
+                    </tr>
+                    [/volist]
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script>
+    var modsorturl = "{:U('Field/sort')}";
+    function mod_sort(id){
+        layer.prompt({title: '修改序号'},function(val){
+            $.post(modsorturl, {id:id,sort:val},function(data){
+                if (data.status==1) {
+                    layer.msg(data.info,{icon: 6});
+                }else{
+                    layer.msg(data.info,{icon: 5});
+                    layer.close(index);
+                }
+            });
+            location.reload();
+        });
+    }
+</script>
+[include file="Inc/footer" /]

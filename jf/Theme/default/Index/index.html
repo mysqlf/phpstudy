@@ -1,0 +1,83 @@
+[include file="Inc/header" /]
+    <div class="box">
+        <!-- category -->
+        <div class="category fl">
+            <div style="height:48px;clear:both;"></div>
+            [scate pid="1" limit="6"]
+            <li>
+                <a class="menu" href="{:U('Index/lists',array('cid'=>$vo['id']))}">{$vo.name}</a>
+                [neq name="vo.id|is_scate" value="0"]
+                <div class="son_nav">
+                    [scate pid='vo.id']
+                    <a href="{:U('Index/lists',array('cid'=>$vo['id']))}">{$vo.name}</a>
+                    [/scate]
+                </div>
+                [/neq]
+            </li>
+            [/scate]
+        </div>
+        <!-- banner -->
+        <script type="text/javascript" src="__IMG__/jquery.superslide.js"></script>
+        <div class="banner fl oh">
+             <ul class="banner_img">
+                [loop table="Doc_banner" where="cid=20" limit="10"]
+                <li><a href="{$vo.link}"><img src="{$vo.thumb|img}" alt="{$vo.title}" title="{$vo.title}"style="height: 340px;"/></a></li>
+                [/loop]
+            </ul>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+            <div class="num">
+                <ul></ul>
+            </div>
+            <script type="text/javascript">
+            /*鼠标移过某个按钮 高亮显示*/
+            $(".prev,.next").hover(function(){
+                $(this).fadeTo("show",0.7);
+            },function(){
+                $(this).fadeTo("show",0.1);
+            })
+            $(".banner").slide({ titCell:".num ul" , mainCell:".banner_img" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+            </script>
+        </div>
+        <!-- user center -->
+        <div class="h_user_center fr oh">
+            [include file="Inc/login" /]
+        </div>
+    </div>
+    <div style="height:5px;clear:both;"></div>
+    <div class="box push cl oh" style="width: 1045px;;border: 1px solid #d1d1d1;margin:20px auto;background:white;">
+        <div class="good gt_1" style="width:25%;"><a class="menu active" onclick="choosepush(1)">大家都喜欢</a></div>
+        <div class="good gt_2" style="width:25%;"><a class="menu" onclick="choosepush(2)">最新</a></div>
+        <div class="good gt_3" style="width:25%;"><a class="menu" onclick="choosepush(3)">推荐</a></div>
+        <div class="good gt_4" style="width:25%;"><a class="menu" onclick="choosepush(4)">特价</a></div>
+        <div style="height:5px;clear:both;"></div>
+        [loop table="Doc_product" limit="16"]
+        <div class="good_info gi_1" [in name="i" value="4,8,12,16,20,24"]style="margin-right:0;float:right;"[/in]>
+            <div class="img"><a href="{:U('Index/msg',array('id'=>$vo['id']))}"><img src="{$vo.thumb|thumb}" alt="{$vo.title}" title="{$vo.title}"></a></div>
+            <div class="tit"><span class="t1">{$vo.title|cut=12}</span><span class="t2"><span class="num">{$vo.score} </span>积分</span></div>
+            <a href="{:U('Index/msg',array('id'=>$vo['id']))}"><div class="buy">立即兑换</div></a>
+        </div>
+        [/loop]
+        [loop table="Doc_product" limit="16"]
+        <div class="good_info gi_2" [in name="i" value="4,8,12,16,20,24"]style="margin-right:0;float:right;"[/in]>
+            <div class="img"><a href="{:U('Index/msg',array('id'=>$vo['id']))}"><img src="{$vo.thumb|thumb}" alt="{$vo.title}" title="{$vo.title}"></a></div>
+            <div class="tit"><span class="t1">{$vo.title|cut=12}</span><span class="t2"><span class="num">{$vo.score} </span>积分</span></div>
+            <a href="{:U('Index/msg',array('id'=>$vo['id']))}"><div class="buy">立即兑换</div></a>
+        </div>
+        [/loop]
+        [loop table="Doc_product" where="push=2" limit="16"]
+        <div class="good_info gi_3" [in name="i" value="4,8,12,16,20,24"]style="margin-right:0;float:right;"[/in]>
+            <div class="img"><a href="{:U('Index/msg',array('id'=>$vo['id']))}"><img src="{$vo.thumb|thumb}" alt="{$vo.title}" title="{$vo.title}"></a></div>
+            <div class="tit"><span class="t1">{$vo.title|cut=12}</span><span class="t2"><span class="num">{$vo.score} </span>积分</span></div>
+            <a href="{:U('Index/msg',array('id'=>$vo['id']))}"><div class="buy">立即兑换</div></a>
+        </div>
+        [/loop]
+        [loop table="Doc_product" where="push=3" limit="16"]
+        <div class="good_info gi_4" [in name="i" value="4,8,12,16,20,24"]style="margin-right:0;float:right;"[/in]>
+            <div class="img"><a href="{:U('Index/msg',array('id'=>$vo['id']))}"><img src="{$vo.thumb|thumb}" alt="{$vo.title}" title="{$vo.title}"></a></div>
+            <div class="tit"><span class="t1">{$vo.title|cut=12}</span><span class="t2"><span class="num">{$vo.score} </span>积分</span></div>
+            <a href="{:U('Index/msg',array('id'=>$vo['id']))}"><div class="buy">立即兑换</div></a>
+        </div>
+        [/loop]
+    </div>
+[include file="Inc/footer" /]

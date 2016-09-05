@@ -1,0 +1,61 @@
+[include file="Mob/header" /]
+[include file="Mob/naver" /]
+<div style="clear:both;height:10px;"></div>
+<div class="am-container">
+    <form id="form1" action="#" method="post" accept-charset="utf-8">
+    <table class="am-table am-table-bordered am-table-striped am-table-compact">
+        <tr>
+            <th width="80px">会员等级</th>
+            <td>{:form_radio('level',$data['level'],'普通:1,银牌:2,金牌:3')}</td>
+        </tr>
+        <tr>
+            <th>用户名</th>
+            <td><input type="text" name="username" class="input-text radius le4" datatype="*" nullmsg="用户名必须填写" value="{$data.username}" disabled></td>
+        </tr>
+        <tr>
+            <th>积分</th>
+            <td><input type="text" name="score" class="input-text radius le4" value="{$data.score}" datatype="n" errormsg="积分必须为数字"></td>
+        </tr>
+        <tr>
+            <th>姓名</th>
+            <td><input type="text" name="name" class="input-text radius le4" value="{$data.name}" datatype="/^[\u4e00-\u9fa5]{2,4}$/" errormsg="姓名不正确"><span class="notic"></span></td>
+        </tr>
+        <tr>
+            <th>性别</th>
+            <td>{:form_radio('sex',$data['sex'],"男:男,女:女")}</td>
+        </tr>
+        <tr>
+            <th>年龄</th>
+            <td><input type="text" name="age" class="input-text radius le4" value="{$data.age}"><span class="notic"></span></td>
+        </tr>
+        <tr>
+            <th>手机号码</th>
+            <td><input type="text" name="phone" class="input-text radius le4" datatype="m" errormsg="手机号码不正确" value="{$data.phone}"></td>
+        </tr>
+        <tr>
+            <th>身份证号</th>
+            <td><input type="text" name="idcard" class="input-text radius le4" value="{$data.idcard}"><span class="notic"></span></td>
+        </tr>
+        <tr>
+            <th>邮寄地址</th>
+            <td><input type="text" name="address" class="input-text radius le4" value="{$data.address}" datatype="*" nullmsg="邮寄地址必须填写"></td>
+        </tr>
+        <tr>
+            <th>登录密码</th>
+            <td><input type="password" name="password" class="input-text radius le4" datatype="*6-16" nullmsg="请设置密码" errormsg="密码长度在6~16位之间" ignore="ignore"></td>
+        </tr>
+        <tr>
+            <th>重复密码</th>
+            <td><input type="password" name="password2" class="input-text radius le4" datatype="*" recheck="password" nullmsg="请再输入一次密码" errormsg="您两次输入的账号密码不一致" ignore="ignore"></td>
+        </tr>
+        <tr>
+            <td colspan="6" class="am-text-center">
+                <input type="hidden" name="id" value="{$data.id}">
+                <button type="submit" class="am-btn am-btn-primary">　提交　</button>　　　
+                <a class="am-btn am-btn-warning" onclick="javascript :history.back(-1);">　返回　</a>
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+[include file="Mob/footer" /]

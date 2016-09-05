@@ -1,0 +1,23 @@
+[include file="Inc/header" /]
+[include file="Left/System" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Dbbak/index')}" class="active"><i class="icon-th-large"></i> 数据库</a><a onclick="ajaxjump('{:U('dbbak/index',array('type'=>1))}')" href="javascript:;"><i class="icon-truck"></i>  备份数据库</a></div>
+        <div class="content">
+            <table class="table table-border table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>数据表</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    [volist name="dblist" id="vo"]
+                    <tr>
+                        <td>{$vo}</td>
+                    </tr>
+                    [/volist]
+                </tbody>
+            </table>
+        </div>
+    </div>
+[include file="Inc/footer" /]
