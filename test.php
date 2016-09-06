@@ -1,8 +1,8 @@
 <?php
-$width=array('B'=>23,'C'=>12,'D'=>10,'E'=>23,'F'=>10,'G'=>10,'H'=>13);
+/*$width=array('B'=>23,'C'=>12,'D'=>10,'E'=>23,'F'=>10,'G'=>10,'H'=>13);
 foreach ($width as $key => $value) {
     var_dump($key,$value);
-}
+}*/
 $arr1=array(
     /*'0'=>array('a'=>2,'b'=>3),
     '1'=>array('a'=>2,'b'=>3),
