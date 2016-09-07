@@ -93,6 +93,7 @@ print_r($one->checklevel());
 echo "\n";
 print_r($one->getstatus());
 echo "\n";
+phpinfo();
 /*$one->setlevel(2);
 print_r($one->checklevel());
 echo "\n";
