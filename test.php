@@ -1,4 +1,5 @@
 <?php
+
 $arr1=array(
     /*'0'=>array('a'=>2,'b'=>3),
     '1'=>array('a'=>2,'b'=>3),
@@ -81,7 +82,8 @@ function get_variable_name(&$var){
     $var   = $tmp;
     return $name;
 }
-var_dump(get_defined_vars());#get_defined_vars()获取当前的符号表
+echo 123;
+#var_dump(get_defined_vars());#get_defined_vars()获取当前的符号表
 #$x=get_defined_vars($tmps);
 #var_dump($x);
 /*#var_dump($GLOBALS);
