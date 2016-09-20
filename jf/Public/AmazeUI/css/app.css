@@ -1,0 +1,6 @@
+/* Write your styles */
+input[type=text],input[type=password]{
+    width: 100%;
+    padding:4px 5px;
+    border:1px solid #eee;
+}

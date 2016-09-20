@@ -1,0 +1,169 @@
+[ 2016-08-18T09:28:07+08:00 ] 127.0.0.1 /jf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002061s ]
+NOTIC: [8] Undefined index: IS_MOBILE D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 8 行.
+NOTIC: [8] Undefined index: mname D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 15 行.
+NOTIC: [8] Undefined index: mid D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 15 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'every'@'127.0.0.1' (using password: YES)
+
+[ 2016-08-18T09:28:40+08:00 ] 127.0.0.1 /jf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+NOTIC: [8] Undefined index: IS_MOBILE D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 8 行.
+NOTIC: [8] Undefined index: mname D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 15 行.
+NOTIC: [8] Undefined index: mid D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 15 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'127.0.0.1' (using password: NO)
+
+[ 2016-08-18T09:29:07+08:00 ] 127.0.0.1 /jf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] Undefined index: IS_MOBILE D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 8 行.
+NOTIC: [8] Undefined index: mname D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 15 行.
+NOTIC: [8] Undefined index: mid D:\Git\phpdemo\jf\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `bz_system` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bz_system` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bz_order` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bz_order` ORDER BY order_date desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bz_block` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bz_block`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bz_doc_ad` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bz_doc_ad`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: parsestr D:\Git\phpdemo\jf\Core\Library\Think\Template\TagLib\My.class.php 第 34 行.
+NOTIC: [8] Undefined variable: parsestr D:\Git\phpdemo\jf\Core\Library\Think\Template\TagLib\My.class.php 第 34 行.
+NOTIC: [8] Undefined variable: parsestr D:\Git\phpdemo\jf\Core\Library\Think\Template\TagLib\My.class.php 第 34 行.
+NOTIC: [8] Undefined variable: parsestr D:\Git\phpdemo\jf\Core\Library\Think\Template\TagLib\My.class.php 第 34 行.
+NOTIC: [8] Undefined variable: parsestr D:\Git\phpdemo\jf\Core\Library\Think\Template\TagLib\My.class.php 第 34 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `bz_doc_product` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: active D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 63 行.
+NOTIC: [8] Undefined variable: active D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 64 行.
+NOTIC: [8] Undefined variable: active D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 65 行.
+NOTIC: [8] Undefined variable: cid D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 66 行.
+NOTIC: [8] Undefined variable: cid D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 67 行.
+NOTIC: [8] Undefined variable: cid D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 68 行.
+NOTIC: [8] Undefined variable: cid D:\Git\phpdemo\jf\Runtime\Cache\Home\8edcbfec52ed8f780c8f51f886be2e1e.php 第 69 行.
+SQL: SHOW COLUMNS FROM `bz_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bz_category` WHERE ( pid=1 ) ORDER BY sort LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bz_category` WHERE ( pid=1 ) ORDER BY sort LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bz_category` WHERE `pid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_category` WHERE `pid` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_category` WHERE `pid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_category` WHERE `pid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_category` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_category` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bz_doc_banner` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bz_doc_banner` WHERE ( cid=20 ) LIMIT 10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bz_uploads` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 46 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 46 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE (  1  ) LIMIT 16   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE (  1  ) LIMIT 16   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE ( push=2 ) LIMIT 16   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bz_doc_product` WHERE ( push=3 ) LIMIT 16   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bz_uploads` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-08-18T09:33:35+08:00 ] 127.0.0.1 /jf/Public/ueditor/third-party/codemirror/codemirror.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+ERR: 模板不存在:./Theme/default//error.html
+
+[ 2016-08-18T09:33:35+08:00 ] 127.0.0.1 /jf/Public/ueditor/third-party/codemirror/codemirror.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+ERR: 模板不存在:./Theme/default//error.html
+
+[ 2016-08-18T09:33:35+08:00 ] 127.0.0.1 /jf/Public/ueditor/third-party/zeroclipboard/ZeroClipboard.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+ERR: 模板不存在:./Theme/default//error.html
+

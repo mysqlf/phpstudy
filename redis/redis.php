@@ -1,7 +1,8 @@
 <?php
+/*phpinfo();*/
 $redis=new Redis();
 $redis->connect('127.0.0.1',6379,0);
-echo "<pre/>";
+echo "\n";
 /*$redis->set('Q','123');
 $redis->set('W','123');
 
@@ -128,7 +129,7 @@ $redis->zadd('SS','2',17);
 //检查集合内元素个数
 $len=$redis->zcard('SS');
 print_r($len);
-echo "<br>";
+echo "\n";
 //统计范围内元素个数
 $len=$redis->zcount('SS',1,3);
 print_r($len);

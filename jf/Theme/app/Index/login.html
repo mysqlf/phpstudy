@@ -1,0 +1,23 @@
+[include file='Inc/header'/]
+<body ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false" onselectstart="return false" 
+ondragstart="return false" onbeforecopy="return false" oncopy=document.selection.empty() onselect=document.selection.empty()> 
+<div id="page">
+    <div class="banners">
+        <span class="left_menu">会员登陆</span>
+        <span class="right_menu"><a href="{:U('Index/category')}"><i class="icon-reorder"></i></a></span>
+    </div>
+    <div id="content">
+        <div class="info_head info_light">
+            <div style="clear:both;height:10px;"></div>
+            <form class="form-1" id="myform1" action="{:U('Index/login')}" method="post" accept-charset="utf-8">
+                用户名：<input class="input" type="text" name="username" placeholder="用户名" datatype="*" nullmsg="用户名不能为空">
+                <div style="clear:both;height:15px;"></div>
+                密　码：<input class="input" type="password" name="password" placeholder="密码" datatype="*" nullmsg="密码不能为空">
+                <div style="clear:both;height:15px;"></div>
+                　　　　<input class="btn" type="submit" value="登录">
+                <div style="clear:both;height:10px;padding: 20px 0 15px 0;text-align: center;"><a style="color:#999;" href="{:U('Index/register')}">没有账号？点击注册</a></div>
+            </form>
+        </div>
+        <div style="padding:15px;"></div>
+    </div>
+[include file='Inc/footer'/]

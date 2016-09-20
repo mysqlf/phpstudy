@@ -1,0 +1,65 @@
+[include file="Inc/header" /]
+[include file="Left/model" /]
+<style type="text/css">
+.rule_list{height: 30px;float: left;line-height: 30px;margin-right: 10px;padding:2px 10px;border:1px solid #ddd;border-radius:3px;margin-bottom: 10px;}
+.rule_list input{margin-left: 10px;}
+</style>
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Model/index')}"><i class="icon-th-large"></i> 模型列表</a><a class="active" href="{:U('Model/add')}"><i class="icon-plus"></i> 添加模型</a></div>
+        <div class="content">
+            <form id="form1" action="#" method="post" accept-charset="utf-8">
+            <div id="tab_form" class="HuiTab">
+                <div class="tabBar cl"><span>基础</span><span>扩展</span></div>
+                <!-- 基础 -->
+                <div class="tabCon">
+                    <table class="table table-border table-bordered table-hover radius">
+                        <tr>
+                            <th width="120px">模型名称</th>
+                            <td><input type="text" name="title" class="input-text radius le4" datatype="*2-10" nullmsg="模型名称不能为空" errormsg="字数超过10"><span class="notic">（10个字以内）</span></td>
+                        </tr>
+                        <tr>
+                            <th>模型标识</th>
+                            <td><input type="text" name="mark" class="input-text radius le4" datatype="/^\w{2,12}$/" nullmsg="模型标识不能为空" errormsg="输入格式不正确"><span class="notic">（2-12个字字母、数字、下划线）</span></td>
+                        </tr>
+                        <tr>
+                            <th>前台分页数</th>
+                            <td>
+                                <input type="text" name="list_row" class="input-text radius le4">
+                                <span class="notic"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>后台列表显示布局</th>
+                            <td>
+                                <input type="text" name="list_type" class="input-text radius le4">
+                                <span class="notic">（为空使用默认列表，已存在图文列表 thumb）</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 扩展 -->
+                <div class="tabCon">
+                    <table class="table table-border table-bordered table-hover radius">
+                        <tr>
+                            <th width="100px">模块标题</th>
+                            <td><input type="text" name="seotitle" class="input-text radius le4"><span class="notic">（可选，用于SEO页面标题设置）</span></td>
+                        </tr>
+                        <tr>
+                            <th width="100px">页面关键词</th>
+                            <td><input type="text" name="keywords" class="input-text radius le4"><span class="notic">（可选，用于SEO页面关键词设置）</span></td>
+                        </tr>
+                        <tr>
+                            <th>页面描述</th>
+                            <td><textarea name="description" rows="4" class="textarea radius le4"></textarea><span class="notic">（可选，用于SEO页面描述设置）</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="submit_btn">
+                <input class="btn btn-primary le1 radius" type="submit" value="提交">
+            </div>
+            </form>
+        </div>
+    </div>
+[include file="Inc/footer" /]

@@ -1,0 +1,16 @@
+[include file='Inc/header'/]
+<body ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false" onselectstart="return false" 
+ondragstart="return false" onbeforecopy="return false" oncopy=document.selection.empty() onselect=document.selection.empty()> 
+<div id="page">
+	<div class="banners">
+		<span class="left_menu">{$cate.id|r_catename}</span>
+		<span class="right_menu"><a href="{:U('Index/category')}"><i class="icon-reorder"></i></a></span>
+	</div>
+	<div id="content">
+		<div class="round">
+			<div style="font-size:16px;text-align:center;height:25px;line-height: 25px;">{$data.title}</div>
+			[empty name='data.content']资料正在整理中，敬请期待……[else/]{$data.content|html}[/empty]
+		</div>
+		<div style="padding:15px;"></div>
+	</div>
+[include file='Inc/footer'/]

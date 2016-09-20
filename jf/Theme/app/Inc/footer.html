@@ -1,0 +1,27 @@
+    <div id="nav-footer">
+        <ul>
+            <li style="width:25%" [eq name="home" value="1"]class="on"[/eq]><a href="{:U('Index/index')}"><i class="icon-home"></i></a></li>
+            <li style="width:25%" [eq name="active" value="2"]class="on"[/eq]><a href="{:U('Index/lists')}"><i class="icon-reorder"></i></a></li>
+            <li style="width:25%" [eq name="active" value="5"]class="on"[/eq]><a href="{:U('Cart/index')}"><i class="icon-shopping-cart"></i></a></li>
+            <li style="width:25%" [eq name="active" value="4"]class="on"[/eq]><a href="{:U('Member/index')}"><i class="icon-user"></i></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    $('.banner').unslider({
+        arrows: true,
+        fluid: true,
+        dots: true
+    });
+
+    $("#content").accordion({
+        alwaysOpen: false,
+        autoheight: false,
+        header: '.info_integral',
+        clearStyle: true
+    });
+});
+</script>
+</body>
+</html>

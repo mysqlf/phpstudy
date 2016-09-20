@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript">
+     var browser_class = navigator.userAgent;
+     var browser_class_name1 = browser_class.match("Mobile");
+     var browser_class_name2 = browser_class.match("mobile");
+     var location_url = window.location.href;
+     if (browser_class_name1 != null || browser_class_name2 != null){
+         if (location_url.match("wap") == null){
+         window.location.href="__ROOT__/app.php";
+         }
+     } else
+     {
+        if (location_url.match("3g") != null || location_url.match("wap") != null){
+        window.location.href="__ROOT__/app.php";
+        }
+     }
+     </script>
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <title>[empty name="title"]{$sys.title}[else /]{$title}[/empty]</title>
+    <!--<title>创推购</title>-->
+    <meta content="[empty name="keywords"]{$sys.keywords}[else /]{$keywords}[/empty]" name="keywords" />
+    <meta content="[empty name="description"]{$sys.description}[else /]{$description}[/empty]" name="description" />
+    <link rel="stylesheet" type="text/css" href="__IMG__/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__IMG__/reset.css">
+    <link rel="stylesheet" type="text/css" href="__IMG__/style.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/fonts/fonts.css">
+    <script type="text/javascript" src="__IMG__/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Validform/Validform.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Validform/Validform.css">
+    <script type="text/javascript" src="__IMG__/comm.js"></script>
+</head>
+<body>
+    <!-- top -->
+    <div class="jiang cl oh">
+        <div class="box cl oh">
+            <div class="fl" id="scrollWrap">
+                <ul id="scrollMsg">
+                [volist name="new_order" id="vo"]
+                <li><span class="red">恭喜会员：{$vo.mbname}</span>　{$vo.ptname|cut=20}　{$vo.ptid|r_p_score}积分　<span class="red">（{$vo.order_date|mdate}）</span></li>
+                [/volist]
+                </ul>
+            </div>
+            <div class="fr">[empty name='mbinfo.name']<a href="{:U('Index/register')}">注册会员</a>[else/]你好！{$mbinfo.name}，欢迎登录创维购。 <a href="{:U('Index/logout')}">[退出平台]</a>[/empty]</div>
+        </div>
+    </div>
+    <div class="top box cl oh">
+        <div class="logo fl oh"><a href="__ROOT__/"><img src="__IMG__/logo.png" alt="慧捷积分兑换"></a></div>
+        <div class="search fr oh" style="margin-right: 50px;">
+            <form action="{:U('Index/lists')}" method="post" accept-charset="utf-8">
+                <input type="text" name="keyword" placeholder="输入要兑换的商品名称" >
+                <input type="submit" value="　">
+            </form>
+        </div>
+        <!--<div class="shoucang fr oh"><a href="#"><img src="__IMG__/shoucang_ico.png"></a></div>-->
+        <!--<div class="tel400 fr oh"><img src="__IMG__/400.png" alt="400电话" style="display: block;float: left"><span style="font-size: 24px;color: #ED4440;font-weight: 700;display: block;float: left">0358-6666666</span></div>-->
+    </div>
+    <!-- nav -->
+    <div class="nav cl oh">
+        <div class="box">
+            <a [eq name="home" value="1"]class="active"[/eq] href="__ROOT__/">　首页　</a>
+            <a href="{:U('Index/lists')}" [eq name="active" value="2"]class="active"[/eq]>积分兑换</a>
+            <a href="{:U('Member/index')}" [eq name="active" value="4"]class="active"[/eq]>会员中心</a>
+            <!--<a href="{:U('Index/lists')}" [eq name="active" value="15"]class="active"[/eq]>合作商家</a>-->
+            <a href="{:U('Index/page',array('cid'=>15))}" [eq name="cid" value="15"]class="active"[/eq]>合作商家</a>
+            <a href="{:U('Index/page',array('cid'=>17))}" [eq name="cid" value="17"]class="active"[/eq]>会员规则</a>
+            <a href="{:U('Index/page',array('cid'=>18))}" [eq name="cid" value="18"]class="active"[/eq]>常见问题</a>
+            <a href="{:U('Index/page',array('cid'=>19))}" [eq name="cid" value="19"]class="active"[/eq]>关于我们</a>
+            <div class="tel4001"><img src="__IMG__/4001.png" alt="400电话" style="display: block;float: left;margin-top:10px;height: 25px;"><span style="font-size: 20px;color: white;font-weight: 700;display: block;float: left">0358-6666666</span></div>
+        </div>
+    </div>
+    <div style="height:20px;clear:both;"></div>

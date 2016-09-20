@@ -1,0 +1,60 @@
+[include file="Inc/header" /]
+[include file="Left/member" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Member/index')}"><i class="icon-th-large"></i> 会员列表</a><a class="active" href="{:U('Member/add')}"><i class="icon-plus"></i> 添加会员</a><a href="{:U('Member/import')}"><i class="icon-arrow-circle-o-up"></i> 导入会员</a><a href="{:U('Member/import2')}"><i class="icon-arrow-circle-o-up"></i> 导入积分</a></div>
+        <div class="content">
+            <form id="form1" action="#" method="post" accept-charset="utf-8">
+            <div id="tab_form" class="HuiTab">
+                <div class="tabBar cl"><span>基础</span></div>
+                <!-- 基础 -->
+                <div class="tabCon">
+                    <table class="table table-border table-bordered table-hover radius">
+                        <tr>
+                            <th width="120px">会员等级</th>
+                            <td>{:form_radio('level',1,'普通会员:1,银牌会员:2,金牌会员:3')}</td>
+                        </tr>
+                        <tr>
+                            <th width="120px">用户名</th>
+                            <td><input type="text" name="username" class="input-text radius le4" datatype="*" nullmsg="用户名必须填写"><span class="notic"></span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">积分</th>
+                            <td><input type="text" name="score" class="input-text radius le4" datatype="n" errormsg="积分必须为数字"><span class="notic">（用于购物）</span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">姓名</th>
+                            <td><input type="text" name="name" class="input-text radius le4" datatype="/^[\u4e00-\u9fa5]{2,4}$/" errormsg="姓名不正确"><span class="notic"></span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">性别</th>
+                            <td>{:form_radio('sex',0,"男:男,女:女")}</td>
+                        </tr>
+                        <tr>
+                            <th width="120px">年龄</th>
+                            <td><input type="text" name="age" class="input-text radius le4"><span class="notic"></span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">手机号码</th>
+                            <td><input type="text" name="phone" class="input-text radius le4" datatype="m" errormsg="手机号码不正确"><span class="notic"></span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">邮寄地址</th>
+                            <td><input type="text" name="address" class="input-text radius le4" datatype="*" nullmsg="邮寄地址必须填写"><span class="notic"></span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">登录密码</th>
+                            <td><input type="password" name="password" class="input-text radius le4" datatype="*6-16" nullmsg="请设置密码" errormsg="密码长度在6~16位之间"><span class="notic">（用于登录）</span></td>
+                        </tr>
+                        <tr>
+                            <th width="120px">重复密码</th>
+                            <td><input type="password" name="password2" class="input-text radius le4" datatype="*" recheck="password" nullmsg="请再输入一次密码" errormsg="您两次输入的账号密码不一致"><span class="notic"></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div><input type="hidden" name="id" value="{$data.id}">
+            <div class="submit_btn"><input class="btn btn-primary le1 radius" type="submit" value="提交"></div>
+            </form>
+        </div>
+    </div>
+[include file="Inc/footer" /]

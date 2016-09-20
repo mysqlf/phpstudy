@@ -1,5 +1,12 @@
 <?php
 
+
+
+/*$width=array('B'=>23,'C'=>12,'D'=>10,'E'=>23,'F'=>10,'G'=>10,'H'=>13);
+foreach ($width as $key => $value) {
+    var_dump($key,$value);
+}*/
+
 $arr1=array(
     /*'0'=>array('a'=>2,'b'=>3),
     '1'=>array('a'=>2,'b'=>3),
@@ -21,7 +28,7 @@ print_r($arr1);*/
 // $str=vsprintf('%s123-%sqwert',explode('-','1981-81'));
 // var_dump($str);
 #string '1981123-81qwert' (length=15)
-
+//echo(md5(md5(123456)));
 function myfoo($x){
     if($x%2==1){
         return $x*$x;
@@ -82,7 +89,9 @@ function get_variable_name(&$var){
     $var   = $tmp;
     return $name;
 }
+
 echo 123;
+
 #var_dump(get_defined_vars());#get_defined_vars()获取当前的符号表
 #$x=get_defined_vars($tmps);
 #var_dump($x);
@@ -103,4 +112,37 @@ print_r($name);
 echo "<br/>";
 print_r($$name);
 #123*/
+$n=100;
+$m=50;
+$arr=array();
+/*function getonly($n,$m){
+
+}*/
+
+/*function kickMonkey($n, $m) {  
+    $monkey = range(1, $n);         // 给猴子编号，生成数组  
+    $i = 0;  
+    while(list($key, $val) = each($monkey)) {       // each - 返回数组中当前的键／值对并将数组指针向前移动一步   
+        if (count($monkey) == 1) {      // 剩最后一个猴子，你就是猴王了  
+             echo  $val . '成为猴王了<br />';  
+             exit;  
+        }  
+        if (++$i == $m) {  
+            echo $monkey[$key] . '出局<br />';  
+            unset($monkey[$key]);  
+            $i = 0;  
+        }  
+        if (!current($monkey)) {        // 循环到头了，重置数组  
+            reset($monkey);  
+        }       
+    }  
+}  
+kickMonkey(9,1);  */
+
+try {
+    print_r('123');
+} catch (Exception $e) {
+    print_r('456');
+}
+
 ?>

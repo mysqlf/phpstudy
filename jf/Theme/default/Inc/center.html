@@ -1,0 +1,20 @@
+<!-- user center -->
+
+<div class="p_left_center fl oh">
+    <div class="pleft_tit">会员中心</div>
+    <div class="pleft_menu">
+        [eq name='sys.signed_onoff' value='1']
+        <a class="menu" href="{:U('Active/signed')}">签到获积分</a>
+        [/eq]
+        <a class="menu" href="{:U('Member/index')}">个人资料</a>
+        <a class="menu" href="{:U('Member/neworder')}">未发货订单</a>
+        <a class="menu" href="{:U('Member/oldorder')}">已发货订单</a>
+        <div style="height:10px;clear:both;"></div>
+        <a href="{:U('Cart/index')}"><div class="cart">
+            [notempty name="mbinfo"]
+            <span>{$cartnum}</span>
+            [/notempty]
+        </div></a>
+    </div>
+    <div class="left_bottom"></div>
+</div>

@@ -1,0 +1,45 @@
+[include file="Inc/header" /]
+[include file="Left/system" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a href="{:U('Admin/index')}" class="active"><i class="icon-th-large"></i> 管理列表</a><a href="{:U('Admin/add')}"><i class="icon-user-plus"></i> 添加管理员</a></div>
+        <div class="content">
+            <table class="table table-border table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th width="20px">ID</th>
+                        <th width="120px">用户名</th>
+                        <th width="240px">手机号码</th>
+                        <th class="text-c" width="40px">状态</th>
+                        <th width="180px">最后登录时间</th>
+                        <th  width="120px">最后登录IP</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    [volist name="data" id="vo"]
+                    [neq name='vo.uid' value='1']
+                    <tr>
+                        <th>{$vo.uid}</th>
+                        <th>{$vo.username}</th>
+                        <td>{$vo.phone}</td>
+                        <td class="text-c">
+                            [eq name="vo.status" value="1"]
+                            <a onclick="ajaxjump('{:U('Admin/isno_status',array('id'=>$vo['uid'],'s'=>0))}')" href="javascript:;"><img src="__IMG__/ico_green.png" title="点击禁用"></a>
+                            [else/]
+                            <a onclick="ajaxjump('{:U('Admin/isno_status',array('id'=>$vo['uid'],'s'=>1))}')" href="javascript:;"><img src="__IMG__/ico_red.png" title="点击启用"></a>
+                            [/eq]
+                        </td>
+                        <td>{$vo.last_login_time|date="Y.m.d  h:i:s a",###}</td>
+                        <td>{$vo.last_login_ip}</td>
+                        <td>
+                            <a href="{:U('Admin/mod',array('id'=>$vo['uid']))}" class="btn btn-success radius size-S">修改</a>
+                            <input onclick="confirm('{:U('Admin/del',array('id'=>$vo['uid']))}','确定要删除吗？')" class="btn btn-danger radius size-S" type="button" value="删除"></td>
+                    </tr>
+                    [/neq]
+                    [/volist]
+                </tbody>
+            </table>
+        </div>
+    </div>
+[include file="Inc/footer" /]

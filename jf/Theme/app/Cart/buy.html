@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="微信,微信公众平台" />
+<meta name="description" content="微信公众平台自助引擎" />
+<title>购物车</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/buttons.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script type="text/javascript" src="js/unslider.min.js"></script>
+</head>
+
+<body ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false" onselectstart="return false" 
+ondragstart="return false" onbeforecopy="return false" oncopy=document.selection.empty() onselect=document.selection.empty()> 
+<div id="page">
+	<div class="banners">
+		<a href="javascript:history.go(-1);"><img src="images/bg_info3.jpg"></a>
+	</div>
+	<div id="content">
+		
+		<div class="box_exp info_light">
+			<div class="info_integral">
+				<span class="title"><i class="icon-bookmark-empty"></i>收货人信息</span>
+			</div>
+			<div style="display: block; overflow: hidden; opacity: 1;">
+				<div class="info_child">
+					<a href="#">
+					<p>收货人：王某某</p>
+					<p>手&nbsp;&nbsp;&nbsp;机：13888888888</p>
+					<p>地&nbsp;&nbsp;&nbsp;址：天津市</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="box_exp info_light">
+			<div class="info_integral">
+				<span class="title"><i class="icon-bookmark-empty"></i>支付及配送方式</span>
+			</div>
+			<div style="display: block; overflow: hidden; opacity: 1;">
+				<div class="info_child">
+					<a href="#">
+					<p>支付方式：在线支付</p>
+					<p>配送方式：申通快递</p>
+					<p>送货时间：天津市</p>
+					<p>电话确认：否</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div clas
+		<div class="box_exp info_light">
+			<div class="info_integral">
+				<span class="title"><i class="icon-bookmark-empty"></i>结算信息</span>
+			</div>
+			<div style="display: block; overflow: hidden; opacity: 1;">
+				<div class="info_child">
+					<a href="#">
+					<p>商品金额：198.00</p>
+					<p>返还现金：0.00</p>
+					<p>应付总额：198.00</p>
+					</a>
+				</div>
+				<div class="info_child_txt">
+					<a href="cart.html" class="left">请在24小时内完成支付,过时订单将被取消！</a>
+				</div>
+			</div>
+		</div>
+		<div class="box_exp info_light">
+			<div class="info_integral">
+				<span class="titles"><i class="icon-bookmark-empty"></i>总计 - ￥1680元</span>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div style="margin:8px 0;"><a href="#" class="button button-block button-rounded button-caution button-large"><i class="icon-shopping-cart"></i>&nbsp;&nbsp;提交订单</a></div>
+		
+		
+		<div style="padding:15px;"></div>
+	</div>
+	<div id="nav-footer">
+		<ul>
+			<li style="width:25%" class="on"><a href="index.html"><i class="icon-home"></i></a></li>
+			<li style="width:25%"><a href="class.html"><i class="icon-reorder"></i></a></li>
+			<li style="width:25%"><a href="cart.html"><i class="icon-shopping-cart"></i></a></li>
+			<li style="width:25%"><a href="index.html"><i class="icon-info-sign"></i></a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+	$('.banner').unslider({
+		arrows: true,
+		fluid: true,
+		dots: true
+	});
+
+	$("#content").accordion({
+		alwaysOpen: false,
+		autoheight: false,
+		header: '.info_integral',
+		clearStyle: true
+	});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+[include file="Inc/header" /]
+[include file="Left/system" /]
+    <!-- bdright -->
+    <div id="bdright">
+        <div class="site"><a class="active"><i class="icon-th-large"></i> 个人资料</a></div>
+        <div class="content">
+            <form id="form1" action="#" method="post" accept-charset="utf-8">
+            <div id="tab_form" class="HuiTab">
+                <div class="tabBar cl"><span>基础</span></div>
+                <!-- 基础 -->
+                <div class="tabCon">
+                    <input type="hidden" name="id" value="1">
+                    <table class="table table-border table-bordered table-hover radius">
+                        <tr>
+                            <th width="75px">手机号</th>
+                            <td><input type="text" name="phone" class="input-text radius le4" value="{$data.phone}" datatype="m" errormsg="手机号格式不正确"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="submit_btn"><input class="btn btn-primary le1 radius" type="submit" value="提交"></div>
+            </form>
+        </div>
+    </div>
+[include file="Inc/footer" /]

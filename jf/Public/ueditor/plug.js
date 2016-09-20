@@ -1,0 +1,1 @@
+document.write("<script type='text/javascript' charset='utf-8' src='"+PUBLIC+"ueditor/plug/upload.js'></script>");
