@@ -3,6 +3,9 @@
 foreach ($width as $key => $value) {
     var_dump($key,$value);
 }*/
+print_r(md5('xiaoxunce200:qq123456'));
+$str=json_encode(array(array('name'=>'工本费' , 'total'=>2)) , JSON_UNESCAPED_UNICODE);
+print($str);die;
 $arr1=array(
     /*'0'=>array('a'=>2,'b'=>3),
     '1'=>array('a'=>2,'b'=>3),

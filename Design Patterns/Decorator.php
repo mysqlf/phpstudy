@@ -1,25 +1,36 @@
 <?php
+
 /**
 * 
 */
-class String
+class Title
 {
-    public $str;
-    public function checkStr($str,$rule){
+    public $title;
+    public function setTitle($title){
+        $this->title=$title;
+    }
+}
+/**
+* 
+*/
+class Name
+{
+    public $name;
+    public function setName($name){
+        $this->name=$name;
+    }
+}
 
-    }
-    public function setstr($str,$rule){
-        if (self::checkStr($str,$rule)) {
-            $this->str=$str;
-        }else{
-            return "value error";
-        }
-    }
-    public function getstr(){
-        return $this->str;
+/**
+* 
+*/
+class Time
+{
+    public $time;
+    public function setTime($time){
+        $this->time=$time;
     }
 }
-class AccordingRuleCheck{
-    public function 
-}
- ?>}
+
+
+ ?>
