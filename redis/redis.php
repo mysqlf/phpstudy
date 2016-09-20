@@ -2,6 +2,12 @@
 /*phpinfo();*/
 $redis=new Redis();
 $redis->connect('127.0.0.1',6379,0);
+#$redis->FLUSHALL();
+for ($i=0; $i <100000 ; $i++) { 
+    $redis->hset("port:$i",'age',$i);
+}
+$arr=$redis->hget('port:99999','age');
+var_dump($arr);
 echo "\n";
 /*$redis->set('Q','123');
 $redis->set('W','123');
@@ -108,7 +114,7 @@ $check=is_string($str);
 print_r($check);*/
 
 //有序集合
-$redis->zadd('SS','1',12);
+/*$redis->zadd('SS','1',12);
 $redis->zadd('SS','1',11);
 $redis->zadd('SS','1',13);
 $redis->zadd('SS','1',10);
@@ -132,6 +138,6 @@ print_r($len);
 echo "\n";
 //统计范围内元素个数
 $len=$redis->zcount('SS',1,3);
-print_r($len);
+print_r($len);*/
 #$redis->FLUSHALL();
 ?>
