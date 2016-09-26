@@ -1,0 +1,70 @@
+[ 2016-09-22T16:10:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+
+[ 2016-09-22T16:10:50+08:00 ] 127.0.0.1 /index.php/Home/App/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [2048] Declaration of Home\Controller\AppController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Git\phpdemo\tp3\Application\Home\Controller\AppController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [2] include(Public/title): failed to open stream: No such file or directory D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+NOTIC: [2] include(): Failed opening 'Public/title' for inclusion (include_path='.;C:\php\pear') D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+NOTIC: [2] include(Public/title): failed to open stream: No such file or directory D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+NOTIC: [2] include(): Failed opening 'Public/title' for inclusion (include_path='.;C:\php\pear') D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004947s ]
+
+[ 2016-09-22T16:11:28+08:00 ] 127.0.0.1 /index.php/Home/App/show.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [2048] Declaration of Home\Controller\AppController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Git\phpdemo\tp3\Application\Home\Controller\AppController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] include(Public/title): failed to open stream: No such file or directory D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+NOTIC: [2] include(): Failed opening 'Public/title' for inclusion (include_path='.;C:\php\pear') D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+NOTIC: [2] include(Public/title): failed to open stream: No such file or directory D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+NOTIC: [2] include(): Failed opening 'Public/title' for inclusion (include_path='.;C:\php\pear') D:\Git\phpdemo\tp3\Application\Runtime\Cache\Home\0f7e79ec558957f6ba552bd2f2231d3a.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-09-22T16:11:30+08:00 ] 127.0.0.1 /index.php/Home/App/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+NOTIC: [2048] Declaration of Home\Controller\AppController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\Git\phpdemo\tp3\Application\Home\Controller\AppController.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
