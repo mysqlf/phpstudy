@@ -12,11 +12,11 @@ foreach ($width as $key => $value) {
 }*/
 
 
-=======
+
 print_r(md5('xiaoxunce200:qq123456'));
 $str=json_encode(array(array('name'=>'工本费' , 'total'=>2)) , JSON_UNESCAPED_UNICODE);
 print($str);die;
->>>>>>> 95f7a62d66731acb6d0fb2e1b902195a069660f6
+
 $arr1=array(
     /*'0'=>array('a'=>2,'b'=>3),
     '1'=>array('a'=>2,'b'=>3),
@@ -45,7 +45,6 @@ function myfoo($x){
     }else{
         return $x;
     }
-    
 }
 $arr= array(1,2,3,4,5);
 #array_map 与py中map方法一致
