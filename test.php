@@ -2,16 +2,10 @@
 
 #echo include "oatest.php";
 
-
-
-
-
 /*$width=array('B'=>23,'C'=>12,'D'=>10,'E'=>23,'F'=>10,'G'=>10,'H'=>13);
 foreach ($width as $key => $value) {
     var_dump($key,$value);
 }*/
-
-
 
 print_r(md5('xiaoxunce200:qq123456'));
 $str=json_encode(array(array('name'=>'工本费' , 'total'=>2)) , JSON_UNESCAPED_UNICODE);
