@@ -1,5 +1,5 @@
 <?php
-
+var_dump( glob("./work/oa.*"));die;
 #echo include "oatest.php";
 
 /*$width=array('B'=>23,'C'=>12,'D'=>10,'E'=>23,'F'=>10,'G'=>10,'H'=>13);
