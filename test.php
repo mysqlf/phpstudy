@@ -1,4 +1,31 @@
 <?php
+$a=1;
+$b=0;
+try {
+/*    if($b>0){
+         }else{
+        throw new \Exception("Error Processing 0", $b);
+    }*/
+        $k=$a/$b;
+   
+
+} catch (\Exception $e) {
+    var_dump($e->getmessage());
+}
+die;
+$a='key';
+$b='zxc';
+$k=$a ^ $b;
+print_r($k);
+echo "<br/>";
+print_r($k^$b);
+die;
+$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$a2=array("e"=>"red","f"=>"green","g"=>"blue");
+
+$result=array_diff($a1,$a2);
+print_r($result);
+die;
 var_dump( glob("./work/oa.*"));die;
 #echo include "oatest.php";
 
