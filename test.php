@@ -1,4 +1,17 @@
 <?php
+try{
+    require_once "1231";
+    print_r(123);
+}catch(Exception $e){
+    print_r(345);
+}
+
+
+die;
+$arr=array("id"=>1,"app_id"=>1,"type"=>1,"is_annex"=>0,"is_allday"=>"是","start_time"=>"2016-09-29 15:39:00","end_time"=>"2016-09-30 15:39:00","reason"=>1,"is_effect"=>1);
+$str=json_encode($arr);
+$arrs=json_decode($str,true);
+var_dump($arrs);die;
 $a=1;
 $b=0;
 try {
