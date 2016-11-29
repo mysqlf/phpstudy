@@ -5,8 +5,9 @@ $user_at_domain='wolf@chitone.com.cn';
 $arr=array('user_at_domain'=>$user_at_domain);
 $result=$client->userExist($arr);
 var_dump($result);*/
-
-
+echo json_encode(array('address'=>array('email'=>'344345150@qq.com','name'=>'344345150@qq.com'),'title'=>'This is a test Message','body'=>'This is a test Message'));
+die;
+echo  json_encode(array('user'=>1,'title'=>'test','type'=>1));die;
 //$arr=array('user_at_domain'=>$user_at_domain);
 // $result=$client->userLogin($arr);
 // var_dump($result);
