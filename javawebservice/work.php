@@ -4,25 +4,25 @@
 $user_at_domain='wolf@chitone.com.cn';
 $arr=array('user_at_domain'=>$user_at_domain);
 $result=$client->userExist($arr);
-var_dump($result);
+var_dump($result);*/
 
 
 //$arr=array('user_at_domain'=>$user_at_domain);
-$result=$client->userLogin($arr);
-var_dump($result);
-
+// $result=$client->userLogin($arr);
+// var_dump($result);
+$client = new SoapClient("http://192.168.2.19/apiws/services/API?wsdl",array('encoding'=>'UTF-8'));
+$user_at_domain='wolf@chitone.com.cn';
+$arr=array('user_at_domain'=>$user_at_domain);
 $result=$client->getNewMailInfos($arr);
-var_dump($result);
-var_dump($result->return->result);
-$content=urldecode(urldecode($result->return->result)).'&mail';
-print_r($content);*/
+$content=urldecode(urldecode($result->return->result));
+
+$pat='/&subject=(.*?)&size=/';
+preg_match_all($pat, $content, $m);
+var_dump($m);
+//print_r($content);
 
 /*var_dump($client->__getFunctions());
 var_dump($client->__getTypes());*/
-/*
-$pat='/&subject=(.*?)&size=/';
-preg_match_all($pat, $content, $m);
-var_dump($m);*/
 /*
 $arr=explode('msid',$content);
 foreach ($arr as $key => $value) {
@@ -49,7 +49,7 @@ $data=array(array('123'));
 var_dump(is_array($data[0]));
 $data=array('123');
 var_dump(is_array($data[0]));*/
-
+/*
 $arr=array('b'=>102,'a'=>100,'c'=>100);
 
 foreach ($arr as $key => $value) {
@@ -58,7 +58,7 @@ foreach ($arr as $key => $value) {
 }
 
 var_dump($tmp);
-var_dump($tmp1);
+var_dump($tmp1);*/
 
 
 /*try{
@@ -70,9 +70,8 @@ var_dump($tmp1);
 //die;
 //echo date('Y-m-d H:i:s',strtotime('2016-11-11T17:23:00'));
 //phpinfo();
-
 //连接RabbitMQ
-$conn_args = array( 'host'=>'192.168.2.50' , 'port'=> '5672', 'login'=>'oa' ,
+/*$conn_args = array( 'host'=>'192.168.2.50' , 'port'=> '5672', 'login'=>'oa' ,
 'password'=> '95105333','vhost' =>'oa');
 $conn = new AMQPConnection($conn_args);
 if ($conn->connect()) {
@@ -84,8 +83,7 @@ $e_name='oa';//交换机名横
 $q_name='queue_test';//队列名称
 $r_key='oa_test';
 
-//你的消息
-$message = json_encode(array('Hello World!'));
+
 //创建channel
 $channel = new AMQPChannel($conn);
 //创建exchange
@@ -106,24 +104,29 @@ echo 'queue bind: '.$q->bind($e_name,$r_key);//将你的队列绑定到routingKe
 echo "\n"; 
 
 $channel->startTransaction();
+//你的消息
+$message = json_encode(array('Hello World!'));
 echo "send: ".$ex->publish($message, $r_key); //将你的消息通过制定routingKey发送
 $channel->commitTransaction();
 $conn->disconnect();
 
-// $conn = new AMQPConnection($conn_args);
-// $conn->connect();
-// //设置queue名称，使用exchange，绑定routingkey
-// $channel = new AMQPChannel($conn);
-// $q = new AMQPQueue($channel);
-// $q->setName($q_name); 
-// $q->setFlags(AMQP_DURABLE | AMQP_AUTODELETE);
-// $q->declare();
-// $q->bind($e_name, $r_key);
-// //消息获取
-// $messages = $q->get(AMQP_AUTOACK);
-// if ($messages){
-//       var_dump(json_decode($messages->getBody(), true ));
-// }
-// $conn->disconnect();
+
+
+$conn = new AMQPConnection($conn_args);
+$conn->connect();
+//设置queue名称，使用exchange，绑定routingkey
+$channel = new AMQPChannel($conn);
+$q = new AMQPQueue($channel);
+$q->setName($q_name); 
+$q->setFlags(AMQP_DURABLE | AMQP_AUTODELETE);
+$q->declare();
+$q->bind($e_name, $r_key);
+//消息获取
+$messages = $q->get(AMQP_AUTOACK);
+if ($messages){
+      var_dump(json_decode($messages->getBody(), true ));
+}
+$conn->disconnect();*/
+
 
 ?>

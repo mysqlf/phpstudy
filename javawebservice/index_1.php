@@ -20,11 +20,20 @@ var_dump($x);
 var_dump(get_resource_type($x));
 var_dump(stream_get_contents($x));*/
 
-$host = "192.168.2.19";
+/*$host = "192.168.2.19";
 $port = 6195;
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 $connection = socket_connect($socket, $host, $port);
 //socket_write($socket, "hello socket") or die("Write failed\n");
 
 var_dump(get_resource_type($socket));
-var_dump(socket_read($socket,4));
+var_dump(socket_read($socket,4));*/
+function test(){
+    for ($i=0; $i <10; $i++) { 
+        $x = (yield $i);
+    }
+}
+$k=test();
+foreach ( $k as  $value) {
+    print_r($value);
+}
