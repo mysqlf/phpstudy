@@ -12,7 +12,7 @@ $k_route = 'lzyx_r'; //路由key
   
 //创建连接和channel  
 $conn = new AMQPConnection($conn_args);    
-if (!$conn->connect()) {    
+if (!$conn->connect()) {
     die("Cannot connect to the broker!\n");    
 }    
 $channel = new AMQPChannel($conn);    
@@ -20,7 +20,7 @@ $channel = new AMQPChannel($conn);
 //消息内容  
 $message = "TEST MESSAGE! 测试消息！";    
   
-//创建交换机对象     
+//创建交换机对象
 $ex = new AMQPExchange($channel);    
 $ex->setName($e_name);    
   
