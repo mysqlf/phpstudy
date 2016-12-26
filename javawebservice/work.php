@@ -5,19 +5,23 @@ $user_at_domain='wolf@chitone.com.cn';
 $arr=array('user_at_domain'=>$user_at_domain);
 $result=$client->userExist($arr);
 var_dump($result);*/
-echo json_encode(array('address'=>array('email'=>'344345150@qq.com','name'=>'344345150@qq.com'),'title'=>'This is a test Message','body'=>'This is a test Message'));
+/*echo json_encode(array('address'=>array('email'=>'344345150@qq.com','name'=>'344345150@qq.com'),'title'=>'This is a test Message','body'=>'This is a test Message'));
 die;
-echo  json_encode(array('user'=>1,'title'=>'test','type'=>1));die;
+echo  json_encode(array('user'=>1,'title'=>'test','type'=>1));die;*/
 //$arr=array('user_at_domain'=>$user_at_domain);
 // $result=$client->userLogin($arr);
 // var_dump($result);
 $client = new SoapClient("http://192.168.2.19/apiws/services/API?wsdl",array('encoding'=>'UTF-8'));
-$user_at_domain='wolf@chitone.com.cn';
+$user_at_domain='chao.wen@chitone.com.cn';
 $arr=array('user_at_domain'=>$user_at_domain);
 $result=$client->getNewMailInfos($arr);
-$content=urldecode(urldecode($result->return->result));
 
-$pat='/&subject=(.*?)&size=/';
+$content=urldecode(urldecode($result->return->result));
+//var_dump($content);die;
+/*$pat='/&subject=(.*?)&size=/';
+preg_match_all($pat, $content, $m);
+var_dump($m);die;*/
+$pat='/&from=(.*?)&to=.*?&subject=(.*?)&size=.*?&date=(.*?)&/';
 preg_match_all($pat, $content, $m);
 var_dump($m);
 //print_r($content);

@@ -8,7 +8,11 @@
 
 
 die;*/
-
+$tmp=array('tel'=>'','mobile'=>'','short_mobile'=>'');
+$tmp1=array('tel'=>'1','short_mobile'=>'1');
+$x=array_merge($tmp,$tmp1);
+print_r($x);
+die;
 function getkeyofnovalue($data){
     $arr=array();
     foreach ($data as $key => $value) {

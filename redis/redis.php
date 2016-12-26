@@ -2,12 +2,12 @@
 /*phpinfo();*/
 $redis=new Redis();
 $redis->connect('127.0.0.1',6379,0);
-#$redis->FLUSHALL();
-for ($i=0; $i <100000 ; $i++) { 
+$redis->FLUSHALL();
+/*for ($i=0; $i <100000 ; $i++) { 
     $redis->hset("port:$i",'age',$i);
 }
 $arr=$redis->hget('port:99999','age');
-var_dump($arr);
+var_dump($arr);*/
 echo "\n";
 /*$redis->set('Q','123');
 $redis->set('W','123');
