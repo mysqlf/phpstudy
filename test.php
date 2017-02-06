@@ -1,4 +1,9 @@
 <?php
+
+$a='123';
+$b='456';
+$tmp= $a.$b;
+var_dump($tmp);
 /*try{
     require_once "1231";
     print_r(123);
@@ -8,8 +13,12 @@
 
 
 die;*/
+die();
 $tmp=array('tel'=>'','mobile'=>'','short_mobile'=>'');
+print_r(array_keys($tmp));
+die;
 $tmp1=array('tel'=>'1','short_mobile'=>'1');
+
 $x=array_merge($tmp,$tmp1);
 print_r($x);
 die;
