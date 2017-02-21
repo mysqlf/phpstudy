@@ -1,5 +1,12 @@
 <?php
+$a='123- 12/测试/';
+$b='试';
+print_r(strpos($a, $b));
 
+$a='123';
+$b='3';
+print_r(strpos($a, $b));
+die;
 $a='123';
 $b='456';
 $tmp= $a.$b;
