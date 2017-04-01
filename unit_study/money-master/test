@@ -1,0 +1,41 @@
+SebastianBergmann\Money\Currency
+ [x] Exception is raised for invalid constructor argument
+ [x] Can be constructed from uppercase string
+ [x] Can be constructed from lowercase string
+ [x] Custom currency can be registered
+ [x] Registered currencies can be accessed
+ [x] Can be cast to string
+ [x] Currency code can be retrieved
+ [x] Default fraction digits can be retrieved
+ [x] Display name can be retrieved
+ [x] Numeric code can be retrieved
+ [x] Sub unit can be retrieved
+
+SebastianBergmann\Money\IntlFormatter
+ [ ] Money object can be formatted as string
+
+SebastianBergmann\Money\Money
+ [x] Exception is raised for invalid constructor arguments
+ [x] Object can be constructed for valid constructor arguments
+ [x] Object can be constructed from string value
+ [x] Amount can be retrieved
+ [x] Converted amount can be retrieved
+ [x] Currency can be retrieved
+ [x] Another money object with same currency can be added
+ [x] Exception is thrown for overflowing addition
+ [x] Exception is raised for integer overflow
+ [x] Exception is raised when money object with different currency is added
+ [x] Another money object with same currency can be subtracted
+ [x] Exception is thrown for overflowing subtraction
+ [x] Exception is raised when money object with different currency is subtracted
+ [x] Can be negated
+ [x] Can be multiplied by a factor
+ [x] Exception is raised when multiplied using invalid rounding mode
+ [x] Can be allocated to number of targets
+ [x] Percentage can be extracted
+ [x] Exception is raised when trying to allocate to invalid number of targets
+ [x] Can be allocated by ratios
+ [x] Can be compared to another money object with same currency
+ [x] Exception is raised when compared to money object with different currency
+ [x] Can be serialized to json
+
