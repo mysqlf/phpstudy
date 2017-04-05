@@ -2,6 +2,6 @@
 namespace Test;
 class Test{
     public function Index(){
-        return 'testlibrarytest';
+        return 'test library of use namespace';
     }
 }

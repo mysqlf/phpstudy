@@ -1,6 +1,6 @@
 <?php
 class Test{
     public function Index(){
-        return 'testlibrary';
+        return 'test library of def';
     }
 }
