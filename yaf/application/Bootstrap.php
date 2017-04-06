@@ -37,8 +37,21 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
         {
             $dispatcher->catchException(true);
             $router = $dispatcher->getRouter();
+
             //$router->addConfig(Yaf_Registry::get("config")['routes']);
-            $router->addConfig(Yaf\Registry::get("config")['routes']);
+            //在配置文件中写路由
+            //$router->addConfig(Yaf\Registry::get("config")['routes']);
+            //手动注册路由
+            $route = new \Yaf\Route\Regex('#^/item/([a-zA-Z-_0-9]+)#', array(
+                'controller'=>'goods',
+                'action'=>'item'
+            ), array(1=>'id'));
+            $router->addRoute('goodsDetail', $route);
+            $route = new \Yaf\Route\Regex('#^/index/([a-zA-Z-_0-9]+)#', array(
+                'controller'=>'index',
+                'action'=>'index'
+            ), array(1=>'id'));
+            $router->addRoute('index', $route);
         }
      
         public function _initView()
