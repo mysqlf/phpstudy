@@ -1,7 +1,7 @@
 <?php
 use Yaf\Controller_Abstract;
 use Yaf\Application;
-class IndexController extends Controller_Abstract
+class PostsController extends Controller_Abstract
 {
     public function indexAction()
     {
@@ -20,6 +20,7 @@ class IndexController extends Controller_Abstract
         Yaf\Loader::import(APP_PATH.'/application/helpers/common.php');
         var_dump(gethelper());
         var_dump($this->getRequest()->getParam('id'));
+        var_dump($this->getRequest()->getParam('name'));
     }
     public function addAction(){
         $this->_view->show="I can use yaf";
