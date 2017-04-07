@@ -35,12 +35,12 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
          /**
          * 初始化路由
          */
-        
+        //public function _initRoute(Yaf_Dispatcher $dispatcher)
         public function _initRoute(Yaf\Dispatcher $dispatcher) {
             $dispatcher->catchException(true);
             $router = $dispatcher->getRouter();
             /**
-             * we can add some pre-defined routes in application.ini
+             *加载配置文件内的路由规则 application.ini
              */
             $router->addConfig(Yaf\Registry::get("config")->routes);
              //手动注册路由
@@ -55,7 +55,7 @@ class Bootstrap extends Yaf\Bootstrap_Abstract
             ), array(1=>'id'));
             $router->addRoute('index', $route);
         }
-        //public function _initRoute(Yaf_Dispatcher $dispatcher)
+        
        /* public function _initRoute(Yaf\Dispatcher $dispatcher)
         {
             

@@ -5,7 +5,7 @@ class PostsController extends Controller_Abstract
 {
     public function indexAction()
     {
-        $this->_view->word = "hello yaf";
+        /*$this->_view->word = "hello yaf";
         $Test=new Test\Test();
         echo $Test->Index();
         echo "<br>";
@@ -18,7 +18,7 @@ class PostsController extends Controller_Abstract
         var_dump($config->application->dispatcher->defaultModule);
         //导入一个函数库文件common.php，即可使用common.php中的函数
         Yaf\Loader::import(APP_PATH.'/application/helpers/common.php');
-        var_dump(gethelper());
+        var_dump(gethelper());*/
         var_dump($this->getRequest()->getParam('id'));
         var_dump($this->getRequest()->getParam('name'));
     }

@@ -2,11 +2,10 @@
 use Yaf\Controller_Abstract;
 use Yaf\Application;
 
-class RegexController extends Controller_Abstract{
+class ProductController extends Controller_Abstract{
     public function indexAction(){
-        echo "Regex";
-        var_dump($this->getRequest()->getParam('id'));
-
         var_dump($this->getRequest()->getParam('name'));
+        echo "product";
+        var_dump($this->getRequest()->getParam('value'));
     }
 }
