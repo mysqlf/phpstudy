@@ -68,6 +68,7 @@ class Mongo{
         }
         $bulk = new \MongoDB\Driver\BulkWrite;
         $bulk->delete($where,$limit);   // limit 为 1 时，删除第一条匹配数据
+        $writeConcern = new \MongoDB\Driver\WriteConcern(\MongoDB\Driver\WriteConcern::MAJORITY, 1000);
         $result = $this->manager->executeBulkWrite($table, $bulk, $writeConcern);
     }
 }
