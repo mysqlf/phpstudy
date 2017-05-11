@@ -1,5 +1,8 @@
 <?php
-//header("Content-type: text/html; charset=UTF-8");
+
+
+header("Content-type: text/html; charset=UTF-8");
+
 //首先导入PHPExcel
 require_once 'PHPExcel.php';
 require_once 'PHPExcel/IOFactory.php';  
@@ -22,17 +25,20 @@ function readexcel($filePath){
 
     //建立excel对象，此时你即可以通过excel对象读取文件，也可以通过它写入文件
     $PHPExcel = $PHPReader->load($filePath);
+
+
     /**读取excel文件中的第一个工作表*/
     $currentSheet = $PHPExcel->getSheet(0);
     /**取得最大的列号*/
     $allColumn = $currentSheet->getHighestColumn();
     /**取得一共有多少行*/
     $allRow = $currentSheet->getHighestRow();
+
     //循环读取每个单元格的内容。注意行从1开始，列从A开始
     $count='';
     for($rowIndex=1;$rowIndex<=$allRow;$rowIndex++){
         $arr='';
-        #数据读取
+
         for($colIndex='A';$colIndex<=$allColumn;$colIndex++){
             $addr = $colIndex.$rowIndex;
             $cell = $currentSheet->getCell($addr)->getValue();
@@ -41,6 +47,7 @@ function readexcel($filePath){
             $arr[]=$cell;
         
         }
+
         $count[]=$arr;
     }
     return $count;
@@ -53,6 +60,15 @@ function readexcel($filePath){
  * @param    string     $file [description]
  * @return   [type]           [description]
  */
+
+        if ($arr[1]=='女'&&$arr[2]=='深圳')
+           $count[]=$arr;
+        
+
+    }
+    return $count;
+}
+
 function saveexcel($arr='',$file=''){
     //新建  
     $resultPHPExcel = new PHPExcel();  
@@ -68,12 +84,14 @@ function saveexcel($arr='',$file=''){
         $x=65;
         for ($j=0; $j <count($arr[$i]) ; $j++) {
             #列名
+
             $name=chr($x);
             $k=$i+2;
             $resultPHPExcel->getActiveSheet()->setCellValue($name.$k,$arr[$i][$j]);
             $x++;
         } 
     }
+
     #$outputFileName = uniqid().'_.xls';
     $objWriter = PHPExcel_IOFactory::createWriter($resultPHPExcel, 'Excel2007');
     $objWriter->save($file);        
@@ -253,3 +271,14 @@ $path     = '';
 $handle   = fopen($path . $fileName, 'w');
 fwrite($handle, $xml);
 fclose($handle);*/
+
+    $outputFileName = uniqid().'_.xls';
+    $objWriter = PHPExcel_IOFactory::createWriter($resultPHPExcel, 'Excel2007');
+    $objWriter->save($file);        
+}
+$filePath = "test.xls";
+$count=readexcel($filePath);
+echo "<pre>";
+#print_r($count);
+saveexcel($count,'mytest.xlsx');
+
