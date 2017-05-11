@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><?php echo $word;?></title>
+    </head>
+    <body>
+        <div><?php echo $word;?></div>
+        <form action="/?c=index&a=getpost" method="post">
+           name: <input type="text" name="name">
+           age: <input type="text" name="age">
+            <input type="submit">
+        </form>
+    </body>
+</html>
