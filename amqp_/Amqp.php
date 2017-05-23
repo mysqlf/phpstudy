@@ -52,15 +52,15 @@ class Amqp{
             'password' => 'lzyx16',  
             'vhost'=>'lzyx'  
         );
-        $this->conn = new \AMQPConnection($conn_args);
+        $this->conn = new AMQPConnection($conn_args);
         #连接
         if ($this->conn->connect()) {
             #创建信道
-            $this->channel = new \AMQPChannel($this->conn);
+            $this->channel = new AMQPChannel($this->conn);
             #创建交换器
-            $this->ex = new \AMQPExchange($this->channel);
+            $this->ex = new AMQPExchange($this->channel);
             #创建队列
-            $this->queue = new \AMQPQueue($this->channel);
+            $this->queue = new AMQPQueue($this->channel);
         }else {
             return false;
         }
@@ -72,7 +72,7 @@ class Amqp{
      * @DateTime 2016-11-22
      * @param    [type]     $e_name [交换器名]
      */
-    private function set_exchange($e_name){
+    public function set_exchange($e_name){
         #交换器名字
         $this->ex->setName($e_name);//创建名字
         $this->ex->setType(AMQP_EX_TYPE_DIRECT);//TOPIC//DIRECT
@@ -86,7 +86,7 @@ class Amqp{
      * @param    [type]     $e_name [交换器名]
      * @param    [type]     $r_key  [description]
      */
-    private function set_queue($q_name,$e_name,$r_key){
+    public function set_queue($q_name,$e_name,$r_key){
         //设置队列名字 如果不存在则添加
         $this->queue->setName($q_name);
         $this->queue->setFlags(AMQP_DURABLE | AMQP_AUTODELETE);
@@ -121,17 +121,18 @@ class Amqp{
 
      * @return   [type]             [description]
      */
-    public function getmessage($q_name,$e_name='oa',$r_key='oa_chitone')
+    public function getmessage($q_name='amq.gen-_os7Lh0vwz5MjAHdr8S6ww',$e_name='benchmark_exchange_1494837518.4352',$r_key='')
     {
-        #设置交换器
+        /*#设置交换器
         self::set_exchange($e_name);
         #设置队列
-        self::set_queue($q_name,$e_name,$r_key);
+        self::set_queue($q_name,$e_name,$r_key);*/
         #读取消息
         $messages = $this->queue->get(AMQP_AUTOACK);
+        return $messages;
         if ($messages){
             $content=json_decode($messages->getBody(),true);
-            $this->ex->publish($content, $r_key);
+            #$this->ex->publish($content, $r_key);
             return $content;
         }
     }
@@ -145,4 +146,14 @@ class Amqp{
         $this->conn->disconnect();
 
     }
+}
+#读取消息受制于PHP的速度
+$amqp=new Amqp();
+$i=0;
+
+$amqp->set_exchange('benchmark_exchange_1494837518.4352');
+$amqp->set_queue('amq.gen-kyMetbUp1ABn2Y8lTNhOaQ','benchmark_exchange_1494837518.4352','');
+while ($i<1314) {
+    var_dump($amqp->getmessage('amq.gen-kyMetbUp1ABn2Y8lTNhOaQ','benchmark_exchange_1494837518.4352',''));
+    $i++;
 }
