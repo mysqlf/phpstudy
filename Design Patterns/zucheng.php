@@ -99,17 +99,12 @@ $c=array(6,5);
 $d=array(5,4);
 $e=array(4,6);
 $arr=array(
-    array(2,6),
-    array(2,3),
-    array(6,5),
-    array(5,4),
-    array(4,6),
+    'a'=> array(2,6),
+    'b'=> array(2,3),
+    'c'=> array(6,5),
+    'd'=> array(5,4),
+    'e'=> array(4,6),
     );
-function best($arr){
-    $count=count($arr);
-    $price=array();
-    for ($i=0; $i < $count; $i++) { 
-        $price[]=$arr[$i][1]/$arr[$i][0];
-    }
-    
-}
+
+$res=best($arr);
+print_r($res);
