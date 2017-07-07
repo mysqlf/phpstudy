@@ -1,10 +1,34 @@
 <?php
-use Yaf\Controller_Abstract;
 use Yaf\Application;
-
-class IndexController extends Controller_Abstract
+class IndexController extends BaseController
 {
+    public function indexAction(){
+        $this->_view->title = "hello yaf";
+        /*$request = $this->getRequest();
+        var_dump($request->getRequestUri());     //   输出：/
+        var_dump($request->getBaseUri());        //   输出：''
+        var_dump($request->getMethod());         //   输出GET
+        var_dump($request->getPost());           //   输出：array()
+        var_dump($request->getQuery());          //   输出: array()
+        var_dump($request->getParam('id'));      //   输出：NULL
+        var_dump($request->getParams());         //   输出：array()*/
+        $Test=new Test\Test();#使用命名空间
+        echo $Test->Index();
+        echo "<br>";
+        $Test=new Test();#默认位置
+        echo $Test->Index();
+        #使用对象方法读取配置文件
+        $config = Application::app()->getConfig();
+        var_dump($config->application->directory);
+        var_dump($config->application->modules);
+        var_dump($config->application->dispatcher->defaultModule);
+        //导入一个函数库文件common.php，即可使用common.php中的函数
+        Yaf\Loader::import(APP_PATH.'/application/helpers/common.php');
+        var_dump(gethelper());
+        var_dump($this->getRequest()->getParam('id'));
 
+
+    }
     public function startAction(){
         $baseurl='http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E6%B7%B1%E5%9C%B3&kw=php&sm=0&pd=3&isfilter=1&sf=-1&st=-1&sg=1987c3cd5d8d47fdab58a1a94dd7fe0e&p=10';
         $count=10;
@@ -82,41 +106,64 @@ class IndexController extends Controller_Abstract
      * @return   [type]     [description]
      */
     public function testmongodbAction(){
-      
-        #插入
-        $mongodb=new Database\Mongo();
-        $list=['x' => 1, 'name'=>'langzi', 'url' => 'http://wp.greedy.bid'];
-        $table='test.lz';
-        $mongodb->add($table,$list);
-        #查询
-        $filter=['x' => ['$gt' => 0]];
-        $options=[ 
-            'projection' => ['_id' => 0],
-            'sort' => ['x' => 1],
-            ];
-        $document=$mongodb->search($table,$filter,$options);
-        foreach ($document as  $value) {
-            var_dump($value);
+        $request = $this->getRequest();
+        if (!empty($request->getPost())) {
+             #插入
+            $param=$request->getPost();
+            var_dump($param);
+            die();
+            $mongodb=new Database\Mongo();
+            $list=['x' => 1, 'name'=>'langzi', 'url' => 'http://wp.greedy.bid'];
+            $table='test.lz';
+            $mongodb->add($table,$list);
+            #查询
+            $filter=['x' => ['$gt' => 0]];
+            $options=[ 
+                'projection' => ['_id' => 0],
+                'sort' => ['x' => 1],
+                ];
+            $document=$mongodb->search($table,$filter,$options);
+            foreach ($document as  $value) {
+                var_dump($value);
+            }
+            #修改
+            $where=['x' => 1];
+            $set= ['name' => 'LZYX', 'url' => 'tool.runoob.com'];
+            $multi=['multi' => false, 'upsert' => false];
+            $mongodb->update($table,$where,$set,$multi);
+            #查询
+            $filter=['x' => ['$gt' => 0]];
+            #
+            $options=[ 
+                'projection' => ['_id' => 0],
+                'sort' => ['x' => 1],
+                ];
+            $document=$mongodb->search($table,$filter,$options);
+            foreach ($document as  $value) {
+                var_dump($value);
+            }
+            #删除
+            $where=['x' => 1];
+            $limit= ['limit' => 0];
+            $mongodb->delete($table,$where,$limit);
+        }else{
+            #视图使用
+            $this->getView()->display('public/header.php');
+            $this->getView()->display('Adv_add.php');
+            $this->getView()->display('public/footer.php');
         }
-        #修改
-        $where=['x' => 1];
-        $set= ['name' => 'LZYX', 'url' => 'tool.runoob.com'];
-        $multi=['multi' => false, 'upsert' => false];
-        $mongodb->update($table,$where,$set,$multi);
-        #查询
-        $filter=['x' => ['$gt' => 0]];
-        $options=[ 
-            'projection' => ['_id' => 0],
-            'sort' => ['x' => 1],
-            ];
-        $document=$mongodb->search($table,$filter,$options);
-        foreach ($document as  $value) {
-            var_dump($value);
-        }
-        #删除
-        $where=['x' => 1];
-        $limit= ['limit' => 0];
-        $mongodb->delete($table,$where,$limit);
+    }
+     
+    public function getpostAction(){
+         $request = $this->getRequest();
+         var_dump($request->getPost());
+    }
+    public function addAction(){
+        $this->_view->show="I can use yaf";
+    }
+
+}
+#
           #创建连接
       /* $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 
@@ -167,43 +214,3 @@ class IndexController extends Controller_Abstract
         $bulk->delete(['x' => 1], ['limit' => 0]);   // limit 为 1 时，删除第一条匹配数据
         $bulk->delete(['x' => 2], ['limit' => 0]);   // limit 为 0 时，删除所有匹配数据
         $result = $manager->executeBulkWrite('test.sites', $bulk, $writeConcern);*/
-
-    }
-     public function indexAction()
-    {
-        $this->_view->word = "hello yaf";
-        $request = $this->getRequest();
-       /* var_dump($request->getRequestUri());     //   输出：/test/test
-        var_dump($request->getBaseUri());        //   输出：''
-        var_dump($request->getMethod());         //   输出GET
-        var_dump($request->getPost());           //   输出：array()
-        var_dump($request->getQuery());          //   输出: array()
-        var_dump($request->getParam('id'));      //   输出：NULL
-        var_dump($request->getParams());  */       //   输出：array()
-        $Test=new Test\Test();
-        echo $Test->Index();
-        echo "<br>";
-        $Test=new Test();
-        echo $Test->Index();
-        #使用对象方法读取配置文件
-        $config = Application::app()->getConfig();
-        var_dump($config->application->directory);
-        var_dump($config->application->modules);
-        var_dump($config->application->dispatcher->defaultModule);
-        //导入一个函数库文件common.php，即可使用common.php中的函数
-        Yaf\Loader::import(APP_PATH.'/application/helpers/common.php');
-
-        var_dump(gethelper());
-        var_dump($this->getRequest()->getParam('id'));
-
-
-    }
-    public function getpostAction(){
-         $request = $this->getRequest();
-         var_dump($request->getPost());
-    }
-    public function addAction(){
-        $this->_view->show="I can use yaf";
-    }
-
-}

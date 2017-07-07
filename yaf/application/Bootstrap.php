@@ -1,85 +1,62 @@
 <?php
+
 /**
  * 框架启动文件
  */
 class Bootstrap extends Yaf\Bootstrap_Abstract
 {
-    /**
-         * 加载核心目录
-         */
-        public function _initCore()
-        {
-            //如自定义一些公共核心类，如基类控制器、基类模型等
-        }
-        public function _initConfig() {
-            $config = Yaf\Application::app()->getConfig();
-            Yaf\Registry::set("config", $config);
-        }
-        /*public function _initConfig()
-        {
-            #Yaf_Registry::set('config', Yaf_Application::app()->getConfig()->toArray());
-            Yaf\Registry::set('config', Yaf\Application::app()->getConfig()->toArray());
-        }*/
-        /**
-         * 初始化插件
-         */
-        public function _initPlugin()
-        {
-     
-        }
-     
-        public function _initLib()
-        {
-            //加载公共通过类
-        }
-         /**
-         * 初始化路由
-         */
-        //public function _initRoute(Yaf_Dispatcher $dispatcher)
-        public function _initRoute(Yaf\Dispatcher $dispatcher) {
-            $dispatcher->catchException(true);
-            $router = $dispatcher->getRouter();
-            /**
-             *加载配置文件内的路由规则 application.ini
-             */
-            $router->addConfig(Yaf\Registry::get("config")->routes);
-             //手动注册路由
-            $route = new \Yaf\Route\Regex('#^/item/([a-zA-Z-_0-9]+)#', array(
-                'controller'=>'goods',
-                'action'=>'item'
-            ), array(1=>'id'));
-            $router->addRoute('goodsDetail', $route);
-            $route = new \Yaf\Route\Regex('#^/index/([a-zA-Z-_0-9]+)#', array(
-                'controller'=>'index',
-                'action'=>'index'
-            ), array(1=>'id'));
-            $router->addRoute('index', $route);
-        }
-        
-       /* public function _initRoute(Yaf\Dispatcher $dispatcher)
-        {
-            
-            $router = $dispatcher->getRouter();
+    private $_config;
 
-            //$router->addConfig(Yaf_Registry::get("config")['routes']);
-            //在配置文件中写路由
-            $router->addConfig(Yaf\Registry::get("config")['routes']);
-            //$router->addConfig(Yaf_Registry::get("config")->routes);
-            //手动注册路由
-            $route = new \Yaf\Route\Regex('#^/item/([a-zA-Z-_0-9]+)#', array(
-                'controller'=>'goods',
-                'action'=>'item'
-            ), array(1=>'id'));
-            $router->addRoute('goodsDetail', $route);
-            $route = new \Yaf\Route\Regex('#^/index/([a-zA-Z-_0-9]+)#', array(
-                'controller'=>'index',
-                'action'=>'index'
-            ), array(1=>'id'));
-            $router->addRoute('index', $route);
-        }*/
-     
-        public function _initView()
-        {
-            //Yaf_Dispatcher::getInstance()->disableView();    //如果只是提供数据接口，则禁止模板输出
-        }
+    public function _initConfig() {
+        $this->_config = Yaf\Application::app()->getConfig();
+        Yaf\Registry::set("config", $this->_config);
+    }
+
+    public function _initDefaultName(Yaf\Dispatcher $dispatcher) {
+        $dispatcher->setDefaultModule("Index")->setDefaultController("Index")->setDefaultAction("index");
+
+    }
+
+    /**
+     * 设置页面layout
+    */
+    /*public function _initLayout(Yaf\Dispatcher $dispatcher){
+        $layout = new Layout($this->_config->application->layout->directory);
+        $dispatcher->setView($layout);
+    }*/
+
+    public function _initNamespaces(){
+        //申明, 凡是以Zend,Local开头的类, 都是本地类
+        Yaf\Loader::getInstance()->registerLocalNameSpace(array("Zend", "Local"));
+    }
+
+    public function _initRoute(Yaf\Dispatcher $dispatcher) {
+        //在这里注册自己的路由协议,默认使用简单路由  通过派遣器获取默认的路由器
+        $router = Yaf\Dispatcher::getInstance()->getRouter();//获取路由器
+        $router->addConfig($this->_config->routes);//加载路由协议
+
+        //手动注册路由
+        $route = new \Yaf\Route\Regex('#^/item/([a-zA-Z-_0-9]+)#', array(
+            'controller'=>'goods',
+            'action'=>'item'
+        ), array(1=>'id'));
+        $router->addRoute('goodsDetail', $route);
+        $route = new \Yaf\Route\Regex('#^/index/([a-zA-Z-_0-9]+)#', array(
+            'controller'=>'index',
+            'action'=>'index'
+        ), array(1=>'id'));
+        $router->addRoute('index', $route);
+    }
+    /**
+     * 连接数据库,设置数据库适配器
+     */
+    public function _initDefaultDbAdapter(){
+        $dbAdapter = new Zend\Db\Adapter\Adapter(
+            $this->_config->database->params->toArray()
+        );
+        Yaf\Registry::set("adapter", $dbAdapter);
+    }
+    public function _initView(Yaf\Dispatcher $dispatcher){
+         $dispatcher->autoRender(false);#关闭根据路由自动渲染模版
+    }        
 }
