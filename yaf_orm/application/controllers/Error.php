@@ -1,4 +1,5 @@
 <?php
+use Katzgrau\KLogger\Logger;
 class ErrorController extends Yaf\Controller_Abstract
 {
     /**
@@ -13,6 +14,9 @@ class ErrorController extends Yaf\Controller_Abstract
             YAF\ERR\NOTFOUND\ACTION,
             YAF\ERR\NOTFOUND\VIEW
         );
+        #var_dump($exception->getMessage());
+        
+        $log=new Logger(APP_PATH.'/data/log');
         $err = $exception->getCode();
         if (in_array($err, $constArr)) {
             $code = 404;
@@ -24,8 +28,9 @@ class ErrorController extends Yaf\Controller_Abstract
         if (ENV == 'DEV') {
             $message = $exception->getMessage();
         }
+        $log->info($exception->getMessage());
         //记录日志
         //ajax输出或显示错误模板
-        $this->getView()->assign('message', $message);
+        
     }
 }

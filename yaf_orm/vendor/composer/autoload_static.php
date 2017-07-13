@@ -18,6 +18,10 @@ class ComposerStaticInitc016bd15114812b23646a329936e6e14
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
         ),
+        'K' => 
+        array (
+            'Katzgrau\\KLogger\\' => 17,
+        ),
         'C' => 
         array (
             'Carbon\\' => 7,
@@ -32,6 +36,10 @@ class ComposerStaticInitc016bd15114812b23646a329936e6e14
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Katzgrau\\KLogger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/katzgrau/klogger/src',
         ),
         'Carbon\\' => 
         array (
@@ -79,12 +87,17 @@ class ComposerStaticInitc016bd15114812b23646a329936e6e14
         ),
     );
 
+    public static $classMap = array (
+        'Katzgrau\\KLogger\\Logger' => __DIR__ . '/..' . '/katzgrau/klogger/src/Logger.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc016bd15114812b23646a329936e6e14::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc016bd15114812b23646a329936e6e14::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitc016bd15114812b23646a329936e6e14::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitc016bd15114812b23646a329936e6e14::$classMap;
 
         }, null, ClassLoader::class);
     }
