@@ -44,5 +44,9 @@ class Bootstrap extends Yaf\Bootstrap_Abstract{
     }
     public function _initView(Yaf\Dispatcher $dispatcher){
         $dispatcher->autoRender(false);#关闭根据路由自动渲染模版
-    }  
+    }
+    
+    public function _initRoute(){
+        \Yaf\Dispatcher::getInstance()->catchException(true);
+    }
 }
