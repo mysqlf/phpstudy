@@ -2,8 +2,18 @@
 use Illuminate\Database\Capsule\Manager as DB;
 
 class ApiController extends AbstractController {
-
-
+    public function api_listAction(){
+        $request=$this->getRequest();
+        $cate=$request->get('cate');
+        if ($cate!==null) {
+            $data['list']=ApiModel::get_api_list_of_cate($cate);
+            $this->_view('api/api_list',$data);
+        }
+    }
+    public function api_infoAction(){
+        $request=$this->getRequest();
+        $apiid=$request->get('apiid');
+    }
     /**
      * [api_addAction 添加api]
      * @author Greedywolf 1154505909@qq.com
