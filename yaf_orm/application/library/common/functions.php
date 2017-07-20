@@ -1,5 +1,29 @@
 <?php
 /**
+ * [msg_code 返回消息状态]
+ * @author Greedywolf 1154505909@qq.com
+ * @DateTime 2017-07-13
+ * @param    [type]     $code [description]
+ * @return   [type]           [description]
+ */
+function msg_code($code){
+    switch ($code) {
+        case '400':
+            $message='缺少参数';
+            break;
+        case '401':
+            $message='参数已存在';
+            break;
+        case '500':
+            $message='写入失败';
+            break;
+        default:
+            $message='内部错误';
+            break;
+    }
+    return $message;
+}
+/**
  * [site_url 链接构造]
  * @author Greedywolf 1154505909@qq.com
  * @DateTime 2017-07-12

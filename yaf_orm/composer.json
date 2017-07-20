@@ -4,7 +4,8 @@
         "illuminate/events": "4.2.*",
         "symfony/debug": "2.6.*",
         "symfony/var-dumper": "2.6.*",
-        "katzgrau/klogger": "dev-master"
+        "katzgrau/klogger": "dev-master",
+        "mongodb/mongodb": "^1.1"
     },
     "repositories": {
         "packagist": {

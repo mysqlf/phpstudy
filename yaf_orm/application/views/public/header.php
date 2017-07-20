@@ -48,17 +48,20 @@
                         </div>
                     </li>
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span> <span class="fa arrow"></span></a>
+                        <a href="index.html"><i class="fa fa-th-large"></i> 
+                        <span class="nav-label">接口管理</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active"><a href="index.html">首页 v.1</a></li>
-                            <li><a href="dashboard_2.html">首页 v.2</a></li>
-                            <li><a href="dashboard_3.html">首页 v.3</a></li>
-                            <li><a href="dashboard_4_1.html">首页 v.4</a></li>
-                            <li><a href="dashboard_5.html">首页 v.5 <span class="label label-primary pull-right">NEW</span></a></li>
+                            <li class="active"><a href="<?php echo site_url('api/api_add');?>">接口添加</a></li>
+                            <li><a href="<?php echo site_url('api/api_list');?>">接口列表</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">布局</span></a>
+                        <a href="index.html"><i class="fa fa-th-large"></i> 
+                        <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="<?php echo site_url('cate/cate_add');?>">分类添加</a></li>
+                            <li><a href="<?php echo site_url('cate/cate_list');?>">分类列表</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">图表</span><span class="fa arrow"></span></a>
@@ -273,9 +276,9 @@
                     <ul class="dropdown-menu dropdown-messages">
                         <li>
                             <div class="dropdown-messages-box">
-                                <a href="profile.html" class="pull-left">
+                                <!-- <a href="profile.html" class="pull-left">
                                     <img alt="image" class="img-circle" src="img/a7.jpg">
-                                </a>
+                                </a> -->
                                 <div class="media-body">
                                     <small class="pull-right">46小时前</small>
                                     <strong>李文俊</strong> 关注了 <strong>刘海洋</strong>. <br>
@@ -286,9 +289,9 @@
                         <li class="divider"></li>
                         <li>
                             <div class="dropdown-messages-box">
-                                <a href="profile.html" class="pull-left">
+                                <!-- <a href="profile.html" class="pull-left">
                                     <img alt="image" class="img-circle" src="img/a4.jpg">
-                                </a>
+                                </a> -->
                                 <div class="media-body ">
                                     <small class="pull-right text-navy">5小时前</small>
                                     <strong>王昆</strong> 关注了 <strong>李文俊</strong>. <br>
@@ -299,9 +302,9 @@
                         <li class="divider"></li>
                         <li>
                             <div class="dropdown-messages-box">
-                                <a href="profile.html" class="pull-left">
+                                <!-- <a href="profile.html" class="pull-left">
                                     <img alt="image" class="img-circle" src="img/profile.jpg">
-                                </a>
+                                </a> -->
                                 <div class="media-body ">
                                     <small class="pull-right">23小时前</small>
                                     <strong>张三</strong> 赞了 <strong>李四</strong>. <br>

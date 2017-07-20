@@ -6,10 +6,12 @@
 abstract class AbstractController extends Yaf\Controller_Abstract
 {
     /**
-     * 登录、权限判断、初始化
+     * 初始化
      */
     public function init(){
+        #参数过滤
         filter();
+        #登录判断
         $user=get_session('user');
         if (empty($user)) {
             $this->redirect('login/index');
