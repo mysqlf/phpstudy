@@ -29,7 +29,7 @@
  // Write the title
  $Test->setFontProperties("Fonts/MankSans.ttf",10);
  $Test->drawTitle(10,20,"Sales per month",100,100,100);
- $filename=basename(__FILE__).'png';
+ $filename=basename(__FILE__).'.png';
  $Test->Render($filename);
  echo "<img src='{$filename}'>";
 ?>

@@ -24,13 +24,13 @@
      Data populating methods :
       ImportFromCSV($FileName,$Delimiter=",",$DataColumns=-1,$HasHeader=FALSE,$DataName=-1)
       AddPoint($Value,$Serie="Serie1",$Description="")
-     Series manipulation methods :
+    Series manipulation methods :
       AddSerie($SerieName="Serie1")
       AddAllSeries()
       RemoveSerie($SerieName="Serie1")
       SetAbsciseLabelSerie($SerieName = "Name")
       SetSerieName($Name,$SerieName="Serie1")
-  +   SetSerieSymbol($Name,$Symbol)
+      SetSerieSymbol($Name,$Symbol)
       SetXAxisName($Name="X Axis")
       SetYAxisName($Name="Y Axis")
       SetXAxisFormat($Format="number")
@@ -39,7 +39,7 @@
       SetYAxisUnit($Unit="")
       removeSerieName($SerieName)
       removeAllSeries()
-     Data retrieval methods :
+    Data retrieval methods :
       GetData()
       GetDataDescription()
  */
