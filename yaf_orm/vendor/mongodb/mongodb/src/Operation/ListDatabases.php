@@ -87,6 +87,8 @@ class ListDatabases implements Executable
          * field inaccessible, but users can manually invoke the command if they
          * need that value.
          */
-        return new DatabaseInfoLegacyIterator($result['databases']);
+        return $result['databases'];
+        #好好的数组非得又转回对象
+        #return new DatabaseInfoLegacyIterator($result['databases']);
     }
 }

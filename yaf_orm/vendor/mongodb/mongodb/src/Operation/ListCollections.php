@@ -106,8 +106,8 @@ class ListCollections implements Executable
 
         $cursor = $server->executeCommand($this->databaseName, new Command($cmd));
         $cursor->setTypeMap(['root' => 'array', 'document' => 'array']);
-
-        return new CollectionInfoCommandIterator($cursor);
+        return $cursor;
+        #return new CollectionInfoCommandIterator($cursor);
     }
 
     /**

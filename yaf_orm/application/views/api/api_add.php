@@ -140,6 +140,16 @@ function DeleteCookie(name) {
                     </div>
                     <div class="form-group has-error">
                         <div class="input-group">
+                            <div class=" input-group-addon">请求类别</div>
+                            <select class="form-control" name="req_type" >
+                                <option value="http">http</option>
+                                <option value="https">https</option>
+                                <option value="soap">soap</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <div class="input-group">
                             <div class="input-group-addon">接口名称</div>
                             <input type="text" class="form-control" name="name" placeholder="接口名称" required="required">
                         </div>

@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class UserModel extends EloquentModel
 {
     protected $table = 'user';
+    public $timestamps = false;#false不维护update_at字段
     public static function getone($id=''){
         return self::where('id','=',$id)->get();
     }

@@ -1,18 +1,5 @@
 <link href="<?php echo DOMAIN_NAME?>/res/style.css" rel="stylesheet">
 <script src="<?php echo DOMAIN_NAME?>/res/js/jquery.min.js"></script>
-<div class="list">
-    <a class="btn btn-success" href="<?php echo site_url('api/api_add?cate=').$cate ?>">添加接口</a>
-    <ul class="list-unstyled" style="padding:10px">
-        <?php foreach($list as $v){ ?>
-        <li class="menu" id="api_<?php echo md5($v['id']);?>" >
-            <a href="<?php echo site_url('api/api_info?apiid=').$v['id']; ?>" id="<?php echo 'menu_'.md5($v['id'])?>">
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                <?php echo $v['name'] ?>
-            </a>
-        </li>
-        <?php } ?>
-    </ul>
-</div>
 <script type="text/javascript" src="<?php echo DOMAIN_NAME?>/res/layer.js"></script>
 
     <!--接口详细列表start-->
@@ -25,14 +12,13 @@
                     <?php if(1){?>
                     <button class="btn btn-danger btn-xs " onclick="deleteApi(<?php echo $v['id']?>,'<?php echo md5($v['id'])?>')">delete</button>&nbsp;
                     <!-- <?php // echo U(array('act'=>'api','op'=>'edit','id'=>$v['id'],'tag'=>$_GET['tag']))?> -->
-                    <a class="btn btn-info btn-xs " href="<?php echo site_url('api/api_edit?apiid=').$v['id']; ?>">edit</a>
+                    <button class="btn btn-info btn-xs " onclick="editApi('')">edit</button>
                     <button class="btn btn-primary btn-xs " onclick="copyApi(<?php echo $v['id']?>)">copy</button>
                     <?php } ?>
                 </div>
                 <h4 class="textshadow"><?php echo $v['name']?></h4>
                 <p>
                     <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red"><?php echo $v['num']?></span></b>
-                     <b>数据表&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red"><?php echo $v['table']?></span></b>
                 </p>
                 <div>
                     <?php
@@ -148,5 +134,6 @@
             }
         };
     </script>
+
 <script src="<?php echo DOMAIN_NAME?>/res/jquery.cookie.js"></script>
-<script src="<?php echo DOMAIN_NAME?>/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+

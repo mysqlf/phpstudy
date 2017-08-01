@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class CateModel extends EloquentModel
 {
     protected  $table= 'cate';
+    public $timestamps = false;#false不维护update_at字段 
     /**
      * [get_cate_list 分类列表]
      * @author Greedywolf 1154505909@qq.com
