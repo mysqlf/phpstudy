@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Database\Capsule\Manager as DB;
-
+#mongod.exe --dbpath c:\data\db
 class MongodbController extends AbstractController {
     /**
      * [dblistAction 数据库列表]
@@ -31,10 +31,12 @@ class MongodbController extends AbstractController {
             }
             $data['dbname']=$dbname;
             $this->getView()->display('mongo/collectionlist.php',$data);
+         }else{
+            error('参数错误');
          }
     }
     /**
-     * [collectioninfoAction description]
+     * [collectioninfoAction 文档详情]
      * @author Greedywolf 1154505909@qq.com
      * @DateTime 2017-08-01
      * @return   [type]     [description]
@@ -49,7 +51,7 @@ class MongodbController extends AbstractController {
                 [],
                 [
                     'skip'=>0,#开始
-                    'limit' => 5,#条数限制
+                    'limit' => 10,#条数限制
                 ]
             );
             foreach ($cursor as $restaurant) {
@@ -59,7 +61,24 @@ class MongodbController extends AbstractController {
             $data['key']=$key;
             $data['list']=$list;
             $this->getView()->display('mongo/info.php',$data);
+        }else{
+            error('参数错误');
+        }
+    }
+    /**
+     * [delcollectionAction 删除表]
+     * @author Greedywolf 1154505909@qq.com
+     * @DateTime 2017-08-02
+     * @return   [type]     [description]
+     */
+    public function delcollectionAction(){
+        $request=$this->getRequest();
+        $dbname=$request->get('dbname');
+        $collectionname=$request->get('collname');
+        if ($dbname!==null && $collectionname !==null) {
 
+        }else{
+            error('参数错误');
         }
     }
     public function indexAction() {//默认Action
