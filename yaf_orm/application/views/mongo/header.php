@@ -2,6 +2,31 @@
 <html>
 <head>
     <title>mongodb</title>
+        <style type="text/css">
+table.imagetable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: #c4e4ff;
+}
+table.imagetable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+table.imagetable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+
+</style>
 </head>
 <body style="width: 100%;height: 100%;">
 <div style="width: 100%;height: 10%;">
@@ -10,7 +35,7 @@
 <div style="width:20%;height:90%;float: left;">
 <div style="width:100%;height:50%;">
 <p>数据库列表</p>
-    <table>
+    <table class="imagetable">
         <?php foreach ($list as $value): ?>
         <tr>
         <td>

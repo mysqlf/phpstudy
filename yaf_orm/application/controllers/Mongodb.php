@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Database\Capsule\Manager as DB;
 #mongod.exe --dbpath c:\data\db
+#https://github.com/jenssegers/laravel-mongodb
 class MongodbController extends AbstractController {
     /**
      * [dblistAction 数据库列表]
@@ -60,6 +61,8 @@ class MongodbController extends AbstractController {
             $key=array_keys($list[0]);
             $data['key']=$key;
             $data['list']=$list;
+            $data['dbname']=$dbname;
+            $data['collname']=$collectionname;
             $this->getView()->display('mongo/info.php',$data);
         }else{
             error('参数错误');
@@ -76,11 +79,41 @@ class MongodbController extends AbstractController {
         $dbname=$request->get('dbname');
         $collectionname=$request->get('collname');
         if ($dbname!==null && $collectionname !==null) {
-
+            $db=(new MongoDB\Client)->$dbname;
+            $res=$db->dropCollection($collectionname);
+            if ($res) {
+                success('删除成功');
+            }else{
+                error('删除失败');
+            }
         }else{
             error('参数错误');
         }
     }
+    /**
+     * [delAction 删除]
+     * @author Greedywolf 1154505909@qq.com
+     * @DateTime 2017-09-28
+     * @return   [type]     [description]
+     */
+    public function delAction(){
+        $request=$this->getRequest();
+        $dbname=$request->get('dbname');
+        $collectionname=$request->get('collname');
+        $id=$request->get('id');
+        $collection=(new MongoDB\Client)->$dbname->$collectionname;
+        #不能直接使用_id删除
+        #因为这个id 并不是内部真正使用的id
+        #需要经过下面这个方法转化
+        $oid=new \MongoDB\BSON\ObjectId($id);
+        $res=$collection->deleteOne(['_id'=>$oid]);
+        if ($res->getDeletedCount()) {
+            success('删除成功');
+        }else{
+            error('删除失败');
+        }
+    }
+
     public function indexAction() {//默认Action
        # $manager = new MongoDB\Driver\Manager('mongodb://127.0.0.1/');
         $collection = (new MongoDB\Client)->test->users;

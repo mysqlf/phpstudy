@@ -118,7 +118,6 @@ class Amqp{
      * @param    [type]     $q_name [description]
      * @param    string     $r_key  [description]
      * @param    string     $e_name [description]
-
      * @return   [type]             [description]
      */
     public function getmessage($q_name='amq.gen-_os7Lh0vwz5MjAHdr8S6ww',$e_name='benchmark_exchange_1494837518.4352',$r_key='')

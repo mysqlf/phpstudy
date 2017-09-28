@@ -84,7 +84,6 @@ function saveexcel($arr='',$file=''){
 		$x=65;
 		for ($j=0; $j <count($arr[$i]) ; $j++) {
 			#列名
-
 			$name=chr($x);
 			$k=$i+2;
 			$resultPHPExcel->getActiveSheet()->setCellValue($name.$k,$arr[$i][$j]);
@@ -269,7 +268,7 @@ $fileName = 'export.xml';
 $path     = '';
 $handle   = fopen($path . $fileName, 'w');
 fwrite($handle, $xml);
-fclose($handle);*/
+fclose($handle);
 
 	$outputFileName = uniqid().'_.xls';
 	$objWriter = PHPExcel_IOFactory::createWriter($resultPHPExcel, 'Excel2007');

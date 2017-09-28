@@ -9,6 +9,10 @@
                 <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 <?php echo $v['cname'] ?>
             </a>
+            <a style="float: right;" href="<?php echo site_url('cate/cate_edit?cate=').$v['aid']; ?>" id="<?php echo 'menu_'.md5($v['aid'])?>">
+                
+                修改
+            </a>
         </li>
         <?php } ?> 
     </ul>

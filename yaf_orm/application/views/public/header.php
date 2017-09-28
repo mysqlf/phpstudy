@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>首页</title>
-
     <link href="<?php echo DOMAIN_NAME?>/info/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo DOMAIN_NAME?>/info/font-awesome/css/font-awesome.css" rel="stylesheet">
-
     <!-- Toastr style -->
     <link href="<?php echo DOMAIN_NAME?>/info/css/plugins/toastr/toastr.min.css" rel="stylesheet">
-
     <!-- Gritter -->
     <link href="<?php echo DOMAIN_NAME?>/info/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
-
     <link href="<?php echo DOMAIN_NAME?>/info/css/animate.css" rel="stylesheet">
     <link href="<?php echo DOMAIN_NAME?>/info/css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
@@ -40,27 +31,34 @@
                                 <li><a href="contacts.html">联系方式</a></li>
                                 <li><a href="mailbox.html">邮箱</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">退出登录</a></li>
+                                <li><a href="<?php echo site_url('Login/logout'); ?>">退出登录</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">
                             IN+
                         </div>
                     </li>
-                    <li class="active">
+                    <!-- <li class="active">
                         <a href="index.html"><i class="fa fa-th-large"></i> 
                         <span class="nav-label">接口管理</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class="active"><a href="<?php echo site_url('api/api_add');?>">接口添加</a></li>
                             <li><a href="<?php echo site_url('api/api_list');?>">接口列表</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="index.html"><i class="fa fa-th-large"></i> 
                         <span class="nav-label">分类管理</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="<?php echo site_url('cate/cate_add');?>">分类添加</a></li>
                             <li><a href="<?php echo site_url('cate/cate_list');?>">分类列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> 
+                        <span class="nav-label">模拟请求</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="<?php echo site_url('cate/cate_list');?>">接口分类</a></li>
                         </ul>
                     </li>
                     <li>

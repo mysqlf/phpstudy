@@ -12,7 +12,11 @@ class CateModel extends EloquentModel
      * @return   [type]     [description]
      */
     public static function get_cate_list(){
-        return self::orderBy('aid', 'desc')->get()->toArray();
+        return self::orderBy('aid','desc')->get()->toArray();
+    }
+
+    public static function get_cate_info($aid){
+        return self::where('aid','=',$aid)->first();
     }
     /**
      * [insert_data 插入数据]
@@ -23,5 +27,8 @@ class CateModel extends EloquentModel
      */
     public static function insert_cate($data=array()){
         return self::insert($data); 
+    }
+    public static function up_cate($aid,$data){
+        return self::where('aid','=',$aid)->update($data);
     }
 }

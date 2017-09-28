@@ -1,11 +1,12 @@
 {
     "require": {
-        "illuminate/database": "~4.2",
-        "illuminate/events": "4.2.*",
+        "illuminate/database": "5.1.2",
+        "illuminate/events": "5.1.*",
         "symfony/debug": "2.6.*",
         "symfony/var-dumper": "2.6.*",
         "katzgrau/klogger": "dev-master",
-        "mongodb/mongodb": "^1.1"
+        "mongodb/mongodb": "^1.1",
+        "jenssegers/mongodb": "3.2.*"
     },
     "repositories": {
         "packagist": {

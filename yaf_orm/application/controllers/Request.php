@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Database\Capsule\Manager as DB;
 /**
  * 
  */
@@ -14,7 +13,7 @@ class RequestController extends AbstractController {
             $url=$info['url'];
             switch ($info['req_type']) {
                 case 'soap':
-                    $res=self::soap();
+                    $res=self::soap($data,$url,$function);
                     break;
                 case 'http':
                     $res=self::http();
@@ -23,7 +22,7 @@ class RequestController extends AbstractController {
                     $res=self::https();
                     break;
                 default:
-                    # code...
+                    
                     break;
             }
         }

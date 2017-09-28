@@ -4,15 +4,14 @@
 
     <!--接口详细列表start-->
     <?php if(count($list)){ ?>
-        <?php foreach($list as $v){ ?>
+        <?php foreach($list as $v){ ?>;
         <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_<?php echo md5($v['id'])?>">
             <div style="background:#f5f5f5;padding:20px;position:relative">
                 <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
                     最后修改者: 
                     <?php if(1){?>
                     <button class="btn btn-danger btn-xs " onclick="deleteApi(<?php echo $v['id']?>,'<?php echo md5($v['id'])?>')">delete</button>&nbsp;
-                    <!-- <?php // echo U(array('act'=>'api','op'=>'edit','id'=>$v['id'],'tag'=>$_GET['tag']))?> -->
-                    <button class="btn btn-info btn-xs " onclick="editApi('')">edit</button>
+                    <button class="btn btn-info btn-xs " onclick="editApi('<?php echo site_url("api/api_edit?apiid=").$v['id'] ?>')">edit</button>
                     <button class="btn btn-primary btn-xs " onclick="copyApi(<?php echo $v['id']?>)">copy</button>
                     <?php } ?>
                 </div>

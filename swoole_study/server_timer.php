@@ -24,26 +24,20 @@ class Server
     }
     public function onWorkerStart($serv,$work_id){
         if ($work_id==0) {
-           swoole_timer_tick(1000, function ($work_id) {
-                echo "tick-2000ms\n";
+            #定时器需要放在回调函数内设置
+            #方法不再是Timer
+            #可以使用闭包形式
+            swoole_timer_tick(1500,function ($work_id) {
+                echo "tick-1500ms\n";
             });
+            #也可使用回调形式
+           swoole_timer_tick(1000, array($this,'onTest'));
         }
     }
-    public function onTimer($serv,$interval){
-        switch ($interval) {
-            case 5:{  // 
-                echo "Do Thing A at interval 500\n";
-                break;
-            }
-            case 10:{
-                echo "Do Thing B at interval 1000\n";
-                break;
-            }
-            case 15:{
-                echo "Do Thing C at interval 1500\n";
-                break;
-            }
-        }
+    public function onTest(){
+        #function ($work_id) {
+                echo "tick-1000ms\n";
+        #    }
     }
     public function onStart( $serv ) {
         echo "Start\n";

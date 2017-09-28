@@ -1,23 +1,16 @@
 <?php
-#$client = new SoapClient("http://mail.chitone.com.cn/apiws/services/API?wsdl",array('encoding'=>'UTF-8'));
-/*$client = new SoapClient("http://192.168.2.19/apiws/services/API?wsdl",array('encoding'=>'UTF-8'));
-$user_at_domain='wolf@chitone.com.cn';
-$arr=array('user_at_domain'=>$user_at_domain);
-$result=$client->userExist($arr);
-var_dump($result);*/
-/*echo json_encode(array('address'=>array('email'=>'344345150@qq.com','name'=>'344345150@qq.com'),'title'=>'This is a test Message','body'=>'This is a test Message'));
-die;
-echo  json_encode(array('user'=>1,'title'=>'test','type'=>1));die;*/
-//$arr=array('user_at_domain'=>$user_at_domain);
-// $result=$client->userLogin($arr);
-// var_dump($result);
-$client = new SoapClient("http://192.168.2.19/apiws/services/API?wsdl",array('encoding'=>'UTF-8'));
-$user_at_domain='chao.wen@chitone.com.cn';
-$arr=array('user_at_domain'=>$user_at_domain);
-$result=$client->getNewMailInfos($arr);
 
+#创建对象 
+$url="http://192.168.2.19/apiws/services/API?wsdl"
+$client = new SoapClient($url,array('encoding'=>'UTF-8'));
+#参数
+$arr=array('user_at_domain'=>'chao.wen@chitone.com.cn');
+#调用方法
+#getNewMailInfos方法名根据文档来
+$result=$client->getNewMailInfos($arr);
+#返回参数解析---具体看对方参数形式,我这个是因为接口给我的是经过urlcode过的
 $content=urldecode(urldecode($result->return->result));
-//var_dump($content);die;
+
 /*$pat='/&subject=(.*?)&size=/';
 preg_match_all($pat, $content, $m);
 var_dump($m);die;*/
@@ -25,6 +18,8 @@ $pat='/&from=(.*?)&to=.*?&subject=(.*?)&size=.*?&date=(.*?)&/';
 preg_match_all($pat, $content, $m);
 var_dump($m);
 //print_r($content);
+#The C compiler identification is unknown
+#-- The CXX compiler identification is unknown
 
 /*var_dump($client->__getFunctions());
 var_dump($client->__getTypes());*/

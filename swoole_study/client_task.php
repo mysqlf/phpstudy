@@ -1,4 +1,5 @@
 <?php
+// task 客户端与服务端需要保持一致,需要进行绑定才行
 class Client
 {
     private $client;
