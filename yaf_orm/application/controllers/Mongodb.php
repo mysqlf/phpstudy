@@ -3,6 +3,11 @@ use Illuminate\Database\Capsule\Manager as DB;
 #mongod.exe --dbpath c:\data\db
 #https://github.com/jenssegers/laravel-mongodb
 class MongodbController extends AbstractController {
+    public function testormAction(){
+        echo 1;
+        $data = MongoOrm\TestModel::where('x','=',1)->get();
+        var_dump($data);
+    }
     /**
      * [dblistAction 数据库列表]
      * @author Greedywolf 1154505909@qq.com

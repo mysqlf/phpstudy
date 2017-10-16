@@ -1,6 +1,12 @@
 <?php
-
-
+$a='end';
+$b='试验';
+if ($a==$b) {
+    echo 1;
+}else{
+    echo 2;
+}
+die();
 /*function testmongodbAction(){
     $bulk = new MongoDB\Driver\BulkWrite;
     $document = ['_id' => new MongoDB\BSON\ObjectID, 'name' => '菜鸟教程'];

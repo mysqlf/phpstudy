@@ -2,6 +2,7 @@
 use Illuminate\Container\Container;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
+
 /**
  * 所有在Bootstrap类中, 以_init开头的方法, 都会被Yaf调用,
  * 这些方法, 都接受一个参数:Yaf_Dispatcher $dispatcher
@@ -21,8 +22,36 @@ class Bootstrap extends Yaf\Bootstrap_Abstract{
 	public function _initDefaultName(Yaf\Dispatcher $dispatcher) {
 		$dispatcher->setDefaultModule("Index")->setDefaultController("Index")->setDefaultAction("index");
 	}
-	
 	//数据库初始化操作
+    public function _initDatabaseMongo() {
+        $config = \Yaf\Application::app()->getConfig()->database->toArray();
+        $capsule = new Capsule();
+        // Get Default database settings
+        if($config['default'] == 'mysql'){
+            $capsule->getDatabaseManager()->setDefaultConnection('mysql');
+        }
+        if($config['default'] == 'mongodb'){
+            // Set default connection
+            $capsule->getDatabaseManager()->setDefaultConnection('mongodb');
+        }
+        // 创建链接
+        $capsule->addConnection($config['mysql'],'mysql');
+        // 设置处理模式
+        $capsule->getDatabaseManager()->extend('mongodb', function($config){
+            $connection = (new MongoDB\Driver\Manager('mongodb://127.0.0.1:27017'));
+            return $connection;
+        });
+        // Set Mongodb host
+        $host = explode(',', $config['mongodb']['host']);
+        $config['mongodb']['host'] = array_filter($host,function($v){return $v !== '';});
+        // 创建链接
+        $capsule->addConnection($config['mongodb'],'mongodb');
+        // 设置全局静态可访问
+        $capsule->setAsGlobal();
+        // 启动Eloquent
+        $capsule->bootEloquent();
+    }
+	/*//数据库初始化操作
 	public function _initDatabaseEloquent() {
 
         $config = Yaf\Application::app()->getConfig()->database->toArray();
@@ -37,7 +66,7 @@ class Bootstrap extends Yaf\Bootstrap_Abstract{
         $capsule->bootEloquent();
         
 
-    }
+    }*/
     //自动加载用户函数
     public function _initFunction(){
         Yaf\Loader::import('common/functions.php');
